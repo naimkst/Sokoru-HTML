@@ -1,0 +1,29 @@
+/*-------------------------
+#.blog-area
+--------------------------*/
+.nav-tabs {
+     border: none;
+     justify-content: center;
+     margin-bottom: 9rem;
+     .nav-item {
+          margin: 0;
+          margin-right: 4rem;
+          &:last-child {
+               margin-right: 0;
+          }
+          .nav-link {
+               border: none;
+               padding: 0;
+               margin: 0;
+               font-family: $titleFont;
+               font-size: 1.8rem;
+               font-weight: 700;
+               text-transform: uppercase;
+               color: var(--black);
+               &.active {
+                    color: var(--primary-color);
+               }
+          }
+     }
+}
+@import "./single-blog";

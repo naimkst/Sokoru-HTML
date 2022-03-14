@@ -1,0 +1,35 @@
+.image-slide {
+     .sigle-image {
+          img {
+               width: 100%;
+               height: auto;
+          }
+     }
+     .slick-dots {
+          position: absolute;
+          bottom: 3rem;
+          left: 0;
+          right: 0;
+          text-align: center;
+          li {
+               display: inline-block;
+               line-height: 1;
+               margin: 0 .5rem;
+               button {
+                    padding: 0;
+                    font-size: 0;
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    border-radius: 50%;
+                    background-color: var(--white);
+                    border: none;
+                    box-shadow: none;
+               }
+               &.slick-active {
+                    button {
+                         background-color: var(--black);
+                    }
+               }
+          }
+     }
+}

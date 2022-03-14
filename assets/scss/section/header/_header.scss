@@ -1,0 +1,152 @@
+/*-------------------------
+#.header-area
+--------------------------*/
+.header-area {
+    background-color: #FFFCF7;
+    padding: 3rem 0;
+    .header-wrap {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        .header-left {
+            width: 40%;
+        }
+        .header-center {
+            width: 20%;
+            text-align: center;
+        }
+        .header-right {
+            width: 40%;
+            text-align: right;
+        }
+    }
+    .main-menu {
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                margin-right: 2.5rem;
+                a {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: var(--black);
+                    transition: $transition;
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.active {
+                    a {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+    .brand-logo {
+        display: inline-block;
+        img {
+            max-width: 16rem;
+        }
+    }
+    .account-curancy-area {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 4rem;
+        .curancy-area {
+            margin-right: 2rem;
+            .dropdown-toggle {
+                padding: 0;
+                border: none;
+                background: transparent;
+                font-family: $bodyFont;
+                font-size: 1.8rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: var(--black);
+                &:after {
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    content: "\f107";
+                    border: none;
+                    vertical-align: 0;
+                    font-size: 1.4rem;
+                    line-height: 1;
+                }
+            }
+            .dropdown-menu {
+                width: 12rem;
+                padding: 0;
+                border: none;
+                border-radius: .5rem;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                li {
+                    a {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        color: var(--black);
+                        transition: $transition;
+                        &:hover {
+                            color: var(--primary-color);
+                        }
+                    }
+                    &.active {
+                        a {
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+        .account-btn {
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: var(--black);
+            transition: $transition;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+    .search-cart {
+        display: inline-flex;
+        align-items: center;
+        li {
+            margin-right: 2.5rem;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                display: inline-block;
+                img {
+                    max-width: 3rem;
+                }
+            }
+        }
+    }
+    .cart-area {
+        a {
+            position: relative;
+            .cart-count {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                text-align: center;
+                font-size: 1rem;
+                line-height: 1;
+                font-weight: 400;
+                color: var(--black);
+            }
+        }
+    }
+}

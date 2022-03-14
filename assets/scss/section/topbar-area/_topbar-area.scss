@@ -1,0 +1,31 @@
+/*-------------------------
+#.topbar-area
+--------------------------*/
+.topbar-area {
+     padding: .6rem 0;
+     background-color: var(--white);
+     .slick-arrow {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 1;
+          cursor: pointer;
+          color: #696969;
+          &.slick-prev {
+               left: 10%;
+          }
+          &.slick-next {
+               right: 10%;
+          }
+     }
+     .single-slide {
+          text-align: center;
+          color: var(--white);
+          p {
+               margin: 0;
+               font-size: 1.2rem;
+               font-weight: 400;
+               color: #696969;
+          }
+     }
+}

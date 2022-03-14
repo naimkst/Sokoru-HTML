@@ -1,0 +1,36 @@
+/*-------------------------
+#.hero-banner-area
+--------------------------*/
+.hero-banner-area {
+     position: relative;
+     padding: 20rem 0;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     z-index: 1;
+     &::before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background: rgba(208, 142, 97, .5);
+          z-index: -1;
+     }
+     .banner-title {
+          margin-bottom: 5rem;
+          font-size: 6rem;
+          line-height: 7rem;
+          font-weight: 700;
+          font-family: $titleFont;
+          text-transform: capitalize;
+          color: var(--black);
+     }
+     .banner-content {
+          margin-bottom: 6rem;
+          font-size: 1.8rem;
+          line-height: 3rem;
+          color: var(--black);
+     }
+}

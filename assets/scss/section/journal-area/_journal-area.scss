@@ -1,0 +1,31 @@
+/*-------------------------
+#.journal-area
+--------------------------*/
+.journal-area {
+     .single-journal {
+          margin-bottom: 3rem;
+          .jurnal-thumbnail {
+               margin-bottom: 3rem;
+               a {
+                    display: block;
+                    img {
+                         width: 100%;
+                         height: auto;
+                    }
+               }
+          }
+          .jurnal-title {
+               margin: 0;
+               font-size: 2.4rem;
+               font-weight: 400;
+               color: var(--black);
+               a {
+                    color: var(--black);
+                    transition: $transition;
+                    &:hover {
+                         color: var(--primary-color);
+                    }
+               }
+          }
+     }
+}

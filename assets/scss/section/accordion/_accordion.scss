@@ -1,0 +1,49 @@
+/*-------------------------
+#.accordion
+--------------------------*/
+.accordion {
+     .accordion-item {
+          background-color: transparent;
+          border: none;
+          margin-bottom: 2rem;
+          .accordion-header {
+               .accordion-button {
+                    padding: 0;
+                    background-color: transparent;
+                    box-shadow: none;
+                    padding-bottom: 2rem;
+                    border-bottom: 1px solid #919294;
+                    font-family: $bodyFont;
+                    font-size: 2.2rem;
+                    font-weight: 400;
+                    color: var(--black);
+                    &:after {
+                         background: transparent;
+                         font-family: "Font Awesome 6 Free";
+                         font-weight: 900;
+                         content: "\f107";
+                    }
+               }
+          }
+          .accordion-body {
+               padding: 2rem 0;
+               p {
+                    margin-bottom: 1.5rem;
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    color: var(--bColor);
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+               }
+          }
+     }
+}
+.more-questions {
+     .more-quistion {
+          margin-bottom: 1.5rem;
+          font-size: 1.8rem;
+          font-weight: 400;
+          color: var(--bColor);
+     }
+}

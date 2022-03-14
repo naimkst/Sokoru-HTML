@@ -1,0 +1,33 @@
+/*-------------------------
+#.image-content-area
+--------------------------*/
+.image-content-area {
+     .image-section {
+          img {
+               width: 100%;
+               height: auto;
+          }
+     }
+     .content-box-area {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          .content-box-inner {
+               width: 80%;
+               margin: 0 auto;
+               .title {
+                    margin-bottom: 4rem;
+                    font-size: 4.8rem;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    color: var(--black);
+               }
+               .content {
+                    margin-bottom: 4.5rem;
+                    font-size: 1.8rem;
+                    line-height: 3rem;
+                    color: var(--black);
+               }
+          }
+     }
+}

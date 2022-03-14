@@ -1,0 +1,81 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Sokoru Responsive  HTML5 Template
+Template URI: http://sokoru.com
+Description: Sokoru Responsive  HTML5 Template
+Author: Gobinda Sarkar
+Author URI: http://sokoru.com
+Version: 1.0
+
+---------------------- common content ----------
+1.body reset content
+#.header-area
+#.topbar-area
+#.hero-banner-area
+#.sustainable-area
+#.section-title
+#.single-product
+#.switch-difference-area
+#.period-area
+#.brand-slider-area
+#.ethically-made-area
+#.call-to-action-area
+#.company-area
+#.accordion
+#.video-image-area
+#.image-content-area
+#.conversation-area
+#.blog-banner
+#.blog-area
+#.journal-area
+#.video-area
+#.image-slide
+#.faq-page-area
+#.footer-area
+
+
+
+
+*/
+
+/*-------------------------
+#.faq-page-area
+--------------------------*/
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/header/header";
+@import "section/topbar-area/topbar-area";
+@import "section/hero-banner-area/hero-banner-area";
+@import "section/sustainable-area/sustainable-area";
+@import "section/section-title/section-title";
+@import "section/footer-area/footer-area";
+@import "section/single-product/single-product";
+@import "section/switch-difference-area/switch-difference-area";
+@import "section/period-area/period-area";
+@import "section/brand-slider-area/brand-slider-area";
+@import "section/ethically-made-area/ethically-made-area";
+@import "section/call-to-action-area/call-to-action-area";
+@import "section/company-area/company-area";
+@import "section/accordion/accordion";
+@import "section/video-image-area/video-image-area";
+@import "section/image-content-area/image-content-area";
+@import "section/conversation-area/conversation-area";
+@import "section/blog-banner/blog-banner";
+@import "section/blog-area/blog-area";
+@import "section/blog-area/single-blog-details";
+@import "section/journal-area/journal-area";
+@import "section/video-area/video-area";
+@import "section/image-slide/image-slide";
+@import "section/faq-page-area/faq-page-area";
+
+// page content
