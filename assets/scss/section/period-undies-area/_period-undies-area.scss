@@ -1,0 +1,52 @@
+/*-------------------------
+#.period-undies-area
+--------------------------*/
+.period-undies-area {
+    background-color: #FFFCF7;
+    .section-innner {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .period-undies-left {
+        h2 {
+            margin-bottom: 6rem;
+            font-size: 4.8rem;
+            line-height: 6rem;
+            font-weight: 700;
+            color: var(--black);
+        }
+        p {
+            margin: 0;
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            font-weight: 400;
+            color: var(--bColor);
+        }
+    }
+    .period-info {
+        display: flex;
+        align-items: center;
+        min-height: 650px;
+    }
+    .period-undies-right {
+        height: 100%;
+        background-color: #E1D2BB;
+    }
+    .single-period-undies {
+        margin-bottom: 3rem;
+        .icon {
+            max-width: 6rem;
+            max-height: 6.5rem;
+            object-fit: cover;
+            margin: 0 auto;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            max-width: 200px;
+            margin: 0 auto;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--black);
+        }
+    }
+}

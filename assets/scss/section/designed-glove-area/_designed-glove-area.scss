@@ -1,0 +1,70 @@
+/*-------------------------
+#.designed-glove-area
+--------------------------*/
+.designed-glove-area {
+    .size-chart {
+        font-family: $bodyFont;
+        font-size: 1.4rem;
+        line-height: 1;
+        font-weight: 700;
+        color: var(--black);
+        text-transform: uppercase;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        img {
+            max-width: 2rem;
+        }
+        span {
+            display: inline-block;
+            text-decoration: underline;
+            margin-right: 1rem;
+        }
+    }
+    .designed-glove-left {
+        .nav {
+            display: block;
+            margin: 0;
+            padding: 0;
+            .nav-item {
+                display: block;
+                margin-bottom: 3rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .nav-link {
+                    display: inline-block;
+                    font-family: $titleFont;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: var(--black);
+                    transition: $transition;
+                    text-decoration: underline;
+                    padding: 0;
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .designed-glove-right {
+        h2 {
+            margin-bottom: 4rem;
+            font-size: 3.2rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: var(--black);
+        }
+        ul {
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+            li {
+                list-style: disc;
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: var(--black);
+            }
+        }
+    }
+}

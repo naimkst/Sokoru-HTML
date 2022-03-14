@@ -1,0 +1,106 @@
+/*-------------------------
+#.how-work-area
+--------------------------*/
+.how-work-area {
+    .how-work-left {
+        padding: 3rem 0;
+        max-width: 480px;
+        margin: 0 auto;
+        .title {
+            margin-bottom: 7rem;
+            font-size: 4.8rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: var(--black);
+        }
+    }
+    .how-work-list {
+        .single-work {
+            display: flex;
+            position: relative;
+            z-index: 1;
+            padding-bottom: 4rem;
+            &:last-child {
+                &::before {
+                    display: none;
+                }
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 100%;
+                background-color: var(--black);
+                left: 60px;
+                top: 0;
+                z-index: -1;
+            }
+            .work-icon {
+                img {
+                    max-width: 3rem;
+                    object-fit: cover;
+                }
+            }
+            .work-count {
+                @include flex-position(flex, center, center);
+                margin: 0 1.5rem;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                border: 1px solid var(--black);
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: var(--black);
+                background-color: #CBD1C7;
+            }
+            .work-info {
+                flex: 1;
+                h4 {
+                    margin-bottom: .5rem;
+                    font-size: 2.2rem;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: var(--black);
+                }
+                p {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    color: var(--black);
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .video-area {
+        position: relative;
+        .video-thumbnail {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .popup-video {
+            display: inline-flex;
+            position: absolute;
+            align-items: center;
+            font-family: $bodyFont;
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: var(--black);
+            left: 3rem;
+            bottom: 3rem;
+            .play-btn {
+                @include flex-position(flex, center, center);
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                border: 1px solid var(--black);
+                margin-right: 1.5rem;
+            }
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+}

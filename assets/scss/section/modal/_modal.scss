@@ -1,0 +1,129 @@
+/*-------------------------
+#.modal
+--------------------------*/
+.modal {
+    .modal-dialog {
+        max-width: 900px;
+    }
+    .modal-content {
+        background-color: #FFFCF7;
+        border: none;
+        box-shadow: none;
+        padding: 3rem;
+    }
+    .modal-header {
+        border: none;
+        padding: 0;
+        margin-bottom: 2rem;
+        .close {
+            @include flex-position(flex, center, center);
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            border: 1px solid var(--bColor);
+        }
+        .modal-title {
+            font-size: 3.2rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: var(--bColor);
+        }
+    }
+    .modal-body {
+        padding: 0;
+    }
+    
+}
+.table {
+    text-align: center;
+    border-color: #D08E61;
+    thead {
+        tr {
+            th {
+                font-family: $bodyFont;
+                font-size: 1.6rem;
+                font-weight: 700;
+                color: var(--black);
+            }
+        }
+    }
+    tbody {
+        border-top: none;
+        tr {
+            td {
+                font-family: $bodyFont;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: var(--black);
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+.table>:not(:first-child) {
+    border-top: none;
+}
+.size-info-bottom {
+    margin-top: 1rem;
+    p {
+        margin-bottom: .5rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: var(--black);
+    }
+    h4 {
+        font-family: $bodyFont;
+        margin-bottom: 0;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--black);
+    }
+}
+.absorbency-list {
+    .single-absorbency {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid #D08E61;
+        .absorbency-left {
+            width: 25%;
+        }
+        .absorbency-center {
+            width: 70px;
+        }
+        .absorbency-right {
+            flex: 1;
+            padding-left: 1.5rem;
+        }
+        h4 {
+            margin: 0;
+            font-family: $bodyFont;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: var(--black);
+        }
+        .absorbency-show {
+            display: flex;
+            li {
+                img {
+                    max-width: 1.5rem;
+                }
+            }
+        }
+        p {
+            margin: 0;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            font-weight: 400;
+        }
+    }
+}

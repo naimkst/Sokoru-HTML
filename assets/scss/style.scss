@@ -32,6 +32,13 @@ Version: 1.0
 #.video-area
 #.image-slide
 #.faq-page-area
+#.shop-page-area
+#.single-product-page
+#.modal
+#.period-undies-area
+#.designed-glove-area
+#.how-work-area
+#.product-review-area
 #.footer-area
 
 
@@ -40,7 +47,7 @@ Version: 1.0
 */
 
 /*-------------------------
-#.faq-page-area
+#.product-review-area
 --------------------------*/
 
 // variable
@@ -77,5 +84,12 @@ Version: 1.0
 @import "section/video-area/video-area";
 @import "section/image-slide/image-slide";
 @import "section/faq-page-area/faq-page-area";
+@import "section/shop-page-area/shop-page-area";
+@import "section/single-product-page/single-product-page";
+@import "section/modal/modal";
+@import "section/period-undies-area/period-undies-area";
+@import "section/designed-glove-area/designed-glove-area";
+@import "section/how-work-area/how-work-area";
+@import "section/product-review-area/product-review-area";
 
 // page content
