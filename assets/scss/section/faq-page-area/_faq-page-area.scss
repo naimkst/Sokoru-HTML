@@ -45,3 +45,16 @@
           }
      }
 }
+@media (max-width: 1199px) {
+     .faq-page-area .nav-tabs .nav-link {
+          font-size: 2rem;
+     }
+     
+}
+@media (max-width: 991px) {
+     .faq-page-area .nav-tabs .nav-item {
+          margin-bottom: 2rem;
+          margin-right: 0;
+          text-align: center;
+     }
+}

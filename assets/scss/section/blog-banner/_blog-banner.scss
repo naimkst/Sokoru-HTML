@@ -56,3 +56,36 @@
           }
      }
 }
+@media (max-width: 1367px) {
+     .blog-banner .blog-banner-content {
+          padding: 3rem 2rem;
+     }
+     .blog-banner .blog-image img {
+          height: 500px;
+          object-fit: cover;
+     }
+     .blog-banner .blog-banner-content .title {
+          margin-bottom: 3rem;
+     }
+     .blog-banner .blog-banner-content .content {
+          margin-bottom: 3.5rem;
+          font-size: 1.8rem;
+     }
+}
+@media (max-width: 991px) {
+     .blog-banner .blog-banner-content {
+          padding: 5rem 2rem;
+     }
+     .blog-banner .blog-banner-content .banner-content-wrap {
+          max-width: 100%;
+     }
+     .blog-banner .blog-image img {
+          height: auto;
+     }
+}
+
+@media (max-width: 480px) {
+     .blog-banner .blog-banner-content .title {
+          font-size: 2.8rem;
+     }
+}

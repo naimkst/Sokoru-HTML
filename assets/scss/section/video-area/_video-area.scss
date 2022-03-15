@@ -43,3 +43,13 @@
      }
      
 }
+@media (max-width: 575px) {
+     .video-area .video-thumbnail .popup-video {
+          width: 8rem;
+          height: 8rem;
+     }
+     .video-area .video-content {
+          max-width: 100%;
+          margin-top: 3rem;
+     }
+}

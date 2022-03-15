@@ -20,3 +20,11 @@
         }
     }
 }
+@media (max-width: 767px) {
+    .shop-page-area .shop-page-top p {
+        max-width: 100%;
+    }
+    .shop-page-top.mb-70 {
+        margin-bottom: 3rem;
+    }
+}

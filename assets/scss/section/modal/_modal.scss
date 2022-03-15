@@ -127,3 +127,53 @@
         }
     }
 }
+@media (max-width: 575px) {
+    .modal .modal-header .modal-title {
+        font-size: 2.8rem;
+        line-height: 1.3;
+        width: 80%;
+    }
+    .table thead tr th {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+    .table tbody tr td {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+    .size-info-bottom p {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+    .size-info-bottom h4 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+}
+@media (max-width: 375px) {
+    .modal .modal-content {
+        padding: 1rem;
+    }
+    .absorbency-list .single-absorbency h4 {
+        font-size: 1.2rem;
+    }
+    .absorbency-list .single-absorbency p {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+    .absorbency-list .single-absorbency .absorbency-show li img {
+        max-width: 1.2rem;
+    }
+    .absorbency-list .single-absorbency .absorbency-center {
+        width: 55px;
+    }
+    .absorbency-list .single-absorbency .absorbency-left {
+        width: 27%;
+    }
+    .absorbency-list .single-absorbency .absorbency-show {
+        line-height: 1;
+    }
+    .absorbency-list .single-absorbency {
+        align-items: flex-start;
+    }
+}

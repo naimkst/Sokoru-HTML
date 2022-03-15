@@ -84,6 +84,8 @@
                margin-bottom: 1rem;
                .colors-switch {
                     display: flex;
+                    line-height: 1;
+                    margin: .5rem 0;
                     li {
                          margin-right: 1rem;
                          &:last-child {
@@ -113,18 +115,6 @@
                               opacity: 0;
                               transition: $transition;
                          }
-                    }
-                    .color-one {
-                         background-color: #696969;
-                    }
-                    .color-two {
-                         background-color: #D08E61;
-                    }
-                    .color-three {
-                         background-color: #571212;
-                    }
-                    .color-four {
-                         background-color: #FFB89D;
                     }
                     input {
                          display: none;

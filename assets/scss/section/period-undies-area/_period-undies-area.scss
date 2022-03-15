@@ -4,7 +4,7 @@
 .period-undies-area {
     background-color: #FFFCF7;
     .section-innner {
-        max-width: 700px;
+        max-width: 80%;
         margin: 0 auto;
     }
     .period-undies-left {
@@ -48,5 +48,45 @@
             font-weight: 400;
             color: var(--black);
         }
+    }
+}
+@media (max-width: 1399px) {
+    .period-undies-area .period-undies-left h2 {
+         font-size: 3.6rem;
+         line-height: 4.6rem;
+         margin-bottom: 5rem;
+    }
+}
+@media (max-width: 991px) {
+    .period-undies-area .section-innner {
+        max-width: 95%;
+    }
+}
+@media (max-width: 767px) {
+    .period-undies-area .period-info {
+        min-height: auto;
+        padding: 5rem 0;
+    }
+    .period-undies-right.period-info {
+        padding-bottom: 2rem;
+    }
+}
+@media (max-width: 575px) {
+    .period-undies-area .period-undies-left h2 {
+         margin-bottom: 3rem;
+    }
+    .period-undies-area .section-innner {
+        max-width: 96%;
+    }
+    .period-undies-area .single-period-undies p {
+        max-width: 100%;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+}
+@media (max-width: 375px) {
+    .period-undies-area .period-undies-left h2 {
+         font-size: 3.2rem;
+         line-height: 4.2rem;
     }
 }

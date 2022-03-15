@@ -602,6 +602,12 @@ primary-btn
         padding-bottom: 3rem;
     }
 }
+@media (max-width: 991px) {
+    .faq-area .faq-left {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+}
 @media (max-width: 575px) {
     .primary-btn {
         padding: .6rem 2rem;

@@ -27,3 +27,14 @@
      }
 }
 @import "./single-blog";
+@media (max-width: 767px) {
+     .blog-area .nav-tabs {
+          margin-bottom: 3rem;
+     }
+     .nav-tabs .nav-item .nav-link {
+          font-size: 1.4rem;
+     }
+     .nav-tabs .nav-item {
+          margin-right: 2rem;
+     }
+}

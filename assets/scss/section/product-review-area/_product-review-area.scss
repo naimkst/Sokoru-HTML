@@ -133,9 +133,11 @@
         }
         .review-right {
             flex: 1;
+            .review-right-top {
+                margin-bottom: 1.5rem;
+            }
             .review-icon {
                 display: flex;
-                margin-bottom: 1.5rem;
                 li {
                     margin-right: .5rem;
                 }
@@ -181,9 +183,6 @@
         }
         .review-time {
             display: inline-block;
-            position: absolute;
-            right: 0;
-            top: 3rem;
             font-size: 1.4rem;
             font-weight: 400;
             color: #8C8C8C;
@@ -230,9 +229,72 @@
             background: var(--black);
           }
         }
-      
         &:active::-moz-range-thumb {
           background: var(--black);
         }
+    }
+}
+
+@media (max-width: 1199px) {
+    .product-review-top .product-review-center .range-area .range-item-lsit {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 991px) {
+    .product-review-top .review-point-count .review-point-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .product-review-top .review-point-count .review-icon {
+        margin: 0 1rem;
+    }
+    .product-review-top .review-point-count {
+        width: 100%;
+    }
+    .product-review-top .product-review-right {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .product-review-top .product-review-center {
+        width: 100%;
+    }
+    .product-review-top .product-review-center {
+        margin: 3rem 0;
+    }
+    .product-review-top .product-review-right .whrite-review-btn {
+        margin-bottom: 0;
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 767px) {
+    .review-list .single-review {
+        flex-flow: row wrap;
+    }
+}
+@media (max-width: 575px) {
+    .review-list .single-review .review-left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .review-list .single-review .review-right h4 {
+        font-size: 1.8rem;
+    }
+    .review-list .single-review .review-right p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+    .product-review-top .product-review-center .range-area {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .product-review-top .product-review-center {
+        margin: 1rem 0 3rem 0;
     }
 }

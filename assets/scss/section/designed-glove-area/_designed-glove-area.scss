@@ -68,3 +68,17 @@
         }
     }
 }
+@media (max-width: 767px) {
+    .designed-glove-area .designed-glove-left .nav .nav-item {
+        margin-bottom: 2rem;
+    }
+    .designed-glove-area .designed-glove-left {
+        margin-bottom: 5rem;
+    }
+    .designed-glove-area .designed-glove-left .nav .nav-item {
+        text-align: center;
+    }
+    .designed-glove-area .designed-glove-left .nav .nav-item .nav-link {
+        text-decoration: none;
+    }
+}

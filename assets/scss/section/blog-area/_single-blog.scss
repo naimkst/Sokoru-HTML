@@ -78,3 +78,11 @@
           }
      }
 }
+@media (max-width: 767px) {
+     .single-blog .blog-info .blog-title {
+          font-size: 2rem;
+     }
+     .single-blog .blog-info {
+          padding-top: 3.5rem;
+     }
+}
