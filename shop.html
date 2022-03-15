@@ -42,8 +42,8 @@
     </div>
   </div>
   <!-- topbar area end here  -->
-  <!-- header area start there  -->
-  <header class="header-area">
+  <!-- header area start there -->
+  <header class="header-area d-none d-lg-block">
     <div class="container">
       <div class="header-wrap">
         <div class="header-left">
@@ -63,11 +63,10 @@
           <ul class="account-curancy-area">
             <li>
               <div class="dropdown curancy-area">
-                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   USD
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="dropdown-menu">
                   <li class="active"><a class="dropdown-item" href="#">USD</a></li>
                   <li><a class="dropdown-item" href="#">BTC</a></li>
                   <li><a class="dropdown-item" href="#">TK</a></li>
@@ -88,6 +87,55 @@
     </div>
   </header>
   <!-- header area end there  -->
+  <!-- mobile header start here  -->
+  <div class="mobile-header d-block d-lg-none">
+    <div class="mobile-header-wrap">
+      <div class="header-left">
+        <button class="menu-bar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+          aria-controls="offcanvasMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="search-btn" href="search.html"><img src="assets/images/search.svg" alt="search"></a>
+      </div>
+      <div class="header-center">
+        <a href="index.html" class="brand-logo"><img src="assets/images/logo.png" alt="logo" /></a>
+      </div>
+      <div class="header-right">
+        <a class="cart-btn" href="cart.html"><img src="assets/images/cart.svg" alt="cart"><span
+            class="cart-count">2</span></a>
+      </div>
+    </div>
+  </div>
+  <!-- mobile header end here  -->
+  <!-- offcanvasMenu start here  -->
+  <div class="offcanvas offcanvas-start offcanvas-menu-area" tabindex="-1" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <div class="dropdown curancy-area">
+        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          USD
+        </button>
+        <ul class="dropdown-menu">
+          <li class="active"><a class="dropdown-item" href="#">USD</a></li>
+          <li><a class="dropdown-item" href="#">BTC</a></li>
+          <li><a class="dropdown-item" href="#">TK</a></li>
+        </ul>
+      </div>
+      <a class="account-btn" href="account.html">ACCOUNT</a>
+      <button type="button" class="close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i
+          class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="main-menu">
+        <ul>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="journal.html">JOURNAL</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- offcanvasMenu end here  -->
   <!-- shop page area start here  -->
   <div class="shop-page-area section-top pb-70 section-bg-four">
     <div class="container">
@@ -636,11 +684,12 @@
   <footer class="footer-area">
     <div class="container-fluid g-0">
       <div class="row g-0">
-        <div class="col-lg-3">
+        <div class="col-xl-3">
           <div class="footer-left">
             <div class="footer-left-conent">
               <h2>Be the first to know</h2>
-              <p>Get exclusive releases, stories & access to sales + <span>10% off</span> your first purchase.</p>
+              <p>Get exclusive releases, stories & access to sales + <span>10% off</span> your first
+                purchase.</p>
               <div class="newsletter-area">
                 <form action="#">
                   <div class="form-group">
@@ -648,28 +697,29 @@
                     <button type="submit" class="send-btn"><i class="fa-solid fa-arrow-right-long"></i></button>
                   </div>
                 </form>
-                <p>By signing up via email, you expressly consent to receive marketing communications from SOKORU. See
-                  privacy policy and terms of use for details.</p>
+                <p>By signing up via email, you expressly consent to receive marketing communications
+                  from SOKORU. See privacy policy and terms of use for details.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-xl-9">
           <div class="footer-right">
             <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="single-widget contact-widget">
                   <h3 class="widget-title">We’re Ready to Help!</h3>
                   <p class="opning-time">Mon-Fri, 9am - 5pm GMT</p>
                   <ul>
-                    <li><a href="#"><img class="icon" src="assets/images/chat.svg" alt="chat" /> Live Chat</a></li>
+                    <li><a href="#"><img class="icon" src="assets/images/chat.svg" alt="chat" />
+                        Live Chat</a></li>
                     <li><a href="#"><img class="icon" src="assets/images/smartphone.svg" alt="smartphone" />Text: +44
                         1111 111111</a></li>
                     <li><a href="#"><img class="icon" src="assets/images/email.svg" alt="email" />Email</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="single-widget menu-widget">
                   <h3 class="widget-title">Customer Care</h3>
                   <ul>
@@ -680,7 +730,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="single-widget menu-widget">
                   <h3 class="widget-title">Company</h3>
                   <ul>
@@ -691,7 +741,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="single-widget menu-widget">
                   <h3 class="widget-title">Connect</h3>
                   <ul>

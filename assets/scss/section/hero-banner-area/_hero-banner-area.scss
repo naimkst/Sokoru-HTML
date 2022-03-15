@@ -34,3 +34,57 @@
           color: var(--black);
      }
 }
+@media (max-width: 1399px) {
+     .hero-banner-area .banner-title {
+          margin-bottom: 3rem;
+          font-size: 5rem;
+          line-height: 6rem;
+     }
+}
+@media (max-width: 1199px) {
+     .hero-banner-area {
+          padding: 15rem 0;
+     }
+     .hero-banner-area .banner-title {
+          margin-bottom: 2rem;
+          font-size: 4.6rem;
+          line-height: 5.6rem;
+     }
+     .hero-banner-area .banner-content {
+          margin-bottom: 3rem;
+     }
+}
+@media (max-width: 991px) {
+     .hero-banner-area {
+          padding: 12rem 0;
+     }
+}
+@media (max-width: 768px) {
+     .hero-banner-area {
+          padding: 10rem 0;
+     }
+}
+@media (max-width: 575px) {
+     .btn-list .primary-btn {
+          margin-right: 1.5rem;
+     }
+}
+@media (max-width: 480px) {
+     .hero-banner-area .banner-title {
+          font-size: 3.2rem;
+          line-height: 4.6rem;
+     }
+     .hero-banner-area .banner-content {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+     }
+}
+@media (max-width: 320px) {
+     .hero-banner-area .btn-list .primary-btn {
+          margin-right: 0;
+          width: 100%;
+          display: block;
+          text-align: center;
+          margin-top: 1rem;
+     }
+}

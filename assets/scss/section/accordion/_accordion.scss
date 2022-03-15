@@ -47,3 +47,19 @@
           color: var(--bColor);
      }
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+     .accordion .accordion-item .accordion-header .accordion-button {
+          font-size: 1.8rem;
+     }
+     .accordion .accordion-item .accordion-body p {
+          font-size: 1.6rem;
+     }
+}
+@media (max-width: 767px) {
+     .accordion .accordion-item .accordion-header .accordion-button {
+          font-size: 1.8rem;
+     }
+     .accordion .accordion-item .accordion-body p {
+          font-size: 1.6rem;
+     }
+}

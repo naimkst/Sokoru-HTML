@@ -17,3 +17,28 @@
           color: var(--black);
      }
 }
+@media (max-width: 1399px) {
+     .sustainable-area .title {
+          font-size: 3.6rem;
+          line-height: 4.6rem;
+          margin-bottom: 5rem;
+     }
+     .sustainable-area .content {
+          font-size: 1.8rem;
+          line-height: 3rem;
+     }
+}
+@media (max-width: 575px) {
+     .sustainable-area .title {
+          margin-bottom: 3rem;
+     }
+     .sustainable-area .content {
+          margin-bottom: 3rem;
+     }
+}
+@media (max-width: 375px) {
+     .sustainable-area .title {
+          font-size: 3.2rem;
+          line-height: 4.2rem;
+     }
+}

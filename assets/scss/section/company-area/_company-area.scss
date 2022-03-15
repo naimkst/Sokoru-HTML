@@ -2,13 +2,12 @@
 #.company-area
 --------------------------*/
 .company-area {
-
      .single-company {
           text-align: center;
           opacity: .20;
           transition: all .3s;
           padding: 0 1.5rem;
-          &.slick-center {
+          &.slick-current {
                opacity: 1;
           }
           p {

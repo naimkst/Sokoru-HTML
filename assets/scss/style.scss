@@ -39,6 +39,8 @@ Version: 1.0
 #.designed-glove-area
 #.how-work-area
 #.product-review-area
+#.section-about-content
+#.plastic-waste-area
 #.footer-area
 
 
@@ -46,9 +48,7 @@ Version: 1.0
 
 */
 
-/*-------------------------
-#.product-review-area
---------------------------*/
+
 
 // variable
 @import "variable/_variable.scss";
@@ -91,5 +91,7 @@ Version: 1.0
 @import "section/designed-glove-area/designed-glove-area";
 @import "section/how-work-area/how-work-area";
 @import "section/product-review-area/product-review-area";
+@import "section/section-about-content/section-about-content";
+@import "section/plastic-waste-area/plastic-waste-area";
 
-// page content
+

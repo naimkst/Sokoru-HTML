@@ -20,3 +20,28 @@
           color: var(--black);
      }
 }
+@media (max-width: 1399px) {
+     .ethically-made-area .title {
+          font-size: 3.6rem;
+          line-height: 4.6rem;
+          margin-bottom: 5rem;
+     }
+     .ethically-made-area .content {
+          font-size: 1.8rem;
+          line-height: 3rem;
+     }
+}
+@media (max-width: 575px) {
+     .ethically-made-area .title {
+          margin-bottom: 3rem;
+     }
+     .ethically-made-area .content {
+          margin-bottom: 3rem;
+     }
+}
+@media (max-width: 375px) {
+     .ethically-made-area .title {
+          font-size: 3.2rem;
+          line-height: 4.2rem;
+     }
+}

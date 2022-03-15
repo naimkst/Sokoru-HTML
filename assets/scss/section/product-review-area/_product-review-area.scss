@@ -1,6 +1,90 @@
 /*-------------------------
 #.product-review-area
 --------------------------*/
+.product-review-top {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: 1px solid #919294;
+    padding-bottom: 3rem;
+    .review-point-count {
+        width: 25%;
+        .review-point-wrap {
+            width: 150px;
+            text-align: center;
+        }
+        .review-point {
+            font-family: $bodyFont;
+            font-size: 5rem;
+            font-weight: 400;
+            color: var(--bColor);
+        }
+        .review-icon {
+            display: flex;
+            justify-content: center;
+            li {
+                list-style: none;
+                margin: 0 5px;
+                color: #D08E61;
+            }
+        }
+        .review-count {
+            display: inline-block;
+            margin: 0;
+            margin-top: .5rem;
+            font-family: $bodyFont;
+            font-weight: 400;
+            font-size: 1.4rem;
+            color: #8C8C8C;
+        }
+    }
+    .product-review-center {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 50%;
+        .range-area {
+            width: 45%;
+            text-align: center;
+            .range-title {
+                font-size: 1.6rem;
+                font-weight: 400;
+                text-transform: capitalize;
+                color: var(--black);
+            }
+            .range-item-lsit {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: var(--black);
+            }
+        }
+    }
+    .product-review-right {
+        width: 25%;
+        text-align: right;
+        .whrite-review-btn {
+            display: inline-block;
+            margin-bottom: 3rem;
+            font-family: $titleFont;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--black);
+            border-bottom: 1px solid var(--black);
+        }
+        .short-field {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            font-family: $bodyFont;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--black);
+        }
+    }
+}
 .review-list {
     .single-review {
         display: flex;

@@ -42,8 +42,8 @@
     </div>
   </div>
   <!-- topbar area end here  -->
-  <!-- header area start there  -->
-  <header class="header-area">
+  <!-- header area start there -->
+  <header class="header-area d-none d-lg-block">
     <div class="container">
       <div class="header-wrap">
         <div class="header-left">
@@ -63,11 +63,10 @@
           <ul class="account-curancy-area">
             <li>
               <div class="dropdown curancy-area">
-                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   USD
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="dropdown-menu">
                   <li class="active"><a class="dropdown-item" href="#">USD</a></li>
                   <li><a class="dropdown-item" href="#">BTC</a></li>
                   <li><a class="dropdown-item" href="#">TK</a></li>
@@ -88,11 +87,79 @@
     </div>
   </header>
   <!-- header area end there  -->
+  <!-- mobile header start here  -->
+  <div class="mobile-header d-block d-lg-none">
+    <div class="mobile-header-wrap">
+      <div class="header-left">
+        <button class="menu-bar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+          aria-controls="offcanvasMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="search-btn" href="search.html"><img src="assets/images/search.svg" alt="search"></a>
+      </div>
+      <div class="header-center">
+        <a href="index.html" class="brand-logo"><img src="assets/images/logo.png" alt="logo" /></a>
+      </div>
+      <div class="header-right">
+        <a class="cart-btn" href="cart.html"><img src="assets/images/cart.svg" alt="cart"><span
+            class="cart-count">2</span></a>
+      </div>
+    </div>
+  </div>
+  <!-- mobile header end here  -->
+  <!-- offcanvasMenu start here  -->
+  <div class="offcanvas offcanvas-start offcanvas-menu-area" tabindex="-1" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <div class="dropdown curancy-area">
+        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          USD
+        </button>
+        <ul class="dropdown-menu">
+          <li class="active"><a class="dropdown-item" href="#">USD</a></li>
+          <li><a class="dropdown-item" href="#">BTC</a></li>
+          <li><a class="dropdown-item" href="#">TK</a></li>
+        </ul>
+      </div>
+      <a class="account-btn" href="account.html">ACCOUNT</a>
+      <button type="button" class="close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i
+          class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="main-menu">
+        <ul>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="journal.html">JOURNAL</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- offcanvasMenu end here  -->
   <div class="single-product-page mb-50">
     <div class="product-details-wrap fix">
       <div class="container-fluid g-0">
         <div class="row g-0">
           <div class="col-lg-8 col-md-8">
+            <div class="product-mobile-info d-block d-md-none">
+              <h2 class="product-name">Classic Brief</h2>
+              <div class="revire-price-wrap">
+                <div class="revire-area">
+                  <ul class="review">
+                    <li class="active"><i class="fa-solid fa-star"></i></li>
+                    <li class="active"><i class="fa-solid fa-star"></i></li>
+                    <li class="active"><i class="fa-solid fa-star"></i></li>
+                    <li class="active"><i class="fa-solid fa-star"></i></li>
+                    <li class="active"><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                  <span class="review-point">4.9</span>
+                </div>
+                <div class="product-price">
+                  <span class="price-amount"><span class="price-currency">$</span>28.00</span>
+                  <span class="price-amount"><del><span class="price-currency">$</span>32.00</del></span>
+                </div>
+              </div>
+            </div>
             <div class="single-product-slide">
               <div class="product-thumbnail">
                 <img src="assets/images/single-product-image-1.jpg" alt="single-product" />
@@ -641,22 +708,24 @@
   </div>
   <!-- video-image-area end here  -->
   <!-- product review area strt here  -->
-  <div class="product-review-area section">
+  <div class="product-review-area section section-bg-four">
     <div class="container">
       <div class="section-title text-center mb-35">
         <h2 class="title">Don’t just take our word for it</h2>
       </div>
       <div class="product-review-top">
         <div class="review-point-count">
-          <h2 class="review-point">4.9</h2>
-          <ul class="review-icon">
-            <li><i class="fa-solid fa-star"></i></li>
-            <li><i class="fa-solid fa-star"></i></li>
-            <li><i class="fa-solid fa-star"></i></li>
-            <li><i class="fa-solid fa-star"></i></li>
-            <li><i class="fa-solid fa-star"></i></li>
-          </ul>
-          <span class="review-count">3,978 reviews</span>
+          <div class="review-point-wrap">
+            <h2 class="review-point">4.9</h2>
+            <ul class="review-icon">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+            <span class="review-count">3,978 reviews</span>
+          </div>
         </div>
         <div class="product-review-center">
           <div class="range-area">
@@ -687,9 +756,9 @@
           <div class="Sort-area">
             <select class="short-field">
               <option>Sort by</option>
-              <option>rectnt </option>
-              <option>most recent</option>
-              <option>best match</option>
+              <option>Rectnt </option>
+              <option>Most Recent</option>
+              <option>Best Match</option>
             </select>
           </div>
         </div>
@@ -801,6 +870,370 @@
     </div>
   </div>
   <!-- product review area strt here  -->
+  <!-- plastic-waste-area start here  -->
+  <div class="plastic-waste-area section-top pb-70 section-bg-two">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="section-about-content">
+            <h2 class="title">More plastic waste-free styles to love</h2>
+            <p class="content">Every period routine is different and we’re all about having options.</p>
+            <a href="shop.html" class="arrow-btn">SHOP ALL <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="plastic-product-slide">
+            <div class="single-product">
+              <div class="product-thumbnail">
+                <a href="single-product.html">
+                  <img src="assets/images/single-product-1.jpg" alt="product" />
+                </a>
+                <span class="product-label">NEW!</span>
+              </div>
+              <div class="product-info">
+                <div class="product-name-color">
+                  <h3 class="product-name"><a href="#">Product Name</a></h3>
+                  <ul class="colors-switch">
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorone" />
+                        <span class="color" style="background: #D08E61;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colortwo" />
+                        <span class="color" style="background: #D08E61;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorthree" />
+                        <span class="color" style="background: #571212;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorfour" />
+                        <span class="color" style="background: #FFB89D;"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="price-review-area">
+                  <h4 class="price">$28.00</h4>
+                  <div class="absorbency">
+                    <input type="radio" name="absorbency" id="absorbency-5">
+                    <label for="absorbency-5"></label>
+                    <input type="radio" name="absorbency" id="absorbency-4">
+                    <label for="absorbency-4"></label>
+                    <input type="radio" name="absorbency" id="absorbency-3">
+                    <label for="absorbency-3"></label>
+                    <input type="radio" name="absorbency" id="absorbency-2">
+                    <label for="absorbency-2"></label>
+                    <input type="radio" name="absorbency" id="absorbency-1">
+                    <label for="absorbency-1"></label>
+                    <input type="radio" name="absorbency" id="absorbency-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-product">
+              <div class="product-thumbnail">
+                <a href="single-product.html">
+                  <img src="assets/images/single-product-1.jpg" alt="product" />
+                </a>
+                <span class="product-label">NEW!</span>
+              </div>
+              <div class="product-info">
+                <div class="product-name-color">
+                  <h3 class="product-name"><a href="#">Product Name</a></h3>
+                  <ul class="colors-switch">
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorone" />
+                        <span class="color" style="background: #D08E61;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colortwo" />
+                        <span class="color" style="background: #D08E61;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorthree" />
+                        <span class="color" style="background: #571212;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorfour" />
+                        <span class="color" style="background: #FFB89D;"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="price-review-area">
+                  <h4 class="price">$28.00</h4>
+                  <div class="absorbency">
+                    <input type="radio" name="absorbency" id="absorbency-5">
+                    <label for="absorbency-5"></label>
+                    <input type="radio" name="absorbency" id="absorbency-4">
+                    <label for="absorbency-4"></label>
+                    <input type="radio" name="absorbency" id="absorbency-3">
+                    <label for="absorbency-3"></label>
+                    <input type="radio" name="absorbency" id="absorbency-2">
+                    <label for="absorbency-2"></label>
+                    <input type="radio" name="absorbency" id="absorbency-1">
+                    <label for="absorbency-1"></label>
+                    <input type="radio" name="absorbency" id="absorbency-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-product">
+              <div class="product-thumbnail">
+                <a href="single-product.html">
+                  <img src="assets/images/single-product-1.jpg" alt="product" />
+                </a>
+                <span class="product-label">NEW!</span>
+              </div>
+              <div class="product-info">
+                <div class="product-name-color">
+                  <h3 class="product-name"><a href="#">Product Name</a></h3>
+                  <ul class="colors-switch">
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorone" />
+                        <span class="color" style="background: #D08E61;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colortwo" />
+                        <span class="color" style="background: #D08E61;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorthree" />
+                        <span class="color" style="background: #571212;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorfour" />
+                        <span class="color" style="background: #FFB89D;"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="price-review-area">
+                  <h4 class="price">$28.00</h4>
+                  <div class="absorbency">
+                    <input type="radio" name="absorbency" id="absorbency-5">
+                    <label for="absorbency-5"></label>
+                    <input type="radio" name="absorbency" id="absorbency-4">
+                    <label for="absorbency-4"></label>
+                    <input type="radio" name="absorbency" id="absorbency-3">
+                    <label for="absorbency-3"></label>
+                    <input type="radio" name="absorbency" id="absorbency-2">
+                    <label for="absorbency-2"></label>
+                    <input type="radio" name="absorbency" id="absorbency-1">
+                    <label for="absorbency-1"></label>
+                    <input type="radio" name="absorbency" id="absorbency-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-product">
+              <div class="product-thumbnail">
+                <a href="single-product.html">
+                  <img src="assets/images/single-product-1.jpg" alt="product" />
+                </a>
+                <span class="product-label">NEW!</span>
+              </div>
+              <div class="product-info">
+                <div class="product-name-color">
+                  <h3 class="product-name"><a href="#">Product Name</a></h3>
+                  <ul class="colors-switch">
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorone" />
+                        <span class="color" style="background: #D08E61;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colortwo" />
+                        <span class="color" style="background: #D08E61;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorthree" />
+                        <span class="color" style="background: #571212;"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="colors" id="colorfour" />
+                        <span class="color" style="background: #FFB89D;"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="price-review-area">
+                  <h4 class="price">$28.00</h4>
+                  <div class="absorbency">
+                    <input type="radio" name="absorbency" id="absorbency-5">
+                    <label for="absorbency-5"></label>
+                    <input type="radio" name="absorbency" id="absorbency-4">
+                    <label for="absorbency-4"></label>
+                    <input type="radio" name="absorbency" id="absorbency-3">
+                    <label for="absorbency-3"></label>
+                    <input type="radio" name="absorbency" id="absorbency-2">
+                    <label for="absorbency-2"></label>
+                    <input type="radio" name="absorbency" id="absorbency-1">
+                    <label for="absorbency-1"></label>
+                    <input type="radio" name="absorbency" id="absorbency-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- plastic-waste-area end here  -->
+  <!-- recently-viewed-area start here  -->
+  <div class="recently-viewed-area section-top pb-70">
+    <div class="container">
+      <div class="section-title text-center mb-35">
+        <h2 class="title">Recently viewed</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="single-product">
+            <div class="product-thumbnail">
+              <a href="single-product.html">
+                <img src="assets/images/single-product-1.jpg" alt="product" />
+              </a>
+              <span class="product-label">NEW!</span>
+            </div>
+            <div class="product-info">
+              <div class="product-name-color">
+                <h3 class="product-name"><a href="#">Product Name</a></h3>
+                <ul class="colors-switch">
+                  <li>
+                    <label>
+                      <input type="radio" name="colors" id="colorone" />
+                      <span class="color" style="background: #D08E61;"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="colors" id="colortwo" />
+                      <span class="color" style="background: #D08E61;"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="colors" id="colorthree" />
+                      <span class="color" style="background: #571212;"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="colors" id="colorfour" />
+                      <span class="color" style="background: #FFB89D;"></span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="price-review-area">
+                <h4 class="price">$28.00</h4>
+                <div class="absorbency">
+                  <input type="radio" name="absorbency" id="absorbency-5">
+                  <label for="absorbency-5"></label>
+                  <input type="radio" name="absorbency" id="absorbency-4">
+                  <label for="absorbency-4"></label>
+                  <input type="radio" name="absorbency" id="absorbency-3">
+                  <label for="absorbency-3"></label>
+                  <input type="radio" name="absorbency" id="absorbency-2">
+                  <label for="absorbency-2"></label>
+                  <input type="radio" name="absorbency" id="absorbency-1">
+                  <label for="absorbency-1"></label>
+                  <input type="radio" name="absorbency" id="absorbency-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="single-product">
+            <div class="product-thumbnail">
+              <a href="single-product.html">
+                <img src="assets/images/single-product-1.jpg" alt="product" />
+              </a>
+              <span class="product-label">SALE</span>
+            </div>
+            <div class="product-info">
+              <div class="product-name-color">
+                <h3 class="product-name"><a href="#">Product Name</a></h3>
+                <ul class="colors-switch">
+                  <li>
+                    <label>
+                      <input type="radio" name="colors" id="colorone" />
+                      <span class="color" style="background: #D08E61;"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="colors" id="colortwo" />
+                      <span class="color" style="background: #D08E61;"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="colors" id="colorthree" />
+                      <span class="color" style="background: #571212;"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="colors" id="colorfour" />
+                      <span class="color" style="background: #FFB89D;"></span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="price-review-area">
+                <h4 class="price">$28.00</h4>
+                <div class="absorbency">
+                  <input type="radio" name="absorbency" id="absorbency-5">
+                  <label for="absorbency-5"></label>
+                  <input type="radio" name="absorbency" id="absorbency-4">
+                  <label for="absorbency-4"></label>
+                  <input type="radio" name="absorbency" id="absorbency-3">
+                  <label for="absorbency-3"></label>
+                  <input type="radio" name="absorbency" id="absorbency-2">
+                  <label for="absorbency-2"></label>
+                  <input type="radio" name="absorbency" id="absorbency-1">
+                  <label for="absorbency-1"></label>
+                  <input type="radio" name="absorbency" id="absorbency-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- recently-viewed-area end here  -->
   <!-- absorbency modal start  -->
   <div class="modal fade" id="absorbency" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="absorbencyLabel" aria-hidden="true">
@@ -972,11 +1405,12 @@
   <footer class="footer-area">
     <div class="container-fluid g-0">
       <div class="row g-0">
-        <div class="col-lg-3">
+        <div class="col-xl-3">
           <div class="footer-left">
             <div class="footer-left-conent">
               <h2>Be the first to know</h2>
-              <p>Get exclusive releases, stories & access to sales + <span>10% off</span> your first purchase.</p>
+              <p>Get exclusive releases, stories & access to sales + <span>10% off</span> your first
+                purchase.</p>
               <div class="newsletter-area">
                 <form action="#">
                   <div class="form-group">
@@ -984,28 +1418,29 @@
                     <button type="submit" class="send-btn"><i class="fa-solid fa-arrow-right-long"></i></button>
                   </div>
                 </form>
-                <p>By signing up via email, you expressly consent to receive marketing communications from SOKORU. See
-                  privacy policy and terms of use for details.</p>
+                <p>By signing up via email, you expressly consent to receive marketing communications
+                  from SOKORU. See privacy policy and terms of use for details.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-xl-9">
           <div class="footer-right">
             <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="single-widget contact-widget">
                   <h3 class="widget-title">We’re Ready to Help!</h3>
                   <p class="opning-time">Mon-Fri, 9am - 5pm GMT</p>
                   <ul>
-                    <li><a href="#"><img class="icon" src="assets/images/chat.svg" alt="chat" /> Live Chat</a></li>
+                    <li><a href="#"><img class="icon" src="assets/images/chat.svg" alt="chat" />
+                        Live Chat</a></li>
                     <li><a href="#"><img class="icon" src="assets/images/smartphone.svg" alt="smartphone" />Text: +44
                         1111 111111</a></li>
                     <li><a href="#"><img class="icon" src="assets/images/email.svg" alt="email" />Email</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="single-widget menu-widget">
                   <h3 class="widget-title">Customer Care</h3>
                   <ul>
@@ -1016,7 +1451,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="single-widget menu-widget">
                   <h3 class="widget-title">Company</h3>
                   <ul>
@@ -1027,7 +1462,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="single-widget menu-widget">
                   <h3 class="widget-title">Connect</h3>
                   <ul>

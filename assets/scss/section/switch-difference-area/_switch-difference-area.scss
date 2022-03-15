@@ -2,20 +2,45 @@
 #.switch-difference-area
 --------------------------*/
 .switch-difference-area {
+     .slick-slider {
+          margin:0 -15px;
+     }
+     .slick-slide {
+          margin-right:15px;
+          margin-left:15px;
+     }
+     .slick-arrow {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         z-index: 1;
+         font-size: 3rem;
+         color: var(--black);
+         transition: $transition;
+         cursor: pointer;
+         &:hover {
+             color: var(--primary-color);
+         }
+         &.slick-prev {
+             left: 1rem;
+         }
+         &.slick-next {
+             right: 1rem;
+         }
+     }
      .switch-card-wrap {
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          grid-gap: 15px;
           .single-switch-card {
                margin-bottom: 3rem;
                text-align: center;
                .icon {
                     margin-bottom: 3.5rem;
+                    text-align: center;
                     img {
                          width: 6rem;
                          height: 6rem;
                          border-radius: 50%;
                          object-fit: cover;
+                         margin: 0 auto;
                     }
                }
                h3 {

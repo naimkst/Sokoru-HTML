@@ -221,3 +221,52 @@
           }
      }
 }
+@media (max-width: 1199px) {
+     .footer-area .footer-left {
+          padding: 5rem;
+          justify-content: center;
+     }
+}
+@media (max-width: 991px) {
+     .footer-area .footer-right {
+          padding: 7rem 1.5rem 3rem 1.5rem;
+     }
+     .footer-area .footer-bottom {
+          flex-flow: row wrap;
+     }
+     .footer-area .footer-bottom .social-media {
+          order: 0;
+          width: 50%;
+     }
+     .footer-area .footer-bottom .brands-logo {
+          order: 1;
+          width: 50%;
+          text-align: right;
+     }
+     .footer-area .footer-bottom .footer-menu {
+          order: 2;
+          width: 100%;
+          text-align: center;
+          margin: 2rem 0;
+     }
+     .footer-area .footer-bottom .copyright-area {
+          order: 3;
+          width: 100%;
+          text-align: center;
+     }
+     .footer-area .footer-left {
+          padding: 4rem 1.5rem;
+     }
+     .footer-area .footer-left h2 {
+          margin-bottom: 1.5rem;
+          font-size: 3.2rem;
+     }
+}
+@media (max-width: 360px) {
+     .footer-right .row .col-6 {
+          width: 100%;
+     }
+     .footer-area .footer-bottom .footer-menu ul li {
+          margin-right: 1rem;
+     }
+}

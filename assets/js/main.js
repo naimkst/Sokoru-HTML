@@ -100,24 +100,27 @@
       nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
+            centerMode: false,
           }
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 1,
+            centerMode: false,
           }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            centerMode: false,
           }
         }
       ]
@@ -211,6 +214,98 @@
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
+          }
+        }
+      ]
+    });
+    /*-------------------------------------------
+    switch-card-wrap active
+    --------------------------------------------- */
+    $('.switch-card-wrap').slick({
+      infinite: true,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      dots: false,
+      arrows: false,
+      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
+      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        }
+      ]
+    });
+    /*-------------------------------------------
+    plastic-product-slidep active
+    --------------------------------------------- */
+    $('.plastic-product-slide').slick({
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      dots: false,
+      arrows: false,
+      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
+      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
           }
         }
       ]

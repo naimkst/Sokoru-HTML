@@ -148,3 +148,20 @@
           }
      }
 }
+@media (max-width: 767px) {
+     .single-product .product-info .product-name {
+          margin-bottom: .5rem;
+     }
+}
+@media (max-width: 375px) {
+     .single-product .product-info .product-name {
+          margin-bottom: 0;
+     }
+     .single-product .product-info .product-name-color .colors-switch .color {
+          width: 1.6rem;
+          height: 1.6rem;
+     }
+     .single-product .product-info .product-name-color .colors-switch li {
+          margin-right: .5rem;
+     }
+}

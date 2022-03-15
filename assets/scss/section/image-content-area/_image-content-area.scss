@@ -31,3 +31,31 @@
           }
      }
 }
+@media (max-width: 1199px) {
+     .image-content-area .content-box-area .content-box-inner .title {
+          font-size: 3.6rem;
+     }
+}
+@media (max-width: 991px) {
+     .image-content-area .content-box-area .content-box-inner .title {
+          margin-bottom: 2rem;
+     }
+     .image-content-area .content-box-area .content-box-inner .content {
+          margin-bottom: 3.5rem;
+          font-size: 1.6rem;
+          line-height: 2.6rem;
+     }
+}
+@media (max-width: 767px) {
+     .image-content-area .content-box-area {
+          padding: 6rem 0;
+     }
+}
+@media (max-width: 480px) {
+     .image-content-area .content-box-area .content-box-inner .title {
+          font-size: 3.2rem;
+     }
+     .image-content-area .content-box-area .content-box-inner {
+          width: 90%;
+     }
+}

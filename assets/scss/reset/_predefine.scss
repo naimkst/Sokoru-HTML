@@ -588,3 +588,23 @@ primary-btn
 .section-bg-four {
     background-color: #FFFCF7;
 }
+@media (max-width: 767px) {
+    .section{
+        padding: 6rem 0
+    }
+    .section-top{
+        padding: 6rem 0 0
+    }
+    .section-bottom{
+        padding: 0 0 6rem 0
+    }
+    .pb-70 {
+        padding-bottom: 3rem;
+    }
+}
+@media (max-width: 575px) {
+    .primary-btn {
+        padding: .6rem 2rem;
+        font-size: 1.4rem;
+    }
+}

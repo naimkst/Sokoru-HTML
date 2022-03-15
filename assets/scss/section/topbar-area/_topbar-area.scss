@@ -29,3 +29,11 @@
           }
      }
 }
+@media (max-width: 375px) {
+     .topbar-area .slick-arrow.slick-prev {
+          left: 5px;
+     }
+     .topbar-area .slick-arrow.slick-next {
+          right: 5px;
+     }
+}
