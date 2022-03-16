@@ -211,11 +211,30 @@
           cursor: pointer;
           transition:  0.15s ease-in-out;
           &:hover {
-            background: var(--black);
+            background-color: var(--black);
           }
         }
+        &.big-handelar {
+            &::-webkit-slider-thumb {
+                appearance: none;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: #E1D2BB;
+                background-image: url('../images/arrow-left-right.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                border: 5px solid #ffffff;
+                box-shadow: 0 0 0 1px #000000;
+                cursor: pointer;
+                transition:  0.15s ease-in-out;
+                &:hover {
+                  background-color: #D08E61;
+                }
+            }
+        }
         &:active::-webkit-slider-thumb {
-          background: var(--black);
+          background-color: var(--black);
         }
         &::-moz-range-thumb {
           width: 14px;
@@ -226,11 +245,11 @@
           cursor: pointer;
           transition: 0.15s ease-in-out;
           &:hover {
-            background: var(--black);
+            background-color: var(--black);
           }
         }
         &:active::-moz-range-thumb {
-          background: var(--black);
+          background-color: var(--black);
         }
     }
 }

@@ -41,13 +41,16 @@ Version: 1.0
 #.product-review-area
 #.section-about-content
 #.plastic-waste-area
+#.section-image-content
+#.banner-area
+#.road-ahead-area
+#.undies-instead-area
 #.footer-area
 
 
 
 
 */
-
 
 
 // variable
@@ -93,5 +96,9 @@ Version: 1.0
 @import "section/product-review-area/product-review-area";
 @import "section/section-about-content/section-about-content";
 @import "section/plastic-waste-area/plastic-waste-area";
+@import "section/section-image-content/section-image-content";
+@import "section/banner-area/banner-area";
+@import "section/road-ahead-area/road-ahead-area";
+@import "section/undies-instead-area/undies-instead-area";
 
 

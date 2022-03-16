@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sokoru Responsive HTML5 Template</title>
+    <meta name="description" content="Sokoru Responsive  HTML5 Template " />
+    <meta name="keywords"
+        content="business,corporate, creative, woocommerach, design, gallery, minimal, modern, landing page, cv, designer, freelancer, html, one page, personal, portfolio, programmer, responsive, vcard, one page" />
+    <meta name="author" content="Sokoru" />
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- fonts file -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- css file  -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/modernizr-3.11.2.min.js"></script>
+</head>
+
+<body>
+    <!-- preloader area start here  -->
+    <div class="preloader">
+        <div class="loader">
+            <img src="assets/images/logo.png" alt="logo" />
+        </div>
+    </div>
+    <!-- preloader area start here  -->
+    <!-- topbar area start here  -->
+    <div class="topbar-area">
+        <div class="topbar-slide">
+            <div class="single-slide">
+                <p>1.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="single-slide">
+                <p>2.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="single-slide">
+                <p>3.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+        </div>
+    </div>
+    <!-- topbar area end here  -->
+    <!-- header area start there  -->
+    <header class="header-area d-none d-lg-block">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <nav class="main-menu">
+                        <ul>
+                            <li class="has-sub-menu">
+                                <a href="shop.html">SHOP <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">sub menu item</a></li>
+                                    <li><a href="#">sub menu item</a></li>
+                                    <li><a href="#">sub menu item</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="blog.html">JOURNAL</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-center">
+                    <a href="index.html" class="brand-logo"><img src="assets/images/logo.png" alt="logo" /></a>
+                </div>
+                <div class="header-right">
+                    <ul class="account-curancy-area">
+                        <li>
+                            <div class="dropdown curancy-area">
+                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    USD
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a class="dropdown-item" href="#">USD</a></li>
+                                    <li><a class="dropdown-item" href="#">BTC</a></li>
+                                    <li><a class="dropdown-item" href="#">TK</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="account-btn" href="account.html">ACCOUNT</a>
+                        </li>
+                    </ul>
+                    <ul class="search-cart">
+                        <li><a href="search.html"><img src="assets/images/search.svg" alt="search"></a></li>
+                        <li class="cart-area"><a href="cart.html"><img src="assets/images/cart.svg" alt="cart"><span
+                                    class="cart-count">2</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end there  -->
+    <!-- mobile header start here  -->
+    <div class="mobile-header d-block d-lg-none">
+        <div class="mobile-header-wrap">
+            <div class="header-left">
+                <button class="menu-bar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    aria-controls="offcanvasMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a class="search-btn" href="search.html"><img src="assets/images/search.svg" alt="search"></a>
+            </div>
+            <div class="header-center">
+                <a href="index.html" class="brand-logo"><img src="assets/images/logo.png" alt="logo" /></a>
+            </div>
+            <div class="header-right">
+                <a class="cart-btn" href="cart.html"><img src="assets/images/cart.svg" alt="cart"><span
+                        class="cart-count">2</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- mobile header end here  -->
+    <!-- offcanvasMenu start here  -->
+    <div class="offcanvas offcanvas-start offcanvas-menu-area" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <div class="dropdown curancy-area">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    USD
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="active"><a class="dropdown-item" href="#">USD</a></li>
+                    <li><a class="dropdown-item" href="#">BTC</a></li>
+                    <li><a class="dropdown-item" href="#">TK</a></li>
+                </ul>
+            </div>
+            <a class="account-btn" href="account.html">ACCOUNT</a>
+            <button type="button" class="close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="mobile-menu main-menu">
+                <ul>
+                    <li class="has-sub-menu">
+                        <a href="shop.html">SHOP </a>
+                        <span class="dropdown-btn"><i class="fa-solid fa-angle-down"></i></span>
+                        <ul class="sub-menu">
+                            <li><a href="#">sub menu item</a></li>
+                            <li><a href="#">sub menu item</a></li>
+                            <li><a href="#">sub menu item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">JOURNAL</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- offcanvasMenu end here  -->
+    <!-- banner area start here  -->
+    <div class="banner-area" style="background-image: url('./assets/images/hero-banner-image.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="banner-content">
+                        <h2 class="banner-title">Our journey to sustainability</h2>
+                        <p class="banner-content">We’re excited to be a part of the sustainability movement, and we’re dedicated to creating a safe future for generations to come.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner area end here  -->
+    <!-- section-image-content start here  -->
+    <div class="section-image-content section">
+        <div class="container">
+            <div class="row align-items-center single-content-wrap g-0">
+                <div class="col-lg-6">
+                    <img src="assets/images/blog-detsils-image-1.jpg" alt="blog-detsils-image" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="content-box">
+                        <h2>Safe period products</h2>
+                        <p>At Sokoru, we have set out to create period products that are safe for your body and the environment. We are achieving this goal by offering best-in-class products that are free of toxins, free of single-use plastics, and have nothing but the highest-performing materials. We are here to provide sustainable period products so women can menstruate worry-free.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center flex-row-reverse single-content-wrap g-0">
+                <div class="col-lg-6">
+                    <img src="assets/images/blog-detsils-image-2.jpg" alt="blog-detsils-image" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="content-box">
+                        <h2>Eco-friendly packaging</h2>
+                        <p>We designed our packaging to protect your products and the planet. To be absolutely sure our packaging creates as little waste as possible, we got rid of anything extra. 
+                        </p>
+                        <p>There are no paper flyers, everything you need to know has been printed on the box. The box is made of recycled cardboard that you can confidently toss in the blue bin to be recycled again. Inside the box, there are no frills, no tissue paper, and no plastic wrapping. When you order online from us, all you’re going to get is your products in a box. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center single-content-wrap g-0">
+                <div class="col-lg-6">
+                    <div class="image-slide">
+                        <div class="sigle-slide-image">
+                            <img src="assets/images/blog-image-slide.jpg" alt="perion-image" />
+                        </div>
+                        <div class="sigle-slide-image">
+                            <img src="assets/images/blog-image-slide.jpg" alt="perion-image" />
+                        </div>
+                        <div class="sigle-slide-image">
+                            <img src="assets/images/blog-image-slide.jpg" alt="perion-image" />
+                        </div>
+                        <div class="sigle-slide-image">
+                            <img src="assets/images/blog-image-slide.jpg" alt="perion-image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content-box">
+                        <h2>1% for the planet</h2>
+                        <p>The leaders of 1% of the Planet think that all businesses profit off resources provided by the planet, so all businesses have to protect the planet. We agree wholeheartedly that our earth requires constant care, so we’ve signed up to donate 1% of gross sales.
+                        </p>
+                        <p>We have chosen to help SeaTrees plant kelp forests off the coast of California. Hundreds of species of ocean wildlife appreciate kelp, and sadly these forests are diminishing at a dangerous rate. Our team is grateful to SeaTrees for taking action to restore underwater ecosystems and reverse the effects of climate change before it’s too late.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section-image-content end here  -->
+    <!-- undies-instead-area start here  -->
+    <div class="undies-instead-area section-top pb-70 section-bg-one">
+        <div class="container">
+            <div class="instead-top text-center">
+                <h2 class="instead-title">If you use SOKORU undies instead of pads and tampons for <span>1 year</span>, you will save:</h2>
+            </div>
+            <div class="range-area">
+                <div class="range-input">
+                  <input class="range-slider-range big-handelar" type="range" value="100" min="0" max="500">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="single-box text-center">
+                        <div class="icon">
+                            <img src="assets/images/emissions.svg" alt="emissions" />
+                        </div>
+                        <div class="box-info">
+                            <h4 class="title">CO2 EMISSIONS</h4>
+                            <h2 class="info-content">3.7 kg</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="single-box text-center">
+                        <div class="icon">
+                            <img src="assets/images/watter.svg" alt="watter" />
+                        </div>
+                        <div class="box-info">
+                            <h4 class="title">WATER</h4>
+                            <h2 class="info-content">2366 l</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="single-box text-center">
+                        <div class="icon">
+                            <img src="assets/images/electricity.svg" alt="electricity" />
+                        </div>
+                        <div class="box-info">
+                            <h4 class="title">ELECTRICITY</h4>
+                            <h2 class="info-content">750 kWh</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="single-box text-center">
+                        <div class="icon">
+                            <img src="assets/images/waste.svg" alt="waste" />
+                        </div>
+                        <div class="box-info">
+                            <h4 class="title">WASTE</h4>
+                            <h2 class="info-content">1 kg</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- undies-instead-area end here  -->
+    <!-- road-ahead-area start here  -->
+    <div class="road-ahead-area section">
+        <div class="container">
+            <div class="road-ahead-wrap text-center">
+                <h2>The road ahead</h2>
+                <p>We are aware that we are not perfect when it comes to sustainability, so we would like to keep you posted on improvements that are not yet here but are coming up next. 
+                </p>
+                <p>To be sustainable means that we must take full responsibility for where our products are ending up. We will be embracing the concept of a circular economy by implementing a return and recycle program soon. The goal is to keep all period products out of the landfill and out of the oceans.
+                </p>
+                <p>For sustainable period products to become the norm, we need as many women as possible to participate. To make change happen, we plan to expand our size range rather than expand our style range. It’s important that women with all body types can join the movement so stay tuned for plus sizes and petit sizes to come.
+                </p>
+                <a href="#" class="primary-btn outline-btn">SHOP OUR RANGE</a>
+            </div>
+        </div>
+    </div>
+    <!-- road-ahead-area end here  -->
+    <!-- video-image-area strt here  -->
+    <div class="video-image-area">
+        <img src="assets/images/image-1.jpg" alt="image" />
+    </div>
+    <!-- video-image-area end here  -->
+    <!-- all-to-action-area start here  -->
+    <div class="call-to-action-area section section-bg-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="sustainable-wrap text-center">
+                        <h2 class="title">Join the Sokoru community, and you will be joining the meaningful movement towards making periods better for you and the planet.</h2>
+                        <a href="#" class="arrow-btn">READ ABOUT SUSTAINABILITY <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- all-to-action-area end here  -->
+    <!-- ethically-made-area start here  -->
+    <div class="ethically-made-area background-image" style="background-image: url('./assets/images/hero-banner-image.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="sustainable-wrap text-center">
+                        <h2 class="title">Ethically made, designed to last</h2>
+                        <p class="content">The benefits of switching from disposable to reusable are too good to pass up at this point. We’re excited to be a part of the sustainability movement, and we’re dedicated to creating a safe future for generations to come.
+                        </p>
+                        <a href="#" class="arrow-btn">LEARN MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ethically-made-area end here  -->
+    <!-- footer area start here  -->
+    <footer class="footer-area">
+        <div class="container-fluid g-0">
+            <div class="row g-0">
+                <div class="col-xl-4">
+                    <div class="footer-left">
+                        <div class="footer-left-conent">
+                            <h2>Be the first to know</h2>
+                            <p>Get exclusive releases, stories & access to sales + <span>10% off</span> your first
+                                purchase.</p>
+                            <div class="newsletter-area">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Enter your email" />
+                                        <button type="submit" class="send-btn"><i
+                                                class="fa-solid fa-arrow-right-long"></i></button>
+                                    </div>
+                                </form>
+                                <p>By signing up via email, you expressly consent to receive marketing communications
+                                    from SOKORU. See privacy policy and terms of use for details.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="footer-right">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <div class="single-widget contact-widget">
+                                    <h3 class="widget-title">We’re Ready to Help!</h3>
+                                    <p class="opning-time">Mon-Fri, 9am - 5pm GMT</p>
+                                    <ul>
+                                        <li><a href="#"><img class="icon" src="assets/images/chat.svg" alt="chat" />
+                                                Live Chat</a></li>
+                                        <li><a href="#"><img class="icon" src="assets/images/smartphone.svg"
+                                                    alt="smartphone" />Text: +44 1111 111111</a></li>
+                                        <li><a href="#"><img class="icon" src="assets/images/email.svg"
+                                                    alt="email" />Email</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <div class="single-widget menu-widget">
+                                    <h3 class="widget-title">Customer Care</h3>
+                                    <ul>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Shipping & Returns</a></li>
+                                        <li><a href="#">Size Guide</a></li>
+                                        <li><a href="#">Order Status</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <div class="single-widget menu-widget">
+                                    <h3 class="widget-title">Company</h3>
+                                    <ul>
+                                        <li><a href="#">Our Story</a></li>
+                                        <li><a href="#">Sustainability</a></li>
+                                        <li><a href="#">Journal</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <div class="single-widget menu-widget">
+                                    <h3 class="widget-title">Connect</h3>
+                                    <ul>
+                                        <li><a href="#">Press Inquiries</a></li>
+                                        <li><a href="#">Become an Affiliate</a></li>
+                                        <li><a href="#">Brand Partnerships</a></li>
+                                        <li><a href="#">Wholesale Inquiries</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="social-media">
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright-area">
+                                <p>© 2022 <a href="index.html">SOKORU</a> . All rights reserved.</p>
+                            </div>
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                </ul>
+                            </div>
+                            <div class="brands-logo">
+                                <a href="#"><img src="assets/images/b-corporation-logo.png" alt="corporation" /></a>
+                                <a href="#"><img src="assets/images/1ftp_Primary_Vertical_Black.png"
+                                        alt="1ftp_Primary_Vertical_Black" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end here  -->
+    <!-- js file start  -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

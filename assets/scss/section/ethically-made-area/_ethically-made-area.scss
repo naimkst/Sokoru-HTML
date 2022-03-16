@@ -5,8 +5,29 @@
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
+     &.background-image {
+          position: relative;
+          padding: 25rem 0;
+          z-index: 1;
+          &::before {
+               position: absolute;
+               content: '';
+               width: 100%;
+               height: 100%;
+               left: 0;
+               top: 0;
+               background: rgba(225, 255, 255, .3);
+               z-index: -1;
+          }
+          .title {
+               color: var(--black);
+          }
+          .content {
+               color: var(--black);
+          }
+     }
      .title {
-          margin-bottom: 7rem;
+          margin-bottom: 5rem;
           font-size: 4.8rem;
           line-height: 5.8rem;
           color: var(--black);
