@@ -549,9 +549,13 @@ primary-btn
     transition: $transition;
     i {
         margin-left: .5rem;
+        transition: $transition;
     }
     &:hover {
         color: var(--bColor);
+        i {
+            transform: translateX(8px);
+        }
     }
 }
 // load-more-btn
@@ -588,6 +592,30 @@ primary-btn
 .section-bg-four {
     background-color: #FFFCF7;
 }
+// preloader
+.preloader {
+    @include flex-position(flex, center, center);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #D08E61;
+    z-index: 9999;
+    img {
+        max-width: 180px;
+        animation: pulse 2s infinite;
+    }
+}
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+ }
+ 
+ @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+ }
 @media (max-width: 767px) {
     .section{
         padding: 6rem 0

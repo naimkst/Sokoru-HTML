@@ -66,6 +66,14 @@
                 color: var(--black);
             }
         }
+        ol {
+            margin-bottom: 2rem;
+            li {
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: var(--black);
+            }
+        }
     }
 }
 @media (max-width: 767px) {

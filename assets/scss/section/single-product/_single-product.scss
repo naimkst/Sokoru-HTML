@@ -34,32 +34,10 @@
      .product-info {
           .absorbency {
                display: flex;
-               justify-content: flex-end;
-               justify-content: center;
-               overflow: hidden;
-               flex-direction: row-reverse;
-               position: relative;
-               input {
-                    display: none;
-               }
-               label {
-                    cursor: pointer;
-                    width: 2rem;
-                    height: 2rem;
-                    margin-top: auto;
-                    background-image: url("../images/blood-drop-outline.svg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: 100%;
-                    transition: .3s;
-               }
-               input:checked ~ label,
-               input:checked ~ label ~ label {
-               background-image: url("../images/blood-drop-fill.svg");
-               }
-               input:not(:checked) ~ label:hover,
-               input:not(:checked) ~ label:hover ~ label {
-               background-image: url("../images/blood-drop-fill.svg");
+               li {
+                    img {
+                         max-width: 2rem;
+                    }
                }
           }
           .product-name {

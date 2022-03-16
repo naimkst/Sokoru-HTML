@@ -27,6 +27,13 @@
 </head>
 
 <body>
+  <!-- preloader area start here  -->
+  <div class="preloader">
+    <div class="loader">
+      <img src="assets/images/logo.png" alt="logo" />
+    </div>
+  </div>
+  <!-- preloader area start here  -->
   <!-- topbar area start here  -->
   <div class="topbar-area">
     <div class="topbar-slide">
@@ -49,10 +56,17 @@
         <div class="header-left">
           <nav class="main-menu">
             <ul>
-              <li><a href="shop.html">SHOP</a></li>
+              <li class="has-sub-menu">
+                <a href="shop.html">SHOP <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="#">sub menu item</a></li>
+                  <li><a href="#">sub menu item</a></li>
+                  <li><a href="#">sub menu item</a></li>
+                </ul>
+              </li>
               <li><a href="about.html">ABOUT</a></li>
               <li><a href="blog.html">JOURNAL</a></li>
-              <li><a href="faq.html">FAQ</a></li>
+              <li class="active"><a href="faq.html">FAQ</a></li>
             </ul>
           </nav>
         </div>
@@ -125,12 +139,20 @@
           class="fa-solid fa-xmark"></i></button>
     </div>
     <div class="offcanvas-body">
-      <nav class="main-menu">
+      <nav class="mobile-menu main-menu">
         <ul>
-          <li><a href="shop.html">SHOP</a></li>
+          <li class="has-sub-menu">
+            <a href="shop.html">SHOP </a>
+            <span class="dropdown-btn"><i class="fa-solid fa-angle-down"></i></span>
+            <ul class="sub-menu">
+              <li><a href="#">sub menu item</a></li>
+              <li><a href="#">sub menu item</a></li>
+              <li><a href="#">sub menu item</a></li>
+            </ul>
+          </li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="blog.html">JOURNAL</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li class="active"><a href="faq.html">FAQ</a></li>
         </ul>
       </nav>
     </div>
@@ -139,7 +161,7 @@
   <!-- faq page area start here  -->
   <div class="faq-page-area section">
     <div class="container">
-      <div class="section-title text-center mb-35">
+      <div class="section-title text-center mb-55">
         <h2 class="title">Frequently Asked Questions</h2>
       </div>
       <div class="row">
@@ -166,6 +188,16 @@
                 role="tab" aria-controls="five" aria-selected="false">Other</button>
             </li>
           </ul>
+          <div class="contact-info d-none d-lg-block">
+            <h3 class="contact-title">Didn’t find what you were <br /> looking for?</h3>
+            <ul>
+              <li><a href="#"><img class="icon" src="assets/images/chat.svg" alt="chat" />
+                  Chat with Us</a></li>
+              <li><a href="#"><img class="icon" src="assets/images/smartphone.svg" alt="smartphone" />Text Us</a></li>
+              <li><a href="#"><img class="icon" src="assets/images/email.svg" alt="email" />Email Us</a></li>
+            </ul>
+            <p class="opning-time">Mon-Fri, 9am - 5pm GMT</p>
+          </div>
         </div>
         <div class="col-lg-8">
           <div class="tab-content" id="myTabContent">
@@ -514,7 +546,7 @@
   <footer class="footer-area">
     <div class="container-fluid g-0">
       <div class="row g-0">
-        <div class="col-xl-3">
+        <div class="col-xl-4">
           <div class="footer-left">
             <div class="footer-left-conent">
               <h2>Be the first to know</h2>
@@ -533,7 +565,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-9">
+        <div class="col-xl-8">
           <div class="footer-right">
             <div class="row">
               <div class="col-lg-3 col-md-3 col-sm-6 col-6">

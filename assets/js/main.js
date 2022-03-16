@@ -19,6 +19,10 @@
   }); 
   
   jQuery(document).ready(function(){
+    // mobile dropdown menu 
+    $('.mobile-menu .has-sub-menu .dropdown-btn').on('click', function() {
+      $(this).siblings('.sub-menu').slideToggle();
+    })
     /*-------------------------------------------
     js scrollup
     --------------------------------------------- */
@@ -40,7 +44,8 @@
       autoplaySpeed: 3000,
       dots: false,
       arrows: true,
-      fade: true,
+      fade: false,
+      vertical: true,
       prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
       nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
     });

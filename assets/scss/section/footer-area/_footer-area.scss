@@ -10,6 +10,10 @@
           background-color: #CBD1C7;
           height: 100%;
           padding: 3rem;
+          .footer-left-conent {
+               max-width: 445px;
+               margin: 0 auto;
+          }
           h2 {
                margin-bottom: 2.5rem;
                font-family: $bodyFont;
@@ -68,7 +72,7 @@
           }
      }
      .footer-right {
-          padding: 10rem 3rem 6rem 3rem;
+          padding: 7rem 5rem 3rem 5rem;
      }
      .single-widget {
           margin-bottom: 3rem;
@@ -83,7 +87,7 @@
      }
      .contact-widget {
           .opning-time {
-               margin-bottom: 0;
+               margin-bottom: 1rem;
                font-size: 1.4rem;
                font-weight: 400;
                color: var(--black);
@@ -93,7 +97,7 @@
                padding: 0;
                li {
                     list-style: none;
-                    margin-bottom: .8rem;
+                    margin-bottom: 1.2rem;
                     &:last-child {
                          margin-bottom: 0;
                     }
@@ -210,6 +214,7 @@
                }
           }
           .brands-logo {
+               padding-right: 12%;
                a {
                     display: inline-block;
                     margin-right: 2rem;
@@ -223,6 +228,40 @@
           }
      }
 }
+@media (max-width: 1550px) {
+     .footer-area .footer-bottom .brands-logo {
+          padding-right: 0;
+     }
+     .footer-area .footer-right {
+          padding: 7rem 3rem 3rem 3rem;
+     }
+}
+@media (min-width: 1200px) and (max-width: 1350px) {
+	.footer-area .footer-bottom {
+          flex-flow: row wrap;
+     }
+     .footer-area .footer-bottom .social-media {
+          order: 0;
+          width: 50%;
+     }
+     .footer-area .footer-bottom .brands-logo {
+          order: 1;
+          width: 50%;
+          text-align: right;
+     }
+     .footer-area .footer-bottom .footer-menu {
+          order: 2;
+          width: 100%;
+          text-align: center;
+          margin: 2rem 0;
+     }
+     .footer-area .footer-bottom .copyright-area {
+          order: 3;
+          width: 100%;
+          text-align: center;
+     }
+}
+
 @media (max-width: 1199px) {
      .footer-area .footer-left {
           padding: 5rem;

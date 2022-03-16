@@ -11,11 +11,23 @@
           margin-left: 12px;
      }
      .single-brand {
+          position: relative;
           font-size: 2.4rem;
           font-weight: 400;
           text-transform: capitalize;
           color: var(--bColor);
           transition: $transition;
+          padding: 0 3rem;
+          &::after {
+               position: absolute;
+               content: '';
+               width: 10px;
+               height: 3px;
+               background-color: var(--bColor);
+               top: 50%;
+               transform: translateY(-50%);
+               left: 100%;
+          }
           &:hover {
                color: var(--primary-color);
           }

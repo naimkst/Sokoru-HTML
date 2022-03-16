@@ -44,6 +44,51 @@
                }
           }
      }
+     .contact-info {
+          .contact-title {
+               margin-bottom: 2.5rem;
+               font-family: $titleFont;
+               font-size: 2.2rem;
+               font-weight: 400;
+               text-transform: capitalize;
+               color: var(--black);
+          }
+          .opning-time {
+               margin-top: 2rem;
+               font-family: $titleFont;
+               font-size: 2.2rem;
+               font-weight: 400;
+               color: var(--black);
+          }
+          ul {
+               margin: 0;
+               padding: 0;
+               li {
+                    list-style: none;
+                    margin-bottom: 1.2rem;
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+                    a {
+                         display: flex;
+                         list-style: none;
+                         font-size: 2.2rem;
+                         line-height: 1.3;
+                         font-weight: 400;
+                         text-transform: capitalize;
+                         color: var(--black);
+                         transition: $transition;
+                         .icon {
+                              width: 2.2rem;
+                              margin-right: 1rem;
+                         }
+                         &:hover {
+                              color: var(--bColor);
+                         }
+                    }
+               }
+          }
+     }
 }
 @media (max-width: 1199px) {
      .faq-page-area .nav-tabs .nav-link {

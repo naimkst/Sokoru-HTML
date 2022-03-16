@@ -27,6 +27,13 @@
 </head>
 
 <body>
+  <!-- preloader area start here  -->
+  <div class="preloader">
+    <div class="loader">
+      <img src="assets/images/logo.png" alt="logo" />
+    </div>
+  </div>
+  <!-- preloader area start here  -->
   <!-- topbar area start here  -->
   <div class="topbar-area">
     <div class="topbar-slide">
@@ -49,7 +56,14 @@
         <div class="header-left">
           <nav class="main-menu">
             <ul>
-              <li><a href="shop.html">SHOP</a></li>
+              <li class="active has-sub-menu">
+                <a href="shop.html">SHOP <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="#">sub menu item</a></li>
+                  <li><a href="#">sub menu item</a></li>
+                  <li><a href="#">sub menu item</a></li>
+                </ul>
+              </li>
               <li><a href="about.html">ABOUT</a></li>
               <li><a href="blog.html">JOURNAL</a></li>
               <li><a href="faq.html">FAQ</a></li>
@@ -125,9 +139,17 @@
           class="fa-solid fa-xmark"></i></button>
     </div>
     <div class="offcanvas-body">
-      <nav class="main-menu">
+      <nav class="mobile-menu main-menu">
         <ul>
-          <li><a href="shop.html">SHOP</a></li>
+          <li class="active has-sub-menu">
+            <a href="shop.html">SHOP </a>
+            <span class="dropdown-btn"><i class="fa-solid fa-angle-down"></i></span>
+            <ul class="sub-menu">
+              <li><a href="#">sub menu item</a></li>
+              <li><a href="#">sub menu item</a></li>
+              <li><a href="#">sub menu item</a></li>
+            </ul>
+          </li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="blog.html">JOURNAL</a></li>
           <li><a href="faq.html">FAQ</a></li>
@@ -186,19 +208,13 @@
               </div>
               <div class="price-review-area">
                 <h4 class="price">$28.00</h4>
-                <div class="absorbency">
-                  <input type="radio" name="absorbency" id="absorbency-5">
-                  <label for="absorbency-5"></label>
-                  <input type="radio" name="absorbency" id="absorbency-4">
-                  <label for="absorbency-4"></label>
-                  <input type="radio" name="absorbency" id="absorbency-3">
-                  <label for="absorbency-3"></label>
-                  <input type="radio" name="absorbency" id="absorbency-2">
-                  <label for="absorbency-2"></label>
-                  <input type="radio" name="absorbency" id="absorbency-1">
-                  <label for="absorbency-1"></label>
-                  <input type="radio" name="absorbency" id="absorbency-0">
-                </div>
+                <ul class="absorbency">
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li><img src="assets/images/blood-drop-outline.svg" alt="blood-drop-outline" /></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -243,19 +259,13 @@
               </div>
               <div class="price-review-area">
                 <h4 class="price">$28.00</h4>
-                <div class="absorbency">
-                  <input type="radio" name="absorbency1" id="absorbency-51">
-                  <label for="absorbency-51"></label>
-                  <input type="radio" name="absorbency1" id="absorbency-41">
-                  <label for="absorbency-41"></label>
-                  <input type="radio" name="absorbency1" id="absorbency-31">
-                  <label for="absorbency-31"></label>
-                  <input type="radio" name="absorbency1" id="absorbency-21">
-                  <label for="absorbency-21"></label>
-                  <input type="radio" name="absorbency1" id="absorbency-11">
-                  <label for="absorbency-11"></label>
-                  <input type="radio" name="absorbency1" id="absorbency-01">
-                </div>
+                <ul class="absorbency">
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li><img src="assets/images/blood-drop-outline.svg" alt="blood-drop-outline" /></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -300,19 +310,13 @@
               </div>
               <div class="price-review-area">
                 <h4 class="price">$28.00</h4>
-                <div class="absorbency">
-                  <input type="radio" name="absorbency2" id="absorbency-52">
-                  <label for="absorbency-52"></label>
-                  <input type="radio" name="absorbency2" id="absorbency-42">
-                  <label for="absorbency-42"></label>
-                  <input type="radio" name="absorbency2" id="absorbency-32">
-                  <label for="absorbency-32"></label>
-                  <input type="radio" name="absorbency2" id="absorbency-22">
-                  <label for="absorbency-22"></label>
-                  <input type="radio" name="absorbency2" id="absorbency-12">
-                  <label for="absorbency-12"></label>
-                  <input type="radio" name="absorbency2" id="absorbency-02">
-                </div>
+                <ul class="absorbency">
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li><img src="assets/images/blood-drop-outline.svg" alt="blood-drop-outline" /></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -357,19 +361,13 @@
               </div>
               <div class="price-review-area">
                 <h4 class="price">$28.00</h4>
-                <div class="absorbency">
-                  <input type="radio" name="absorbency3" id="absorbency-53">
-                  <label for="absorbency-53"></label>
-                  <input type="radio" name="absorbency3" id="absorbency-43">
-                  <label for="absorbency-43"></label>
-                  <input type="radio" name="absorbency3" id="absorbency-33">
-                  <label for="absorbency-33"></label>
-                  <input type="radio" name="absorbency3" id="absorbency-23">
-                  <label for="absorbency-23"></label>
-                  <input type="radio" name="absorbency3" id="absorbency-13">
-                  <label for="absorbency-13"></label>
-                  <input type="radio" name="absorbency3" id="absorbency-03">
-                </div>
+                <ul class="absorbency">
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li><img src="assets/images/blood-drop-outline.svg" alt="blood-drop-outline" /></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -414,19 +412,13 @@
               </div>
               <div class="price-review-area">
                 <h4 class="price">$28.00</h4>
-                <div class="absorbency">
-                  <input type="radio" name="absorbency4" id="absorbency-54">
-                  <label for="absorbency-54"></label>
-                  <input type="radio" name="absorbency4" id="absorbency-44">
-                  <label for="absorbency-44"></label>
-                  <input type="radio" name="absorbency4" id="absorbency-34">
-                  <label for="absorbency-34"></label>
-                  <input type="radio" name="absorbency4" id="absorbency-24">
-                  <label for="absorbency-24"></label>
-                  <input type="radio" name="absorbency4" id="absorbency-14">
-                  <label for="absorbency-14"></label>
-                  <input type="radio" name="absorbency4" id="absorbency-04">
-                </div>
+                <ul class="absorbency">
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li><img src="assets/images/blood-drop-outline.svg" alt="blood-drop-outline" /></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -471,19 +463,13 @@
               </div>
               <div class="price-review-area">
                 <h4 class="price">$28.00</h4>
-                <div class="absorbency">
-                  <input type="radio" name="absorbency5" id="absorbency-55">
-                  <label for="absorbency-55"></label>
-                  <input type="radio" name="absorbency5" id="absorbency-45">
-                  <label for="absorbency-45"></label>
-                  <input type="radio" name="absorbency5" id="absorbency-35">
-                  <label for="absorbency-35"></label>
-                  <input type="radio" name="absorbency5" id="absorbency-25">
-                  <label for="absorbency-25"></label>
-                  <input type="radio" name="absorbency5" id="absorbency-15">
-                  <label for="absorbency-15"></label>
-                  <input type="radio" name="absorbency5" id="absorbency-05">
-                </div>
+                <ul class="absorbency">
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li><img src="assets/images/blood-drop-outline.svg" alt="blood-drop-outline" /></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -528,19 +514,13 @@
               </div>
               <div class="price-review-area">
                 <h4 class="price">$28.00</h4>
-                <div class="absorbency">
-                  <input type="radio" name="absorbency6" id="absorbency-56">
-                  <label for="absorbency-56"></label>
-                  <input type="radio" name="absorbency6" id="absorbency-46">
-                  <label for="absorbency-46"></label>
-                  <input type="radio" name="absorbency6" id="absorbency-36">
-                  <label for="absorbency-36"></label>
-                  <input type="radio" name="absorbency6" id="absorbency-26">
-                  <label for="absorbency-26"></label>
-                  <input type="radio" name="absorbency6" id="absorbency-16">
-                  <label for="absorbency-16"></label>
-                  <input type="radio" name="absorbency6" id="absorbency-06">
-                </div>
+                <ul class="absorbency">
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li><img src="assets/images/blood-drop-outline.svg" alt="blood-drop-outline" /></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -585,19 +565,13 @@
               </div>
               <div class="price-review-area">
                 <h4 class="price">$28.00</h4>
-                <div class="absorbency">
-                  <input type="radio" name="absorbency7" id="absorbency-57">
-                  <label for="absorbency-57"></label>
-                  <input type="radio" name="absorbency7" id="absorbency-47">
-                  <label for="absorbency-47"></label>
-                  <input type="radio" name="absorbency7" id="absorbency-37">
-                  <label for="absorbency-37"></label>
-                  <input type="radio" name="absorbency7" id="absorbency-27">
-                  <label for="absorbency-27"></label>
-                  <input type="radio" name="absorbency7" id="absorbency-17">
-                  <label for="absorbency-17"></label>
-                  <input type="radio" name="absorbency7" id="absorbency-07">
-                </div>
+                <ul class="absorbency">
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li><img src="assets/images/blood-drop-outline.svg" alt="blood-drop-outline" /></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -642,19 +616,13 @@
               </div>
               <div class="price-review-area">
                 <h4 class="price">$28.00</h4>
-                <div class="absorbency">
-                  <input type="radio" name="absorbency8" id="absorbency-58">
-                  <label for="absorbency-58"></label>
-                  <input type="radio" name="absorbency8" id="absorbency-48">
-                  <label for="absorbency-48"></label>
-                  <input type="radio" name="absorbency8" id="absorbency-38">
-                  <label for="absorbency-38"></label>
-                  <input type="radio" name="absorbency8" id="absorbency-28">
-                  <label for="absorbency-28"></label>
-                  <input type="radio" name="absorbency8" id="absorbency-18">
-                  <label for="absorbency-18"></label>
-                  <input type="radio" name="absorbency8" id="absorbency-08">
-                </div>
+                <ul class="absorbency">
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li class="active"><img src="assets/images/blood-drop-fill.svg" alt="blood-drop-fill" /></li>
+                  <li><img src="assets/images/blood-drop-outline.svg" alt="blood-drop-outline" /></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -684,7 +652,7 @@
   <footer class="footer-area">
     <div class="container-fluid g-0">
       <div class="row g-0">
-        <div class="col-xl-3">
+        <div class="col-xl-4">
           <div class="footer-left">
             <div class="footer-left-conent">
               <h2>Be the first to know</h2>
@@ -703,7 +671,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-9">
+        <div class="col-xl-8">
           <div class="footer-right">
             <div class="row">
               <div class="col-lg-3 col-md-3 col-sm-6 col-6">

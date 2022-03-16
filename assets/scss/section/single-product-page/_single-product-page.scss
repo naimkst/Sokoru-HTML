@@ -58,6 +58,7 @@
         }
     }
     .single-product-slide {
+        overflow: hidden;
         .product-thumbnail {
             img {
                  width: 100%;
@@ -98,19 +99,33 @@
            color: var(--black);
            transition: $transition;
            cursor: pointer;
+           opacity: 0;
+           visibility: hidden;
            &:hover {
                color: var(--primary-color);
            }
            &.slick-prev {
-               left: 3rem;
+               left: -3rem;
            }
            &.slick-next {
-               right: 3rem;
+               right: -3rem;
            }
+       }
+       &:hover {
+        .slick-arrow {
+            opacity: 1;
+            visibility: visible;
+            &.slick-prev {
+                left: 3rem;
+            }
+            &.slick-next {
+                right: 3rem;
+            }
+        }
        }
     }
     .product-info {
-        padding: 0 3rem;
+        padding: 2rem 5rem;
         .revire-area {
             display: flex;
             align-items: center;
@@ -190,34 +205,12 @@
             }
             .absorbency {
                 display: flex;
-                justify-content: flex-end;
-                justify-content: center;
-                overflow: hidden;
-                flex-direction: row-reverse;
-                position: relative;
-                input {
-                     display: none;
+                li {
+                    img {
+                        max-width: 2rem;
+                    }
                 }
-                label {
-                     cursor: pointer;
-                     width: 2rem;
-                     height: 2rem;
-                     margin-top: auto;
-                     background-image: url("../images/blood-drop-outline.svg");
-                     background-repeat: no-repeat;
-                     background-position: center;
-                     background-size: 100%;
-                     transition: .3s;
-                }
-                input:checked ~ label,
-                input:checked ~ label ~ label {
-                background-image: url("../images/blood-drop-fill.svg");
-                }
-                input:not(:checked) ~ label:hover,
-                input:not(:checked) ~ label:hover ~ label {
-                background-image: url("../images/blood-drop-fill.svg");
-                }
-           }
+            }
         }
         .product-short-info {
             margin: 3rem 0;
@@ -377,30 +370,45 @@
         }
         .feature-list {
             margin-top: 2rem;
-            ul {
+            .accordion {
                 margin: 0;
                 padding: 0;
-                li {
+                .accordion-item {
+                    margin-bottom: 1rem;
+                    border: none;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                .accordion-header {
+                    margin: 0;
+                    border: none;
+                }
+                .accordion-button {
                     display: flex;
                     align-items: center;
                     font-family: $titleFont;
                     font-size: 1.1rem;
                     line-height: 1.6rem;
                     font-weight: 700;
-                    margin-bottom: 1rem;
+                    padding: 0;
+                    border: none;
                     .icon {
                         max-width: 2rem;
                         margin-right: 1rem;
                     }
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
+                    
                 }
             }
         }
     }
     .switch-btn-wrap {
         flex-flow: row wrap;
+    }
+}
+@media (max-width: 1500px) {
+    .single-product-page .product-info {
+        padding: 2rem 3rem;
     }
 }
 @media (max-width: 1250px) {
