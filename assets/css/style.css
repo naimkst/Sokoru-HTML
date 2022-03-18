@@ -4754,13 +4754,16 @@ primary-btn
 #.banner-area
 --------------------------*/
 .banner-area {
+  display: grid;
+  place-items: center;
   position: relative;
-  padding: 27rem 0;
+  padding: 6rem 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   z-index: 1;
   overflow: hidden;
+  min-height: 800px;
 }
 .banner-area::before {
   position: absolute;
