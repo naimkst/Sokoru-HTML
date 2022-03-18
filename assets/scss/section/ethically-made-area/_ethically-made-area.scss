@@ -51,6 +51,20 @@
           font-size: 1.8rem;
           line-height: 3rem;
      }
+     .ethically-made-area.background-image {
+          padding: 12rem 0;
+     }
+}
+@media (max-width: 991px) {
+     .ethically-made-area.background-image {
+          padding: 8rem 0;
+     }
+     .ethically-made-area .title {
+          margin-bottom: 3rem;
+     }
+     .ethically-made-area .content {
+          margin-bottom: 3rem;
+     }
 }
 @media (max-width: 575px) {
      .ethically-made-area .title {

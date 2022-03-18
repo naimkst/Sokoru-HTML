@@ -199,7 +199,6 @@
         outline: none;
         padding: 0;
         margin: 0;
-
         &::-webkit-slider-thumb {
           appearance: none;
           width: 14px;
@@ -292,6 +291,12 @@
 @media (max-width: 767px) {
     .review-list .single-review {
         flex-flow: row wrap;
+    }
+    .range-area .range-slider-range.big-handelar::-webkit-slider-thumb {
+        width: 35px;
+        height: 35px;
+        background-size: contain;
+        border: 3px solid #ffffff;
     }
 }
 @media (max-width: 575px) {

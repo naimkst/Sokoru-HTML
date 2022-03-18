@@ -54,11 +54,13 @@
     --------------------------------------------- */
     $('.brand-slide').slick({
       infinite: true,
-      speed: 500,
+      autoplaySpeed: 0,
+      speed: 3000,
+      cssEase: 'linear',
+      pauseOnHover: true,
       slidesToShow: 6,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 3000,
       dots: false,
       arrows: false,
       variableWidth: true,

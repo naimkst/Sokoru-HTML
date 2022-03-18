@@ -51,3 +51,28 @@
         color: var(--black);
    }
 }
+@media (max-width: 1399px) {
+    .banner-area {
+        min-height: 600px;
+    }
+    .banner-area .banner-title {
+        margin-bottom: 3rem;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .banner-area .banner-content {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+}
+@media (max-width: 767px) {
+    .banner-area {
+        min-height: 480px;
+    }
+}
+@media (max-width: 575px) {
+    .banner-area .banner-title {
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+    }
+}

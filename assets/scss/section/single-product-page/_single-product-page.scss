@@ -246,21 +246,21 @@
                 .color {
                     display: inline-block;
                     position: relative;
-                    width: 1.8rem;
-                    height: 1.8rem;
+                    width: 2.4rem;
+                    height: 2.4rem;
                     border-radius: 50%;
                     background-color: #696969;
                     cursor: pointer;
                     &::before {
                         content: "";
                         position: absolute;
-                        width: 2.4rem;
-                        height: 2.4rem;
-                        border: 1px solid var(--black);
+                        width: 3.2rem;
+                        height: 3.2rem;
+                        border: 2px solid var(--black);
                         border-radius: 50%;
                         box-sizing: border-box;
-                        left: -3px;
-                        top: -3px;
+                        left: -4px;
+                        top: -4px;
                         opacity: 0;
                         visibility: hidden;
                     }

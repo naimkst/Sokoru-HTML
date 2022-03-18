@@ -1816,7 +1816,8 @@ primary-btn
             order: 2;
     width: 100%;
     text-align: center;
-    margin: 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
   }
 
   .footer-area .footer-bottom .copyright-area {
@@ -2209,6 +2210,23 @@ primary-btn
     font-size: 1.8rem;
     line-height: 3rem;
   }
+
+  .ethically-made-area.background-image {
+    padding: 12rem 0;
+  }
+}
+@media (max-width: 991px) {
+  .ethically-made-area.background-image {
+    padding: 8rem 0;
+  }
+
+  .ethically-made-area .title {
+    margin-bottom: 3rem;
+  }
+
+  .ethically-made-area .content {
+    margin-bottom: 3rem;
+  }
 }
 @media (max-width: 575px) {
   .ethically-made-area .title {
@@ -2251,15 +2269,21 @@ primary-btn
     margin-bottom: 5rem;
   }
 }
+@media (max-width: 767px) {
+  .call-to-action-area .title {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    margin-bottom: 4rem;
+  }
+}
 @media (max-width: 575px) {
   .call-to-action-area .title {
     margin-bottom: 3rem;
   }
-}
-@media (max-width: 375px) {
+
   .call-to-action-area .title {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
   }
 }
 /*-------------------------
@@ -3402,8 +3426,8 @@ primary-btn
 .single-product-page .product-info .product-switch .colors-switch .color {
   display: inline-block;
   position: relative;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
   border-radius: 50%;
   background-color: #696969;
   cursor: pointer;
@@ -3411,14 +3435,14 @@ primary-btn
 .single-product-page .product-info .product-switch .colors-switch .color::before {
   content: "";
   position: absolute;
-  width: 2.4rem;
-  height: 2.4rem;
-  border: 1px solid var(--black);
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 2px solid var(--black);
   border-radius: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  left: -3px;
-  top: -3px;
+  left: -4px;
+  top: -4px;
   opacity: 0;
   visibility: hidden;
 }
@@ -4018,10 +4042,13 @@ primary-btn
   color: var(--black);
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  text-decoration: underline;
+  text-decoration: none;
   padding: 0;
   border: none;
   background-color: transparent;
+}
+.designed-glove-area .designed-glove-left .nav .nav-item .nav-link.active {
+  text-decoration: underline;
 }
 .designed-glove-area .designed-glove-right h2 {
   margin-bottom: 4rem;
@@ -4154,7 +4181,9 @@ primary-btn
 }
 .how-work-area .video-area .video-thumbnail img {
   width: 100%;
-  height: auto;
+  min-height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .how-work-area .video-area .popup-video {
   display: -webkit-inline-box;
@@ -4164,13 +4193,15 @@ primary-btn
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: capitalize;
   color: var(--black);
   left: 3rem;
   bottom: 3rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 .how-work-area .video-area .popup-video .play-btn {
   display: -webkit-box;
@@ -4191,9 +4222,14 @@ primary-btn
   border-radius: 50%;
   border: 1px solid var(--black);
   margin-right: 1.5rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 .how-work-area .video-area .popup-video:hover {
   color: var(--primary-color);
+}
+.how-work-area .video-area .popup-video:hover .play-btn {
+  border-color: var(--primary-color);
 }
 
 @media (max-width: 1700px) {
@@ -4613,6 +4649,13 @@ primary-btn
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
+
+  .range-area .range-slider-range.big-handelar::-webkit-slider-thumb {
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    border: 3px solid #ffffff;
+  }
 }
 @media (max-width: 575px) {
   .review-list .single-review .review-left {
@@ -4805,6 +4848,33 @@ primary-btn
   color: var(--black);
 }
 
+@media (max-width: 1399px) {
+  .banner-area {
+    min-height: 600px;
+  }
+
+  .banner-area .banner-title {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .banner-area .banner-content {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+}
+@media (max-width: 767px) {
+  .banner-area {
+    min-height: 480px;
+  }
+}
+@media (max-width: 575px) {
+  .banner-area .banner-title {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+}
 /*-------------------------
 #.road-ahead-area
 --------------------------*/
@@ -4818,7 +4888,7 @@ primary-btn
 .road-ahead-area p {
   margin-bottom: 4.5rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 2.4rem;
+  font-size: 2.4rem;
   line-height: 3.6rem;
   font-weight: 500;
   color: var(--black);
@@ -4827,6 +4897,26 @@ primary-btn
   margin-bottom: 0;
 }
 
+@media (max-width: 1399px) {
+  .road-ahead-area h2 {
+    margin-bottom: 4rem;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+
+  .road-ahead-area p {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 575px) {
+  .road-ahead-area p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+  }
+}
 /*-------------------------
 #.undies-instead-area
 --------------------------*/
@@ -4877,4 +4967,45 @@ primary-btn
 }
 .undies-instead-area .range-area {
   margin-bottom: 8rem;
+}
+
+@media (max-width: 1399px) {
+  .undies-instead-area .instead-top .instead-title {
+    font-size: 3.2rem;
+  }
+
+  .undies-instead-area .single-box .icon img {
+    max-width: 7rem;
+    max-height: 7rem;
+  }
+}
+@media (max-width: 767px) {
+  .undies-instead-area .instead-top {
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .undies-instead-area .instead-top .instead-title {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+
+  .undies-instead-area .range-area {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 575px) {
+  .undies-instead-area .single-box .icon img {
+    max-width: 4rem;
+    max-height: 4rem;
+  }
+
+  .undies-instead-area .single-box .title {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .undies-instead-area .single-box .info-content {
+    font-size: 2.2rem;
+  }
 }

@@ -25,14 +25,19 @@
           margin-bottom: 5rem;
      }
 }
+@media (max-width: 767px) {
+     .call-to-action-area .title {
+          font-size: 3.2rem;
+          line-height: 4.4rem;
+          margin-bottom: 4rem;
+     }
+}
 @media (max-width: 575px) {
      .call-to-action-area .title {
           margin-bottom: 3rem;
      }
-}
-@media (max-width: 375px) {
      .call-to-action-area .title {
-          font-size: 3.2rem;
-          line-height: 4.2rem;
+          font-size: 2.4rem;
+          line-height: 3.2rem;
      }
 }
