@@ -31,7 +31,7 @@
                 width: 1px;
                 height: 100%;
                 background-color: var(--black);
-                left: 60px;
+                left: 63px;
                 top: 0;
                 z-index: -1;
             }
@@ -44,8 +44,8 @@
             .work-count {
                 @include flex-position(flex, center, center);
                 margin: 0 1.5rem;
-                width: 3rem;
-                height: 3rem;
+                width: 3.5rem;
+                height: 3.5rem;
                 border-radius: 50%;
                 border: 1px solid var(--black);
                 font-size: 1.8rem;

@@ -55,9 +55,9 @@
     $('.brand-slide').slick({
       infinite: true,
       autoplaySpeed: 0,
-      speed: 3000,
+      speed: 5000,
       cssEase: 'linear',
-      pauseOnHover: true,
+      pauseOnHover: false,
       slidesToShow: 6,
       slidesToScroll: 1,
       autoplay: true,

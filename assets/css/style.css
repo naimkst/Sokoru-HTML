@@ -2142,9 +2142,6 @@ primary-btn
           transform: translateY(-50%);
   left: 100%;
 }
-.brand-slider-area .single-brand:hover {
-  color: var(--primary-color);
-}
 
 @media (max-width: 767px) {
   .brand-slider-area {
@@ -2162,6 +2159,7 @@ primary-btn
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 .ethically-made-area.background-image {
   position: relative;
@@ -3232,6 +3230,7 @@ primary-btn
   position: absolute;
   bottom: 3rem;
   right: 3rem;
+  z-index: 200;
 }
 .single-product-page .single-product-slide .slick-dots li {
   display: inline-block;
@@ -3254,26 +3253,28 @@ primary-btn
 }
 .single-product-page .single-product-slide .slick-arrow {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 1;
-  font-size: 3rem;
-  color: var(--black);
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: 0 0;
+  border: 0;
+  text-indent: -9999px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  z-index: 100;
 }
 .single-product-page .single-product-slide .slick-arrow:hover {
   color: var(--primary-color);
 }
 .single-product-page .single-product-slide .slick-arrow.slick-prev {
-  left: -3rem;
+  left: 0;
+  cursor: url("../images/icon-left-arrow.svg"), pointer;
 }
 .single-product-page .single-product-slide .slick-arrow.slick-next {
-  right: -3rem;
+  right: 0;
+  cursor: url("../images/icon-right-arrow.svg"), pointer;
 }
 .single-product-page .single-product-slide:hover .slick-arrow {
   opacity: 1;
@@ -4125,7 +4126,7 @@ primary-btn
   width: 1px;
   height: 100%;
   background-color: var(--black);
-  left: 60px;
+  left: 63px;
   top: 0;
   z-index: -1;
 }
@@ -4149,8 +4150,8 @@ primary-btn
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   margin: 0 1.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   border: 1px solid var(--black);
   font-size: 1.8rem;
@@ -4561,6 +4562,7 @@ primary-btn
   background-image: url("../images/arrow-left-right.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 80%;
   border: 5px solid #ffffff;
   -webkit-box-shadow: 0 0 0 1px #000000;
           box-shadow: 0 0 0 1px #000000;
