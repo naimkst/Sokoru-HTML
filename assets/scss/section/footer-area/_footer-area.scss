@@ -111,8 +111,9 @@
                          color: var(--black);
                          transition: $transition;
                          .icon {
-                              width: 2rem;
+                              max-width: 2rem;
                               margin-right: 1rem;
+                              object-fit: contain;
                          }
                          &:hover {
                               color: var(--bColor);
@@ -307,6 +308,17 @@
      }
      .footer-area .footer-bottom {
           margin-top: 0;
+     }
+}
+@media (max-width: 575px) {
+     .footer-area .contact-widget ul li a {
+          font-size: 1.5rem;
+     }
+     .footer-area .menu-widget ul li a {
+          font-size: 1.5rem;
+     }
+     .footer-area .contact-widget .opning-time {
+          font-size: 1.5rem;
      }
 }
 @media (max-width: 375px) {

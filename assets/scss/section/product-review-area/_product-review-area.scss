@@ -306,6 +306,13 @@
         margin-right: 0;
         margin-bottom: 2.5rem;
     }
+    .product-review-top .review-point-count .review-point {
+        font-size: 3rem;
+    }
+    .product-review-top .review-point-count .review-icon li {
+        margin: .2rem;
+        font-size: 1.4rem;
+    }
 }
 @media (max-width: 480px) {
     .review-list .single-review .review-right h4 {

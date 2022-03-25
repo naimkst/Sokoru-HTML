@@ -17,6 +17,17 @@
       $('#sticky').removeClass('stick');
     }
   }); 
+  /*-------------------------------------------
+  Sticky Header
+  --------------------------------------------- */
+  $(window).on('scroll', function(){
+    var divHeight = $(".single-product-page").outerHeight();
+    if( $(window).scrollTop()>divHeight ){
+      $('.product-stickty-bar').addClass('active');
+    } else {
+      $('.product-stickty-bar').removeClass('active');
+    }
+  }); 
   
   jQuery(document).ready(function(){
     // mobile dropdown menu 
@@ -317,6 +328,51 @@
     plastic-product-slidep active
     --------------------------------------------- */
     $('.plastic-product-slide').slick({
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      dots: false,
+      arrows: false,
+      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
+      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+    });
+    /*-------------------------------------------
+    product-slide active
+    --------------------------------------------- */
+    $('.product-slide').slick({
       infinite: true,
       speed: 500,
       slidesToShow: 3,

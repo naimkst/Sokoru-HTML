@@ -28,6 +28,10 @@
              right: 1rem;
          }
      }
+     .switch-card-list {
+          max-width: 94%;
+          margin: 0 auto;
+     }
      .switch-card-wrap {
           .single-switch-card {
                text-align: center;
@@ -57,5 +61,16 @@
                     max-width: 26rem;
                }
           }
+     }
+}
+
+@media (max-width: 1399px) {
+     .switch-difference-area .switch-card-list {
+          max-width: 100%;
+     }
+}
+@media (max-width: 480px) {
+     .switch-difference-area .switch-card-wrap .single-switch-card p {
+          max-width: 100%;
      }
 }
