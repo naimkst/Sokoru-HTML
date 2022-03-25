@@ -28,6 +28,12 @@
                     line-height: 3rem;
                     color: var(--black);
                }
+               &.text-end {
+                  .content {
+                       max-width: 520px;
+                       margin-left: auto;
+                  }  
+               }
           }
      }
 }

@@ -60,6 +60,7 @@
     .single-product-slide {
         overflow: hidden;
         .product-thumbnail {
+            margin-right: 2px;
             img {
                  width: 100%;
                  height: auto;
@@ -135,7 +136,7 @@
             align-items: center;
             margin-bottom: 2rem;
             .review {
-                display: flex;
+                display: inline-flex;
                 margin-right: 1rem;
                 li {
                     list-style: none;
@@ -295,6 +296,7 @@
                     border-radius: 50%;
                     border: 1px solid #BFBFBF;
                     font-size: 1.2rem;
+                    text-transform: uppercase;
                     line-height: 1;
                     font-weight: 700;
                     color: var(--black);
@@ -309,7 +311,7 @@
             font-family: $bodyFont;
             font-size: 1.1rem;
             line-height: 1;
-            font-weight: 500;
+            font-weight: 700;
             color: var(--black);
             text-transform: uppercase;
             border: none;
@@ -327,6 +329,7 @@
         }
         .cart-quantity-area {
             display: flex;
+            margin-top: 3rem;
             .primary-btn {
                 display: block;
                 width: 100%;
@@ -378,7 +381,7 @@
                 margin: 0;
                 padding: 0;
                 .accordion-item {
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.2rem;
                     border: none;
                     &:last-child {
                         margin-bottom: 0;
@@ -392,8 +395,8 @@
                     display: flex;
                     align-items: center;
                     font-family: $titleFont;
-                    font-size: 1.1rem;
-                    line-height: 1.6rem;
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
                     font-weight: 700;
                     padding: 0;
                     border: none;

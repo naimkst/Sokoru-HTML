@@ -50,10 +50,11 @@
                     color: var(--bColor);
                }
                p {
-                    margin: 0;
+                    margin: 0 auto;
                     font-size: 1.8rem;
                     line-height: 3rem;
                     color: var(--bColor);
+                    max-width: 26rem;
                }
           }
      }

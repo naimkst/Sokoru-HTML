@@ -91,6 +91,48 @@
       ]
     });
     /*-------------------------------------------
+    brand-slide-rtl active
+    --------------------------------------------- */
+    $('.brand-slide-rtl').slick({
+      infinite: true,
+      autoplaySpeed: 0,
+      speed: 5000,
+      cssEase: 'linear',
+      pauseOnHover: false,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      dots: false,
+      arrows: false,
+      rtl: true,
+      variableWidth: true,
+      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
+      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+    /*-------------------------------------------
     company-slide active
     --------------------------------------------- */
     $('.company-slide').slick({
@@ -347,33 +389,6 @@
     -----------------------------------*/
     $('.popup-video').venobox(); 
 
-    /*---------------------------------
-    isotope activation 
-    -----------------------------------*/
-    // filter items on button click
-    $('.filtering-button').on('click', 'a', function () {
-      var filterValue = $(this).attr('data-filter');
-      $grid.isotope({ filter: filterValue });
-    });
-    var $grid = $('.grid').isotope({
-      // set itemSelector so .grid-sizer is not used in layout
-      itemSelector: '.grid-item',
-      percentPosition: true,
-      animationOptions: {
-        duration: 500,
-        easing: 'zoom-in'
-      },
-      masonry: {
-        // use element for option
-        columnWidth: '.grid-item'
-      },
-      transitionDuration: '.9s'
-    })
-  
-    $('.filtering-button a').on('click',  function () {
-      $('.filtering-button a').removeClass('active');
-      $(this).addClass('active');
-    });
 
     
 

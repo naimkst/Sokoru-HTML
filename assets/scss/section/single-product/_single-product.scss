@@ -28,7 +28,14 @@
                img {
                     width: 100%;
                     height: auto;
+                    object-fit: cover;
                }
+          }
+          .product-image {
+               display: block;
+          }
+          .product-hover-image {
+               display: none;
           }
      }
      .product-info {
@@ -73,8 +80,8 @@
                     .color {
                          display: inline-block;
                          position: relative;
-                         width: 2.2rem;
-                         height: 2.2rem;
+                         width: 1.8rem;
+                         height: 1.8rem;
                          border-radius: 50%;
                          background-color: #696969;
                          cursor: pointer;
@@ -112,6 +119,16 @@
                     font-weight: 400;
                     text-transform: capitalize;
                     color: var(--bColor);
+               }
+          }
+     }
+     &:hover {
+          .product-thumbnail {
+               .product-image {
+                    display: none;
+               }
+               .product-hover-image {
+                    display: block;
                }
           }
      }
