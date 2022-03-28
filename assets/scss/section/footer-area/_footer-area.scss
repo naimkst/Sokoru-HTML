@@ -312,13 +312,22 @@
 }
 @media (max-width: 575px) {
      .footer-area .contact-widget ul li a {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
      }
      .footer-area .menu-widget ul li a {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
      }
      .footer-area .contact-widget .opning-time {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
+     }
+     .footer-area .single-widget .widget-title {
+          font-size: 1.7rem;
+     }
+     .footer-area .footer-left h2 {
+          font-size: 2.6rem;
+     }
+     .footer-area .footer-left p {
+          font-size: 1.6rem;
      }
 }
 @media (max-width: 375px) {

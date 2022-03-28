@@ -84,8 +84,13 @@
      }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 575px) {
      .blog-banner .blog-banner-content .title {
-          font-size: 2.8rem;
+          font-size: 2.6rem;
+          line-height: 3.4rem;
+     }
+     .blog-banner .blog-banner-content .content {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
      }
 }

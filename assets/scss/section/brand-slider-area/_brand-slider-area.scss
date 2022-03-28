@@ -38,3 +38,9 @@
           font-size: 2rem;
      }
 }
+@media (max-width: 575px) {
+     .brand-slider-area .single-brand {
+          font-size: 1.6rem;
+          padding: 0 1rem;
+     }
+}

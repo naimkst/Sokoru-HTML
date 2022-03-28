@@ -18,8 +18,9 @@
          color: var(--black);
          transition: $transition;
          cursor: pointer;
+         max-width: 3rem;
          &:hover {
-             color: var(--primary-color);
+             color: var(--black);
          }
          &.slick-prev {
              left: 1rem;
@@ -67,6 +68,12 @@
 @media (max-width: 1399px) {
      .switch-difference-area .switch-card-list {
           max-width: 100%;
+     }
+}
+@media (max-width: 575px) {
+     .switch-difference-area .switch-card-wrap .single-switch-card p {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
      }
 }
 @media (max-width: 480px) {

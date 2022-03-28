@@ -67,12 +67,17 @@
 }
 @media (max-width: 767px) {
     .banner-area {
-        min-height: 480px;
+        min-height: 400px;
     }
 }
 @media (max-width: 575px) {
     .banner-area .banner-title {
-        font-size: 3.2rem;
-        line-height: 4.2rem;
+        margin-bottom: 2rem;
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+    }
+    .banner-area .banner-content {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
     }
 }

@@ -57,10 +57,12 @@
           padding: 6rem 0;
      }
 }
-@media (max-width: 480px) {
+@media (max-width: 575px) {
      .image-content-area .content-box-area .content-box-inner .title {
-          font-size: 3.2rem;
+          font-size: 2.6rem;
      }
+}
+@media (max-width: 480px) {
      .image-content-area .content-box-area .content-box-inner {
           width: 90%;
      }

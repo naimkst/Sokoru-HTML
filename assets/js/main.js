@@ -12,9 +12,9 @@
   --------------------------------------------- */
   $(window).on('scroll', function(){
     if( $(window).scrollTop()>80 ){
-      $('#sticky').addClass('stick');
+      $('.sticky').addClass('stick');
     } else {
-      $('#sticky').removeClass('stick');
+      $('.sticky').removeClass('stick');
     }
   }); 
   /*-------------------------------------------
@@ -59,11 +59,11 @@
       autoplay: true,
       autoplaySpeed: 3000,
       dots: false,
-      arrows: true,
+      arrows: false,
       fade: false,
       vertical: true,
-      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
-      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
+      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
     });
     /*-------------------------------------------
     brand-slide active
@@ -80,8 +80,8 @@
       dots: false,
       arrows: false,
       variableWidth: true,
-      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
-      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
+      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
       responsive: [
         {
           breakpoint: 1024,
@@ -122,8 +122,8 @@
       arrows: false,
       rtl: true,
       variableWidth: true,
-      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
-      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
+      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
       responsive: [
         {
           breakpoint: 1024,
@@ -161,8 +161,8 @@
       centerMode: true,
       dots: false,
       arrows: false,
-      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
-      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
+      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
       responsive: [
         {
           breakpoint: 1200,
@@ -202,8 +202,8 @@
       autoplaySpeed: 3000,
       dots: true,
       arrows: false,
-      prevArrow: '<i class="slick-prev arrow fas fa-angle-left"></i> ',
-      nextArrow: '<i class="slick-next arrow fas fa-angle-right"></i> ',
+      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
+      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
     });
     /*-------------------------------------------
     conversation-list active
@@ -218,8 +218,8 @@
       centerMode: false,
       dots: false,
       arrows: false,
-      prevArrow: '<i class="slick-prev arrow fas fa-angle-left"></i> ',
-      nextArrow: '<i class="slick-next arrow fas fa-angle-right"></i> ',
+      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
+      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
       vertical: false,
       responsive: [
         {
@@ -257,8 +257,8 @@
       autoplaySpeed: 3000,
       dots: true,
       arrows: true,
-      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
-      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
+      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
       responsive: [
         {
           breakpoint: 1024,
@@ -295,8 +295,8 @@
       autoplaySpeed: 3000,
       dots: false,
       arrows: false,
-      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
-      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
+      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
       responsive: [
         {
           breakpoint: 1200,
@@ -341,8 +341,8 @@
       autoplaySpeed: 3000,
       dots: false,
       arrows: false,
-      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
-      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
+      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
       responsive: [
         {
           breakpoint: 1200,
@@ -386,8 +386,8 @@
       autoplaySpeed: 3000,
       dots: false,
       arrows: false,
-      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
-      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
+      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
+      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
       responsive: [
         {
           breakpoint: 1200,

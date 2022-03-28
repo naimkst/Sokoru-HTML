@@ -64,7 +64,7 @@ Version: 1.0
 html,
 body {
   height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3rem;
@@ -79,7 +79,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-weight: 700;
 }
 
@@ -667,7 +667,7 @@ primary-btn
   border: 1px solid var(--black);
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-weight: 500;
   color: var(--white);
   -webkit-transition: all 0.5s linear;
@@ -687,7 +687,7 @@ primary-btn
 
 .arrow-btn {
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -710,7 +710,7 @@ primary-btn
 
 .load-more-btn {
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -825,6 +825,10 @@ primary-btn
     padding: .6rem 2rem;
     font-size: 1.4rem;
   }
+
+  .load-more-btn {
+    font-size: 1.4rem;
+  }
 }
 /*-------------------------
 #.header-area
@@ -890,13 +894,13 @@ primary-btn
   vertical-align: baseline;
 }
 .header-area .main-menu ul li a:hover {
-  color: var(--primary-color);
+  color: var(--black);
 }
 .header-area .main-menu ul li:last-child {
   margin-right: 0;
 }
 .header-area .main-menu ul li.active a {
-  color: var(--primary-color);
+  color: var(--black);
 }
 .header-area .main-menu ul li.has-sub-menu {
   position: relative;
@@ -940,7 +944,7 @@ primary-btn
   padding: .5rem 1rem;
 }
 .header-area .main-menu ul li.has-sub-menu .sub-menu li a:hover {
-  color: var(--primary-color);
+  color: var(--black);
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
 }
@@ -973,7 +977,7 @@ primary-btn
   padding: 0;
   border: none;
   background: transparent;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -1005,10 +1009,22 @@ primary-btn
   transition: all 0.5s linear;
 }
 .header-area .account-curancy-area .curancy-area .dropdown-menu li a:hover {
-  color: var(--primary-color);
+  color: var(--black);
+}
+.header-area .account-curancy-area .curancy-area .dropdown-menu li a:active {
+  color: var(--black);
+  background-color: var(--white);
+}
+.header-area .account-curancy-area .curancy-area .dropdown-menu li a:focus {
+  color: var(--black);
+  background-color: var(--white);
+}
+.header-area .account-curancy-area .curancy-area .dropdown-menu li a:visited {
+  color: var(--black);
+  background-color: var(--white);
 }
 .header-area .account-curancy-area .curancy-area .dropdown-menu li.active a {
-  color: var(--primary-color);
+  color: var(--black);
 }
 .header-area .account-curancy-area .account-btn {
   font-size: 1.8rem;
@@ -1019,7 +1035,7 @@ primary-btn
   transition: all 0.5s linear;
 }
 .header-area .account-curancy-area .account-btn:hover {
-  color: var(--primary-color);
+  color: var(--black);
 }
 .header-area .search-cart {
   display: -webkit-inline-box;
@@ -1060,6 +1076,15 @@ primary-btn
 .mobile-header {
   background-color: #FFFCF7;
   padding: 1.5rem;
+}
+.mobile-header.stick {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  -webkit-animation: goDown 0.5s ease-in-out forwards;
+          animation: goDown 0.5s ease-in-out forwards;
 }
 .mobile-header .mobile-header-wrap {
   display: -webkit-box;
@@ -1164,7 +1189,7 @@ primary-btn
   padding: 0;
   border: none;
   background: transparent;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -1196,10 +1221,22 @@ primary-btn
   transition: all 0.5s linear;
 }
 .offcanvas-menu-area .curancy-area .dropdown-menu li a:hover {
-  color: var(--primary-color);
+  color: var(--black);
+}
+.offcanvas-menu-area .curancy-area .dropdown-menu li a:active {
+  color: var(--black);
+  background-color: var(--white);
+}
+.offcanvas-menu-area .curancy-area .dropdown-menu li a:focus {
+  color: var(--black);
+  background-color: var(--white);
+}
+.offcanvas-menu-area .curancy-area .dropdown-menu li a:visited {
+  color: var(--black);
+  background-color: var(--white);
 }
 .offcanvas-menu-area .curancy-area .dropdown-menu li.active a {
-  color: var(--primary-color);
+  color: var(--black);
 }
 .offcanvas-menu-area .account-btn {
   font-size: 1.8rem;
@@ -1210,7 +1247,7 @@ primary-btn
   transition: all 0.5s linear;
 }
 .offcanvas-menu-area .account-btn:hover {
-  color: var(--primary-color);
+  color: var(--black);
 }
 .offcanvas-menu-area .main-menu ul {
   margin: 0;
@@ -1233,13 +1270,13 @@ primary-btn
   transition: all 0.5s linear;
 }
 .offcanvas-menu-area .main-menu ul li a:hover {
-  color: var(--primary-color);
+  color: var(--black);
 }
 .offcanvas-menu-area .main-menu ul li:last-child {
   margin-bottom: 0;
 }
 .offcanvas-menu-area .main-menu ul li.active a {
-  color: var(--primary-color);
+  color: var(--black);
 }
 .offcanvas-menu-area .main-menu ul li.has-sub-menu .sub-menu {
   background-color: var(--white);
@@ -1268,7 +1305,7 @@ primary-btn
   padding: .5rem 1rem;
 }
 .offcanvas-menu-area .main-menu ul li.has-sub-menu .sub-menu li a:hover {
-  color: var(--primary-color);
+  color: var(--black);
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
 }
@@ -1292,9 +1329,24 @@ primary-btn
             transform: translateY(0);
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 767px) {
+  .mobile-header .header-left .menu-bar {
+    font-size: 2rem;
+  }
+
+  .mobile-header .header-left .search-btn img {
+    max-width: 2.2rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .mobile-header .cart-btn img {
+    max-width: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
   .mobile-header .header-center a img {
-    max-width: 13rem;
+    max-width: 10rem;
   }
 
   .mobile-header .header-left .menu-bar {
@@ -1324,6 +1376,7 @@ primary-btn
   z-index: 1;
   cursor: pointer;
   color: #696969;
+  max-width: 1.5rem;
 }
 .topbar-area .slick-arrow.slick-prev {
   left: 10%;
@@ -1377,7 +1430,7 @@ primary-btn
   font-size: 6rem;
   line-height: 7rem;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   text-transform: capitalize;
   color: var(--black);
 }
@@ -1408,6 +1461,7 @@ primary-btn
 
   .hero-banner-area .banner-content {
     margin-bottom: 3rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 991px) {
@@ -1427,8 +1481,8 @@ primary-btn
 }
 @media (max-width: 480px) {
   .hero-banner-area .banner-title {
-    font-size: 3.2rem;
-    line-height: 4.6rem;
+    font-size: 2.8rem;
+    line-height: 3.8rem;
   }
 
   .hero-banner-area .banner-content {
@@ -1456,7 +1510,7 @@ primary-btn
 }
 .sustainable-area .content {
   margin-bottom: 5.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 2.4rem;
   line-height: 3.4rem;
   font-weight: 500;
@@ -1483,11 +1537,15 @@ primary-btn
   .sustainable-area .content {
     margin-bottom: 3rem;
   }
-}
-@media (max-width: 375px) {
+
   .sustainable-area .title {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .sustainable-area .content {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 }
 /*-------------------------
@@ -1516,6 +1574,17 @@ primary-btn
     margin-bottom: 2rem;
   }
 }
+@media (max-width: 575px) {
+  .section-title .title {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .section-inner-title .title {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+}
 /*-------------------------
 #.footer-area
 --------------------------*/
@@ -1540,7 +1609,7 @@ primary-btn
 }
 .footer-area .footer-left h2 {
   margin-bottom: 2.5rem;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 4rem;
   font-weight: 400;
   color: var(--black);
@@ -1568,7 +1637,7 @@ primary-btn
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: transparent;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--bColor);
@@ -1603,7 +1672,7 @@ primary-btn
 }
 .footer-area .single-widget .widget-title {
   margin-bottom: 2.5rem;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -1661,7 +1730,7 @@ primary-btn
 }
 .footer-area .menu-widget ul li a {
   display: inline-block;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.8rem;
   line-height: 1.3;
   font-weight: 400;
@@ -1876,15 +1945,27 @@ primary-btn
 }
 @media (max-width: 575px) {
   .footer-area .contact-widget ul li a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .footer-area .menu-widget ul li a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .footer-area .contact-widget .opning-time {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .footer-area .single-widget .widget-title {
+    font-size: 1.7rem;
+  }
+
+  .footer-area .footer-left h2 {
+    font-size: 2.6rem;
+  }
+
+  .footer-area .footer-left p {
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 375px) {
@@ -1959,6 +2040,9 @@ primary-btn
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.single-product .product-info .absorbency li {
+  line-height: 1;
 }
 .single-product .product-info .absorbency li img {
   max-width: 1.4rem;
@@ -2104,9 +2188,10 @@ primary-btn
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   cursor: pointer;
+  max-width: 3rem;
 }
 .switch-difference-area .slick-arrow:hover {
-  color: var(--primary-color);
+  color: var(--black);
 }
 .switch-difference-area .slick-arrow.slick-prev {
   left: 1rem;
@@ -2151,6 +2236,12 @@ primary-btn
 @media (max-width: 1399px) {
   .switch-difference-area .switch-card-list {
     max-width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .switch-difference-area .switch-card-wrap .single-switch-card p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 }
 @media (max-width: 480px) {
@@ -2231,6 +2322,12 @@ primary-btn
     font-size: 2rem;
   }
 }
+@media (max-width: 575px) {
+  .brand-slider-area .single-brand {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+}
 /*-------------------------
 #.ethically-made-area
 --------------------------*/
@@ -2269,7 +2366,7 @@ primary-btn
 }
 .ethically-made-area .content {
   margin-bottom: 5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   line-height: 3rem;
   font-weight: 500;
@@ -2313,11 +2410,15 @@ primary-btn
   .ethically-made-area .content {
     margin-bottom: 3rem;
   }
-}
-@media (max-width: 375px) {
+
   .ethically-made-area .title {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .ethically-made-area .content {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 }
 /*-------------------------
@@ -2337,7 +2438,7 @@ primary-btn
 }
 .call-to-action-area .content {
   margin-bottom: 5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   line-height: 3rem;
   font-weight: 500;
@@ -2367,6 +2468,11 @@ primary-btn
     font-size: 2.4rem;
     line-height: 3.2rem;
   }
+
+  .call-to-action-area .approved-badge {
+    max-width: 60px;
+    margin-bottom: 3rem;
+  }
 }
 /*-------------------------
 #.company-area
@@ -2383,7 +2489,7 @@ primary-btn
 }
 .company-area .single-company p {
   margin-bottom: 5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 3rem;
@@ -2411,7 +2517,7 @@ primary-btn
           box-shadow: none;
   padding-bottom: 2rem;
   border-bottom: 1px solid #D08E61;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--black);
@@ -2554,11 +2660,12 @@ primary-btn
     padding: 6rem 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 575px) {
   .image-content-area .content-box-area .content-box-inner .title {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
   }
-
+}
+@media (max-width: 480px) {
   .image-content-area .content-box-area .content-box-inner {
     width: 90%;
   }
@@ -2708,9 +2815,15 @@ primary-btn
     height: auto;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 575px) {
   .blog-banner .blog-banner-content .title {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .blog-banner .blog-banner-content .content {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 }
 /*-------------------------
@@ -2734,7 +2847,7 @@ primary-btn
   border: none;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -2858,7 +2971,7 @@ primary-btn
 }
 .single-blog-details .blog-top .post-tag {
   margin-bottom: 4rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -2990,6 +3103,22 @@ primary-btn
   .blog-image-slider .sigle-image {
     margin: 1.5rem 0;
   }
+
+  .single-blog-details .blog-top .blog-title {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .single-blog-details .blog-bottom h2 {
+    margin-bottom: 3rem;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .single-blog-details .blog-bottom p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }
 @media (max-width: 480px) {
   .single-blog-details .video-area .video-content {
@@ -3028,6 +3157,11 @@ primary-btn
   color: var(--primary-color);
 }
 
+@media (max-width: 575px) {
+  .journal-area .single-journal .jurnal-thumbnail {
+    margin-bottom: 2rem;
+  }
+}
 /*-------------------------
 #.video-area
 --------------------------*/
@@ -3079,7 +3213,7 @@ primary-btn
   max-width: 90%;
   margin: 0 auto;
   margin-top: 5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 4.2rem;
   line-height: 5.8rem;
   color: var(--black);
@@ -3158,7 +3292,7 @@ primary-btn
   padding: 0;
   border: none;
   background-color: transparent;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 2.4rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -3186,7 +3320,7 @@ primary-btn
 }
 .faq-page-area .contact-info .contact-title {
   margin-bottom: 2.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 2.2rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -3194,7 +3328,7 @@ primary-btn
 }
 .faq-page-area .contact-info .opning-time {
   margin-top: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--black);
@@ -3243,6 +3377,11 @@ primary-btn
     text-align: center;
   }
 }
+@media (max-width: 575px) {
+  .faq-page-area .nav-tabs .nav-link {
+    font-size: 1.8rem;
+  }
+}
 /*-------------------------
 #.shop-page-area
 --------------------------*/
@@ -3269,6 +3408,17 @@ primary-btn
 
   .shop-page-top.mb-70 {
     margin-bottom: 3rem;
+  }
+}
+@media (max-width: 575px) {
+  .shop-page-area .shop-page-top p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .shop-page-area .shop-page-top h2 {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
   }
 }
 /*-------------------------
@@ -3330,7 +3480,7 @@ primary-btn
 }
 .single-product-page .product-info-mobile .product-price .price-amount {
   display: inline-block;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 3.2rem;
   font-weight: 400;
   color: var(--black);
@@ -3446,7 +3596,7 @@ primary-btn
 }
 .single-product-page .product-info .revire-area .review-point {
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1;
@@ -3464,7 +3614,7 @@ primary-btn
 }
 .single-product-page .product-info .product-price .price-amount {
   display: inline-block;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--black);
@@ -3494,7 +3644,7 @@ primary-btn
           align-items: center;
   margin: 0;
   margin-right: 1rem;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.4rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -3527,7 +3677,7 @@ primary-btn
   color: var(--black);
 }
 .single-product-page .product-info .size-chart {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.1rem;
   line-height: 1;
   font-weight: 700;
@@ -3556,7 +3706,7 @@ primary-btn
   margin-top: 3rem;
 }
 .single-product-page .product-info .cart-quantity-area .quantity-title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   margin-bottom: 1rem;
   font-size: 1.4rem;
   font-weight: 700;
@@ -3599,7 +3749,7 @@ primary-btn
   -webkit-box-shadow: none;
           box-shadow: none;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-weight: 500;
   font-size: 1.8rem;
   color: var(--black);
@@ -3612,7 +3762,7 @@ primary-btn
   line-height: 1;
   text-align: center;
   background-color: transparent;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 2.2rem;
   font-weight: 500;
   color: var(--black);
@@ -3634,7 +3784,7 @@ primary-btn
 }
 .single-product-page .product-info .buy-offer-info .single-offer-info h4 {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--black);
@@ -3669,7 +3819,7 @@ primary-btn
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 700;
@@ -3682,6 +3832,10 @@ primary-btn
 .single-product-page .product-info .feature-list .accordion .accordion-button .icon {
   max-width: 2rem;
   margin-right: 1rem;
+}
+.single-product-page .product-info .feature-list .accordion .accordion-body p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 .single-product-page .product-switch {
   margin-bottom: 2rem;
@@ -3807,7 +3961,7 @@ primary-btn
   margin: 0;
   border: none;
   border-bottom: 1px solid #C4C4C4;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -3824,7 +3978,7 @@ primary-btn
   text-align: center;
   border-radius: 50%;
   border: 1px solid var(--black);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--black);
@@ -3893,7 +4047,7 @@ primary-btn
   border: none;
   border: none;
   background-color: transparent;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--black);
@@ -3916,7 +4070,7 @@ primary-btn
   text-align: center;
   border: none;
   background-color: transparent;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--black);
@@ -4053,6 +4207,19 @@ primary-btn
   .product-stickty-bar .product-qty .qty-btn {
     font-size: 1.1rem;
   }
+
+  .single-product-page .product-info-mobile .product-name {
+    font-size: 2.6rem;
+  }
+
+  .single-product-page .product-info .product-short-info p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .single-product-page .product-switch .size-switch .size {
+    padding-top: 4px;
+  }
 }
 @media (max-width: 414px) {
   .single-product-page .product-info .cart-quantity-area .product-qty {
@@ -4153,7 +4320,7 @@ primary-btn
   border-color: #D08E61;
 }
 .table thead tr th {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--black);
@@ -4162,7 +4329,7 @@ primary-btn
   border-top: none;
 }
 .table tbody tr td {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--black);
@@ -4185,7 +4352,7 @@ primary-btn
   color: var(--black);
 }
 .size-info-bottom h4 {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   margin-bottom: 0;
   font-size: 1.8rem;
   font-weight: 700;
@@ -4216,7 +4383,7 @@ primary-btn
 }
 .absorbency-list .single-absorbency h4 {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -4393,18 +4560,22 @@ primary-btn
     font-size: 1.6rem;
     line-height: 2.2rem;
   }
-}
-@media (max-width: 375px) {
+
   .period-undies-area .period-undies-left h2 {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .period-undies-area .period-undies-left p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
   }
 }
 /*-------------------------
 #.designed-glove-area
 --------------------------*/
 .designed-glove-area .size-chart {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.4rem;
   line-height: 1;
   font-weight: 700;
@@ -4436,7 +4607,7 @@ primary-btn
 }
 .designed-glove-area .designed-glove-left .nav .nav-item .nav-link {
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -4495,6 +4666,24 @@ primary-btn
 
   .designed-glove-area .designed-glove-left .nav .nav-item .nav-link {
     text-decoration: none;
+  }
+}
+@media (max-width: 575px) {
+  .designed-glove-area .designed-glove-right h2 {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .designed-glove-area .designed-glove-right ul li {
+    font-size: 1.6rem;
+  }
+
+  .designed-glove-area .designed-glove-right ol li {
+    font-size: 1.6rem;
+  }
+
+  .designed-glove-area .designed-glove-left .nav .nav-item .nav-link {
+    font-size: 1.6rem;
   }
 }
 /*-------------------------
@@ -4618,7 +4807,7 @@ primary-btn
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 500;
   text-transform: capitalize;
@@ -4657,6 +4846,9 @@ primary-btn
   background-color: var(--primary-color);
   border-color: var(--primary-color);
   color: var(--white);
+}
+.how-work-area .video-area .play-icon {
+  max-width: 6rem;
 }
 
 @media (max-width: 1700px) {
@@ -4706,11 +4898,16 @@ primary-btn
 }
 @media (max-width: 575px) {
   .how-work-area .how-work-left .title {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
   }
 
   .how-work-area .video-area .video-thumbnail img {
     min-height: auto;
+  }
+
+  .how-work-area .video-area .play-icon {
+    max-width: 4rem;
   }
 }
 @media (max-width: 480px) {
@@ -4774,7 +4971,7 @@ primary-btn
   text-align: center;
 }
 .product-review-top .review-point-count .review-point {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 5rem;
   font-weight: 400;
   color: var(--bColor);
@@ -4796,7 +4993,7 @@ primary-btn
   display: inline-block;
   margin: 0;
   margin-top: .5rem;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-weight: 400;
   font-size: 1.4rem;
   color: #8C8C8C;
@@ -4842,7 +5039,7 @@ primary-btn
 .product-review-top .product-review-right .whrite-review-btn {
   display: inline-block;
   margin-bottom: 3rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -4853,7 +5050,7 @@ primary-btn
   padding: 0;
   border: none;
   background-color: transparent;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--black);
@@ -4873,7 +5070,7 @@ primary-btn
 }
 .review-list .single-review .review-left .user-name {
   margin-bottom: 1rem;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--black);
@@ -5155,12 +5352,23 @@ primary-btn
 }
 .section-about-content .content {
   margin-bottom: 2.5rem;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--black);
 }
 
+@media (max-width: 575px) {
+  .section-about-content .title {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .section-about-content .content {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
 /*-------------------------
 #.plastic-waste-area
 --------------------------*/
@@ -5306,7 +5514,7 @@ primary-btn
   font-size: 6rem;
   line-height: 7rem;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   text-transform: capitalize;
   color: var(--black);
 }
@@ -5335,13 +5543,19 @@ primary-btn
 }
 @media (max-width: 767px) {
   .banner-area {
-    min-height: 480px;
+    min-height: 400px;
   }
 }
 @media (max-width: 575px) {
   .banner-area .banner-title {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
+    margin-bottom: 2rem;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .banner-area .banner-content {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 }
 /*-------------------------
@@ -5356,7 +5570,7 @@ primary-btn
 }
 .road-ahead-area p {
   margin-bottom: 4.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 2.4rem;
   line-height: 3.6rem;
   font-weight: 500;
@@ -5387,6 +5601,11 @@ primary-btn
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 400;
+  }
+
+  .road-ahead-area h2 {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
   }
 }
 /*-------------------------
@@ -5422,7 +5641,7 @@ primary-btn
 }
 .undies-instead-area .single-box .title {
   margin-bottom: 2.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -5430,7 +5649,7 @@ primary-btn
 }
 .undies-instead-area .single-box .info-content {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cera Pro";
   font-size: 3.2rem;
   line-height: 1;
   font-weight: 400;

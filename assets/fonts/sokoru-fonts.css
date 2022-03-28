@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Canela';
+    src: url('Canela-Regular.eot');
+    src: url('Canela-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Canela-Regular.woff2') format('woff2'),
+        url('Canela-Regular.woff') format('woff'),
+        url('Canela-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('Canela-Light.eot');
+    src: url('Canela-Light.eot?#iefix') format('embedded-opentype'),
+        url('Canela-Light.woff2') format('woff2'),
+        url('Canela-Light.woff') format('woff'),
+        url('Canela-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('CeraPro-Light.eot');
+    src: url('CeraPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('CeraPro-Light.woff2') format('woff2'),
+        url('CeraPro-Light.woff') format('woff'),
+        url('CeraPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -48,7 +48,7 @@
                         vertical-align: baseline;
                     }
                     &:hover {
-                        color: var(--primary-color);
+                        color: var(--black);
                     }
                 }
                 &:last-child {
@@ -56,7 +56,7 @@
                 }
                 &.active {
                     a {
-                        color: var(--primary-color);
+                        color: var(--black);
                     }
                 }
                 &.has-sub-menu {
@@ -93,7 +93,7 @@
                                 transition: $transition;
                                 padding: .5rem 1rem;
                                 &:hover {
-                                    color: var(--primary-color);
+                                    color: var(--black);
                                     transform: translateX(5px);
                                 }
                             }
@@ -156,12 +156,24 @@
                         color: var(--black);
                         transition: $transition;
                         &:hover {
-                            color: var(--primary-color);
+                            color: var(--black);
+                        }
+                        &:active {
+                            color: var(--black);
+                            background-color: var(--white);
+                        }
+                        &:focus {
+                            color: var(--black);
+                            background-color: var(--white);
+                        }
+                        &:visited {
+                            color: var(--black);
+                            background-color: var(--white);
                         }
                     }
                     &.active {
                         a {
-                            color: var(--primary-color);
+                            color: var(--black);
                         }
                     }
                 }
@@ -174,7 +186,7 @@
             color: var(--black);
             transition: $transition;
             &:hover {
-                color: var(--primary-color);
+                color: var(--black);
             }
         }
     }
@@ -216,6 +228,14 @@
 .mobile-header {
     background-color: #FFFCF7;
     padding: 1.5rem;
+    &.stick {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        animation: goDown 0.5s ease-in-out forwards;
+    }
     .mobile-header-wrap {
         display: flex;
         justify-content: space-between;
@@ -325,12 +345,24 @@
                     color: var(--black);
                     transition: $transition;
                     &:hover {
-                        color: var(--primary-color);
+                        color: var(--black);
+                    }
+                    &:active {
+                        color: var(--black);
+                        background-color: var(--white);
+                    }
+                    &:focus {
+                        color: var(--black);
+                        background-color: var(--white);
+                    }
+                    &:visited {
+                        color: var(--black);
+                        background-color: var(--white);
                     }
                 }
                 &.active {
                     a {
-                        color: var(--primary-color);
+                        color: var(--black);
                     }
                 }
             }
@@ -343,7 +375,7 @@
         color: var(--black);
         transition: $transition;
         &:hover {
-            color: var(--primary-color);
+            color: var(--black);
         }
     }
     .main-menu {
@@ -364,7 +396,7 @@
                     color: var(--black);
                     transition: $transition;
                     &:hover {
-                        color: var(--primary-color);
+                        color: var(--black);
                     }
                 }
                 &:last-child {
@@ -372,7 +404,7 @@
                 }
                 &.active {
                     a {
-                        color: var(--primary-color);
+                        color: var(--black);
                     }
                 }
                 &.has-sub-menu {
@@ -398,7 +430,7 @@
                                 transition: $transition;
                                 padding: .5rem 1rem;
                                 &:hover {
-                                    color: var(--primary-color);
+                                    color: var(--black);
                                     transform: translateX(5px);
                                 }
                             }
@@ -417,9 +449,21 @@
       transform: translateY(0);
     }
 }  
-@media (max-width: 360px) {
+@media (max-width: 767px) {
+    .mobile-header .header-left .menu-bar {
+        font-size: 2rem;
+    }
+    .mobile-header .header-left .search-btn img {
+        max-width: 2.2rem;
+        object-fit: contain;
+    }
+    .mobile-header .cart-btn img {
+        max-width: 2.5rem;
+    }
+}
+@media (max-width: 480px) {
     .mobile-header .header-center a img {
-        max-width: 13rem;
+        max-width: 10rem;
     }
     .mobile-header .header-left .menu-bar {
         font-size: 2.5rem;

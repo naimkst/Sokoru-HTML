@@ -25,3 +25,13 @@
           margin-bottom: 2rem;
      }
 }
+@media (max-width: 575px) {
+     .section-title .title {
+          font-size: 2.6rem;
+          line-height: 3.4rem;
+     }
+     .section-inner-title .title {
+          font-size: 2.6rem;
+          line-height: 3.4rem;
+     }
+}
