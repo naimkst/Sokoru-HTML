@@ -4198,6 +4198,7 @@ primary-btn
 
   .product-stickty-bar .cart-btn {
     font-size: 1.1rem;
+    line-height: 1;
   }
 
   .product-stickty-bar .product-qty .qty-input {
@@ -4544,6 +4545,10 @@ primary-btn
 
   .period-undies-right.period-info {
     padding-bottom: 2rem;
+  }
+
+  .period-undies-featur .row.mt-50 {
+    margin-top: 0;
   }
 }
 @media (max-width: 575px) {
