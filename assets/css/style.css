@@ -64,7 +64,7 @@ Version: 1.0
 html,
 body {
   height: 100%;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3rem;
@@ -79,7 +79,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-weight: 700;
 }
 
@@ -667,7 +667,7 @@ primary-btn
   border: 1px solid var(--black);
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-weight: 500;
   color: var(--white);
   -webkit-transition: all 0.5s linear;
@@ -687,7 +687,7 @@ primary-btn
 
 .arrow-btn {
   display: inline-block;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -710,7 +710,7 @@ primary-btn
 
 .load-more-btn {
   display: inline-block;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -977,7 +977,7 @@ primary-btn
   padding: 0;
   border: none;
   background: transparent;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -1189,7 +1189,7 @@ primary-btn
   padding: 0;
   border: none;
   background: transparent;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -1430,7 +1430,7 @@ primary-btn
   font-size: 6rem;
   line-height: 7rem;
   font-weight: 700;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   text-transform: capitalize;
   color: var(--black);
 }
@@ -1510,7 +1510,7 @@ primary-btn
 }
 .sustainable-area .content {
   margin-bottom: 5.5rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 2.4rem;
   line-height: 3.4rem;
   font-weight: 500;
@@ -1609,7 +1609,7 @@ primary-btn
 }
 .footer-area .footer-left h2 {
   margin-bottom: 2.5rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 4rem;
   font-weight: 400;
   color: var(--black);
@@ -1637,7 +1637,7 @@ primary-btn
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: transparent;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--bColor);
@@ -1672,7 +1672,7 @@ primary-btn
 }
 .footer-area .single-widget .widget-title {
   margin-bottom: 2.5rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -1730,7 +1730,7 @@ primary-btn
 }
 .footer-area .menu-widget ul li a {
   display: inline-block;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   line-height: 1.3;
   font-weight: 400;
@@ -2366,7 +2366,7 @@ primary-btn
 }
 .ethically-made-area .content {
   margin-bottom: 5rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.8rem;
   line-height: 3rem;
   font-weight: 500;
@@ -2438,7 +2438,7 @@ primary-btn
 }
 .call-to-action-area .content {
   margin-bottom: 5rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.8rem;
   line-height: 3rem;
   font-weight: 500;
@@ -2489,7 +2489,7 @@ primary-btn
 }
 .company-area .single-company p {
   margin-bottom: 5rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 3rem;
@@ -2517,7 +2517,7 @@ primary-btn
           box-shadow: none;
   padding-bottom: 2rem;
   border-bottom: 1px solid #D08E61;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--black);
@@ -2847,7 +2847,7 @@ primary-btn
   border: none;
   padding: 0;
   margin: 0;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -2971,7 +2971,7 @@ primary-btn
 }
 .single-blog-details .blog-top .post-tag {
   margin-bottom: 4rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -3213,7 +3213,7 @@ primary-btn
   max-width: 90%;
   margin: 0 auto;
   margin-top: 5rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 4.2rem;
   line-height: 5.8rem;
   color: var(--black);
@@ -3292,7 +3292,7 @@ primary-btn
   padding: 0;
   border: none;
   background-color: transparent;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 2.4rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -3320,7 +3320,7 @@ primary-btn
 }
 .faq-page-area .contact-info .contact-title {
   margin-bottom: 2.5rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 2.2rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -3328,7 +3328,7 @@ primary-btn
 }
 .faq-page-area .contact-info .opning-time {
   margin-top: 2rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--black);
@@ -3480,7 +3480,7 @@ primary-btn
 }
 .single-product-page .product-info-mobile .product-price .price-amount {
   display: inline-block;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 3.2rem;
   font-weight: 400;
   color: var(--black);
@@ -3596,7 +3596,7 @@ primary-btn
 }
 .single-product-page .product-info .revire-area .review-point {
   display: inline-block;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1;
@@ -3614,7 +3614,7 @@ primary-btn
 }
 .single-product-page .product-info .product-price .price-amount {
   display: inline-block;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--black);
@@ -3644,7 +3644,7 @@ primary-btn
           align-items: center;
   margin: 0;
   margin-right: 1rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.4rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -3677,7 +3677,7 @@ primary-btn
   color: var(--black);
 }
 .single-product-page .product-info .size-chart {
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.1rem;
   line-height: 1;
   font-weight: 700;
@@ -3706,7 +3706,7 @@ primary-btn
   margin-top: 3rem;
 }
 .single-product-page .product-info .cart-quantity-area .quantity-title {
-  font-family: "Canela";
+  font-family: "Cera Pro";
   margin-bottom: 1rem;
   font-size: 1.4rem;
   font-weight: 700;
@@ -3749,7 +3749,7 @@ primary-btn
   -webkit-box-shadow: none;
           box-shadow: none;
   margin: 0;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-weight: 500;
   font-size: 1.8rem;
   color: var(--black);
@@ -3762,7 +3762,7 @@ primary-btn
   line-height: 1;
   text-align: center;
   background-color: transparent;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 2.2rem;
   font-weight: 500;
   color: var(--black);
@@ -3784,7 +3784,7 @@ primary-btn
 }
 .single-product-page .product-info .buy-offer-info .single-offer-info h4 {
   margin: 0;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--black);
@@ -3819,7 +3819,7 @@ primary-btn
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 700;
@@ -3961,7 +3961,7 @@ primary-btn
   margin: 0;
   border: none;
   border-bottom: 1px solid #C4C4C4;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -3978,7 +3978,7 @@ primary-btn
   text-align: center;
   border-radius: 50%;
   border: 1px solid var(--black);
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--black);
@@ -4047,7 +4047,7 @@ primary-btn
   border: none;
   border: none;
   background-color: transparent;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--black);
@@ -4070,7 +4070,7 @@ primary-btn
   text-align: center;
   border: none;
   background-color: transparent;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--black);
@@ -4321,7 +4321,7 @@ primary-btn
   border-color: #D08E61;
 }
 .table thead tr th {
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--black);
@@ -4330,7 +4330,7 @@ primary-btn
   border-top: none;
 }
 .table tbody tr td {
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--black);
@@ -4353,7 +4353,7 @@ primary-btn
   color: var(--black);
 }
 .size-info-bottom h4 {
-  font-family: "Canela";
+  font-family: "Cera Pro";
   margin-bottom: 0;
   font-size: 1.8rem;
   font-weight: 700;
@@ -4384,7 +4384,7 @@ primary-btn
 }
 .absorbency-list .single-absorbency h4 {
   margin: 0;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -4580,7 +4580,7 @@ primary-btn
 #.designed-glove-area
 --------------------------*/
 .designed-glove-area .size-chart {
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.4rem;
   line-height: 1;
   font-weight: 700;
@@ -4612,7 +4612,7 @@ primary-btn
 }
 .designed-glove-area .designed-glove-left .nav .nav-item .nav-link {
   display: inline-block;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -4812,7 +4812,7 @@ primary-btn
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 500;
   text-transform: capitalize;
@@ -4976,7 +4976,7 @@ primary-btn
   text-align: center;
 }
 .product-review-top .review-point-count .review-point {
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 5rem;
   font-weight: 400;
   color: var(--bColor);
@@ -4998,7 +4998,7 @@ primary-btn
   display: inline-block;
   margin: 0;
   margin-top: .5rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-weight: 400;
   font-size: 1.4rem;
   color: #8C8C8C;
@@ -5044,7 +5044,7 @@ primary-btn
 .product-review-top .product-review-right .whrite-review-btn {
   display: inline-block;
   margin-bottom: 3rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -5055,7 +5055,7 @@ primary-btn
   padding: 0;
   border: none;
   background-color: transparent;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--black);
@@ -5075,7 +5075,7 @@ primary-btn
 }
 .review-list .single-review .review-left .user-name {
   margin-bottom: 1rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--black);
@@ -5357,7 +5357,7 @@ primary-btn
 }
 .section-about-content .content {
   margin-bottom: 2.5rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--black);
@@ -5519,7 +5519,7 @@ primary-btn
   font-size: 6rem;
   line-height: 7rem;
   font-weight: 700;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   text-transform: capitalize;
   color: var(--black);
 }
@@ -5575,7 +5575,7 @@ primary-btn
 }
 .road-ahead-area p {
   margin-bottom: 4.5rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 2.4rem;
   line-height: 3.6rem;
   font-weight: 500;
@@ -5646,7 +5646,7 @@ primary-btn
 }
 .undies-instead-area .single-box .title {
   margin-bottom: 2.5rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -5654,7 +5654,7 @@ primary-btn
 }
 .undies-instead-area .single-box .info-content {
   margin: 0;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 3.2rem;
   line-height: 1;
   font-weight: 400;
