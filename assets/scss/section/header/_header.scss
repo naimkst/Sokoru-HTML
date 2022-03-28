@@ -4,6 +4,14 @@
 .header-area {
     background-color: #FFFCF7;
     padding: 3rem 0;
+    &.stick {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        animation: goDown 0.5s ease-in-out forwards;
+    }
     .header-wrap {
         display: flex;
         flex-flow: row wrap;
@@ -401,6 +409,14 @@
         }
     }
 }
+@keyframes goDown {
+    0%{
+      top:-60px;
+    }
+    100% {
+      transform: translateY(0);
+    }
+}  
 @media (max-width: 360px) {
     .mobile-header .header-center a img {
         max-width: 13rem;

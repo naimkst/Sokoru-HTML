@@ -33,3 +33,9 @@
           }
      }
 }
+@media (max-width: 575px) {
+     .image-slide .slick-dots li button {
+          width: 1rem;
+          height: 1rem;
+     }
+}

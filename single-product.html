@@ -318,18 +318,32 @@
                     </li>
                   </ul>
                   <button type="button" class="size-chart" data-bs-toggle="modal" data-bs-target="#sizechart">
-                    <span>SIZE CHART </span><img src="assets/images/measuring-tape.svg" alt="measuring-tape" />
+                    <span>SIZE CHART </span>
                   </button>
                 </div>
               </div>
               <div class="cart-quantity-area">
-                <div class="product-qty">
-                  <button class="dec qty-btn">-</button>
-                  <input class="qty-input" type="text" title="Quantity" value="1" readonly />
-                  <button class="inc qty-btn">+</button>
+                <div class="product-qty-area">
+                  <h3 class="quantity-title">Quantity</h3>
+                  <div class="product-qty">
+                    <button class="dec qty-btn">-</button>
+                    <input class="qty-input" type="text" title="Quantity" value="1" readonly />
+                    <button class="inc qty-btn">+</button>
+                  </div>
                 </div>
                 <div class="add-cart-area">
                   <button class="primary-btn">Add to cart - $28</button>
+                </div>
+              </div>
+              <div class="buy-offer-info">
+                <div class="single-offer-info">
+                  <h4>BUY  ANY 3 <span>SAVE 10%</span></h4>
+                </div>
+                <div class="single-offer-info">
+                  <h4>BUY  ANY 5 <span>SAVE 15%</span></h4>
+                </div>
+                <div class="single-offer-info">
+                  <h4>BUY  ANY 7+ <span>SAVE 20%</span></h4>
                 </div>
               </div>
               <div class="feature-list">
@@ -414,6 +428,8 @@
                       <p>Bonded seams for unmatched comfort</p>
                     </div>
                   </div>
+                </div>
+                <div class="row mt-50">
                   <div class="col-sm-6 col-6">
                     <div class="single-period-undies text-center">
                       <div class="icon">
@@ -491,7 +507,7 @@
                   <li>Model is 5'9", Waist: 24'', Hip: 35'', wearing size Small</li>
                 </ul>
                 <button type="button" class="size-chart" data-bs-toggle="modal" data-bs-target="#sizechart">
-                  <span>SIZE CHART </span><img src="assets/images/measuring-tape.svg" alt="measuring-tape" />
+                  <span>SIZE CHART </span>
                 </button>
               </div>
             </div>
@@ -526,7 +542,7 @@
   </div>
   <!-- designed-glove-area end here  -->
   <!-- switch-difference-area start here  -->
-  <div class="switch-difference-area section">
+  <div class="switch-difference-area section section-bg-four">
     <div class="container-fluid">
       <div class="section-title text-center mb-55">
         <h2 class="title">Switch and feel the difference</h2>
@@ -583,7 +599,7 @@
                 <div class="how-work-left">
                     <h2 class="title">How they work</h2>
                     <div class="how-work-list">
-                        <div class="single-work">
+                        <div class="single-work" data-aos="fade-up" data-aos-offset="200" data-aos-duration="200" data-aos-anchor-placement="bottom-bottom">
                             <div class="work-icon"><img src="assets/images/sweat.svg" alt="sweat" /></div>
                             <div class="work-count">1</div>
                             <div class="work-info">
@@ -592,7 +608,7 @@
                                     bacteria.</p>
                             </div>
                         </div>
-                        <div class="single-work">
+                        <div class="single-work" data-aos="fade-up" data-aos-offset="300" data-aos-duration="300" data-aos-anchor-placement="bottom-bottom">
                             <div class="work-icon"><img src="assets/images/absorption.svg" alt="absorption" /></div>
                             <div class="work-count">2</div>
                             <div class="work-info">
@@ -600,10 +616,19 @@
                                 <p>Absorbs fluid and locks it away keeping you dry and comfy all day long.</p>
                             </div>
                         </div>
-                        <div class="single-work">
+                        <div class="single-work" data-aos="fade-up" data-aos-offset="400" data-aos-duration="400" data-aos-anchor-placement="bottom-bottom">
                             <div class="work-icon"><img src="assets/images/waterproof-fabric.svg"
                                     alt="waterproof-fabric" /></div>
                             <div class="work-count">3</div>
+                            <div class="work-info">
+                                <h4>Impermeable layer</h4>
+                                <p>The waterproof and breathable layer prevents any fluids from seeping through.</p>
+                            </div>
+                        </div>
+                        <div class="single-work" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+                            <div class="work-icon"><img src="assets/images/waterproof-fabric.svg"
+                                    alt="waterproof-fabric" /></div>
+                            <div class="work-count">4</div>
                             <div class="work-info">
                                 <h4>Impermeable layer</h4>
                                 <p>The waterproof and breathable layer prevents any fluids from seeping through.</p>
@@ -614,11 +639,15 @@
             </div>
             <div class="col-lg-6 order-frst order-lg-last">
                 <div class="video-area">
-                    <video controls autoplay muted loop>
+                    <video autoplay muted loop>
                         <source src="assets/videos/movie.mp4" type="video/mp4">
                         <source src="movie.ogg" type="video/ogg">
                         Your browser does not support the video tag.
                     </video>
+                    <a class="popup-video" data-autoplay="true" data-vbtype="video"
+                            href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+                            <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -748,7 +777,11 @@
   <!-- brand slider area end here  -->
   <!-- video-image-area strt here  -->
   <div class="video-image-area">
-    <img src="assets/images/image-1.jpg" alt="image" />
+    <video autoplay muted loop>
+      <source src="assets/videos/movie.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+  </video>
   </div>
   <!-- video-image-area end here  -->
   <!-- product review area strt here  -->
@@ -925,7 +958,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <div class="section-about-content">
+          <div class="section-about-content me-lg-5">
             <h2 class="title">More plastic waste-free styles to love</h2>
             <p class="content">Every period routine is different and we’re all about having options.</p>
             <a href="shop.html" class="arrow-btn">SHOP ALL <i class="fa-solid fa-arrow-right-long"></i></a>
@@ -1280,7 +1313,7 @@
           <input class="qty-input" type="text" title="Quantity" value="1" readonly />
           <button class="inc qty-btn">+</button>
         </div>
-        <button class="cart-btn">Add to cart - $</button>
+        <button class="cart-btn">Add to cart <span class="price">- $</span></button>
       </div>
     </div>
   </div>
