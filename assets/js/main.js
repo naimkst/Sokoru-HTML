@@ -257,8 +257,8 @@
       autoplaySpeed: 3000,
       dots: true,
       arrows: true,
-      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
-      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
+      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
+      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
       responsive: [
         {
           breakpoint: 1024,
