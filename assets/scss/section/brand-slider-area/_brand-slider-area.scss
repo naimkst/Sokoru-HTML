@@ -21,12 +21,13 @@
           &::after {
                position: absolute;
                content: '';
-               width: 3px;
-               height: 3px;
+               width: 5px;
+               height: 5px;
                background-color: var(--bColor);
                top: 50%;
                transform: translateY(-50%);
                left: 100%;
+               border-radius: 50%;
           }
      }
 }

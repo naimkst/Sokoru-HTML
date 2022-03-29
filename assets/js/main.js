@@ -330,7 +330,7 @@
       ]
     });
     /*-------------------------------------------
-    plastic-product-slidep active
+    plastic-product-slide active
     --------------------------------------------- */
     $('.plastic-product-slide').slick({
       infinite: false,
@@ -338,6 +338,51 @@
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
+      autoplaySpeed: 3000,
+      dots: false,
+      arrows: false,
+      prevArrow: '<img class="slick-prev" src="assets/images/icon-left-arrow.svg" alt="left-arrow.svg" /> ',
+      nextArrow: '<img class="slick-next" src="assets/images/icon-right-arrow.svg" alt="right-arrow" />  ',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1.3,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+    });
+    /*-------------------------------------------
+    recently-product-slide active
+    --------------------------------------------- */
+    $('.recently-product-slide').slick({
+      infinite: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: false,
       autoplaySpeed: 3000,
       dots: false,
       arrows: false,
@@ -450,9 +495,15 @@
     venobox Popup active
     -----------------------------------*/
     $('.popup-video').venobox(); 
-    
-
-    
+    /*---------------------------------
+    movile video autoplay stop 
+    -----------------------------------*/
+    var screenWidth = $(window).width();
+    if (screenWidth < 767){
+      $('video').removeAttr('autoplay');
+    } else {
+      $('video').attr('autoplay');
+    }
 
   });
 

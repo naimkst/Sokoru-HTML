@@ -33,11 +33,16 @@
         height: 100%;
         background-color: #E1D2BB;
     }
+    .period-undies-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        max-width: 470px;
+    }
     .single-period-undies {
-        margin-bottom: 3rem;
         .icon {
             max-width: 6rem;
-            max-height: 6.5rem;
+            height: 6.5rem;
             object-fit: cover;
             margin: 0 auto;
             margin-bottom: 1.5rem;
@@ -66,10 +71,7 @@
 @media (max-width: 767px) {
     .period-undies-area .period-info {
         min-height: auto;
-        padding: 5rem 0;
-    }
-    .period-undies-right.period-info {
-        padding-bottom: 2rem;
+        padding: 5rem 1.5rem;
     }
     .period-undies-featur .row.mt-50 {
         margin-top: 0;
@@ -94,5 +96,13 @@
     .period-undies-area .period-undies-left p {
         font-size: 1.6rem;
         line-height: 2.8rem;
+    }
+    .period-undies-area .period-undies-list {
+        grid-gap: 30px;
+    }
+}
+@media (max-width: 360px) {
+    .period-undies-area .period-undies-list {
+        grid-gap: 15px;
     }
 }

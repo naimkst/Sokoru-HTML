@@ -81,6 +81,28 @@
             }
         }
     }
+    .designed-glove-accordion {
+        .accordion-item {
+            margin-bottom: 0;
+            &:last-child {
+                .accordion-button {
+                    border-bottom: none;
+                }
+            }
+            .accordion-button {
+                display: block;
+                text-align: center;
+                text-transform: uppercase;
+                color: var(--black);
+                border-bottom-color: var(--white);
+                padding: 4rem 0;
+            }
+            .accordion-body {
+                padding: 3rem 1.5rem;
+                border-bottom: 1px solid var(--white);
+            }
+        }
+    }
 }
 @media (max-width: 767px) {
     .designed-glove-area .designed-glove-left .nav .nav-item {
@@ -94,6 +116,9 @@
     }
     .designed-glove-area .designed-glove-left .nav .nav-item .nav-link {
         text-decoration: none;
+    }
+    .designed-glove-area.designed-glove-mobile.section {
+        padding: 0;
     }
 }
 @media (max-width: 575px) {
