@@ -72,6 +72,7 @@ body {
   color: var(--bColor);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FFFCF7;
 }
 
 h1,
@@ -831,6 +832,11 @@ primary-btn
     font-size: 1.4rem;
   }
 }
+@media (max-width: 414px) {
+  .btn-list .primary-btn {
+    margin-right: 1rem;
+  }
+}
 /*-------------------------
 #.header-area
 --------------------------*/
@@ -1281,8 +1287,6 @@ primary-btn
 }
 .offcanvas-menu-area .main-menu ul li.has-sub-menu .sub-menu {
   background-color: var(--white);
-  -webkit-box-shadow: 0 5px 8px rgba(100, 100, 111, 0.2);
-          box-shadow: 0 5px 8px rgba(100, 100, 111, 0.2);
   margin-top: 1rem;
   border-radius: .3rem;
   display: none;
@@ -1511,7 +1515,6 @@ primary-btn
 }
 .sustainable-area .content {
   margin-bottom: 5.5rem;
-  font-family: "Canela";
   font-size: 2.4rem;
   line-height: 3.4rem;
   font-weight: 500;
@@ -1585,6 +1588,10 @@ primary-btn
     font-size: 2.6rem;
     line-height: 3.4rem;
   }
+
+  .section-title.mb-55 {
+    margin-bottom: 3rem;
+  }
 }
 /*-------------------------
 #.footer-area
@@ -1610,7 +1617,7 @@ primary-btn
 }
 .footer-area .footer-left h2 {
   margin-bottom: 2.5rem;
-  font-family: "Cera Pro";
+  font-family: "Canela";
   font-size: 4rem;
   font-weight: 400;
   color: var(--black);
@@ -1968,6 +1975,10 @@ primary-btn
   .footer-area .footer-left p {
     font-size: 1.6rem;
   }
+
+  .footer-area .footer-bottom .footer-menu ul li {
+    margin-right: 1rem;
+  }
 }
 @media (max-width: 375px) {
   .footer-area .single-widget .widget-title {
@@ -1988,6 +1999,46 @@ primary-btn
 --------------------------*/
 .single-product {
   margin-bottom: 3rem;
+}
+.single-product.promo-product {
+  position: relative;
+}
+.single-product.promo-product img {
+  width: 100%;
+  height: auto;
+}
+.single-product.promo-product .promo-product-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+}
+.single-product.promo-product .promo-product-content .promo-product-title {
+  margin: 0;
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  color: var(--black);
+  text-align: center;
+}
+.single-product.promo-product .promo-product-content .load-more-btn {
+  margin-top: 4rem;
 }
 .single-product .product-thumbnail {
   position: relative;
@@ -2050,6 +2101,7 @@ primary-btn
 }
 .single-product .product-info .product-name {
   margin: 0;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -2137,6 +2189,7 @@ primary-btn
 }
 .single-product .product-info .price-review-area .price {
   margin: 0;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -2220,6 +2273,7 @@ primary-btn
   margin: 0 auto;
 }
 .switch-difference-area .switch-card-wrap .single-switch-card h3 {
+  font-family: "Cera Pro";
   margin-bottom: 2rem;
   font-size: 1.8rem;
   font-weight: 700;
@@ -2284,6 +2338,7 @@ primary-btn
 --------------------------*/
 .brand-slider-area {
   padding: 5.5rem 0;
+  background-color: var(--white);
 }
 .brand-slider-area .slick-slider {
   margin: 0 -12px;
@@ -2368,7 +2423,7 @@ primary-btn
 }
 .ethically-made-area .content {
   margin-bottom: 5rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   line-height: 3rem;
   font-weight: 500;
@@ -2491,7 +2546,7 @@ primary-btn
 }
 .company-area .single-company p {
   margin-bottom: 5rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 3rem;
@@ -2545,6 +2600,7 @@ primary-btn
 
 .more-questions .more-quistion {
   margin-bottom: 1.5rem;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--bColor);
@@ -2656,6 +2712,11 @@ primary-btn
     font-size: 1.6rem;
     line-height: 2.6rem;
   }
+
+  .image-content-area .content-box-area .content-box-inner .title {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
 }
 @media (max-width: 767px) {
   .image-content-area .content-box-area {
@@ -2722,6 +2783,11 @@ primary-btn
   visibility: visible;
 }
 
+@media (max-width: 480px) {
+  .conversation-area .single-conversation .overlay-area .icon {
+    font-size: 2.5rem;
+  }
+}
 /*-------------------------
 #.blog-banner
 --------------------------*/
@@ -2827,6 +2893,18 @@ primary-btn
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
+
+  .blog-banner .blog-banner-content {
+    padding: 3rem 2rem;
+  }
+
+  .blog-banner .blog-banner-content .title {
+    margin-bottom: 2rem;
+  }
+
+  .blog-banner .blog-banner-content .content {
+    margin-bottom: 2.5rem;
+  }
 }
 /*-------------------------
 #.blog-area
@@ -2849,7 +2927,7 @@ primary-btn
   border: none;
   padding: 0;
   margin: 0;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -2952,6 +3030,11 @@ primary-btn
     padding-top: 3.5rem;
   }
 }
+@media (max-width: 768px) {
+  .blog-area .nav-tabs {
+    margin-bottom: 5rem;
+  }
+}
 @media (max-width: 767px) {
   .blog-area .nav-tabs {
     margin-bottom: 3rem;
@@ -2963,6 +3046,11 @@ primary-btn
 
   .nav-tabs .nav-item {
     margin-right: 2rem;
+  }
+}
+@media (max-width: 575px) {
+  .load-more-area.mt-30 {
+    margin-top: 1rem;
   }
 }
 /*-------------------------
@@ -3294,7 +3382,7 @@ primary-btn
   padding: 0;
   border: none;
   background-color: transparent;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 2.4rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -3379,6 +3467,11 @@ primary-btn
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .faq-page-area .nav-tabs {
+    margin-bottom: 5rem;
+  }
+}
 @media (max-width: 575px) {
   .faq-page-area .nav-tabs .nav-link {
     font-size: 1.8rem;
@@ -3391,16 +3484,169 @@ primary-btn
   margin-bottom: 2.5rem;
   font-size: 3.2rem;
   font-weight: 700;
+  font-family: "Cera Pro";
   text-transform: capitalize;
   color: var(--black);
 }
 .shop-page-area .shop-page-top p {
-  max-width: 900px;
+  max-width: 812px;
   margin: 0 auto;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3rem;
   color: var(--black);
+}
+
+.filter-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 3rem;
+}
+.filter-area .switch-filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.filter-area .switch-filters .single-filter {
+  margin-right: 2.5rem;
+}
+.filter-area .switch-filters .single-filter:last-child {
+  margin-right: 0;
+}
+.filter-area .dropdown .switch-dropdown {
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent;
+  font-family: "Cera Pro";
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--black);
+  white-space: nowrap;
+}
+.filter-area .dropdown .switch-dropdown span {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.filter-area .dropdown .switch-dropdown i {
+  color: var(--black);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.filter-area .dropdown .switch-dropdown.show i {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.filter-area .dropdown .dropdown-menu {
+  max-height: 250px;
+  min-width: 250px;
+  overflow-y: auto;
+  background-color: var(--white);
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
+.filter-area .dropdown .dropdown-menu::-webkit-scrollbar {
+  width: 4px;
+}
+.filter-area .dropdown .dropdown-menu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.filter-area .dropdown .dropdown-menu::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.filter-area .dropdown .dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.filter-area .dropdown .dropdown-menu li label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  margin: 0;
+  font-family: "Cera Pro";
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--black);
+  cursor: pointer;
+}
+.filter-area .dropdown .dropdown-menu li label input {
+  margin-right: 1rem;
+  margin-top: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.filter-area .dropdown .dropdown-menu li label .form-check-input {
+  border: 1px solid var(--black);
+  border-radius: 0;
+}
+.filter-area .dropdown .dropdown-menu li label .form-check-input:checked {
+  background-color: var(--black);
+}
+.filter-area .dropdown .dropdown-menu li label:hover {
+  background-color: #f9f8f8;
+}
+.filter-area .grid-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.filter-area .grid-list li {
+  line-height: 1;
+  margin-right: 1rem;
+}
+.filter-area .grid-list li:last-child {
+  margin-right: 0;
+}
+.filter-area .grid-list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: .6rem;
+  background-color: #fafafa;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.filter-area .grid-list li a img {
+  max-width: 100%;
+  height: auto;
+}
+.filter-area .grid-list li.active a {
+  background-color: #D08E61;
 }
 
 @media (max-width: 767px) {
@@ -3421,6 +3667,22 @@ primary-btn
   .shop-page-area .shop-page-top h2 {
     font-size: 2.6rem;
     line-height: 3.4rem;
+  }
+}
+@media (max-width: 414px) {
+  .filter-area .filter-left {
+    width: 100%;
+  }
+
+  .filter-area .filter-right {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .filter-area .grid-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 /*-------------------------
@@ -3598,7 +3860,7 @@ primary-btn
 }
 .single-product-page .product-info .revire-area .review-point {
   display: inline-block;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1;
@@ -3751,7 +4013,7 @@ primary-btn
   -webkit-box-shadow: none;
           box-shadow: none;
   margin: 0;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-weight: 500;
   font-size: 1.8rem;
   color: var(--black);
@@ -3821,7 +4083,7 @@ primary-btn
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 700;
@@ -3846,6 +4108,7 @@ primary-btn
 }
 .single-product-page .product-switch .switch-name {
   margin-bottom: 1rem;
+  font-family: "Cera Pro";
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -4145,10 +4408,6 @@ primary-btn
     margin-top: 1rem;
   }
 
-  .product-stickty-bar .product-name {
-    display: none;
-  }
-
   .product-stickty-bar .cart-btn {
     width: auto;
     font-size: 1.2rem;
@@ -4218,6 +4477,10 @@ primary-btn
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
+
+  .product-stickty-bar .product-name {
+    display: none;
+  }
 }
 @media (max-width: 414px) {
   .single-product-page .product-info .cart-quantity-area .product-qty {
@@ -4253,6 +4516,10 @@ primary-btn
     font-size: 1.4rem;
     font-weight: 500;
     padding-left: .5rem;
+  }
+
+  .product-stickty-bar .cart-btn {
+    width: 110px;
   }
 }
 @media (max-width: 360px) {
@@ -4644,7 +4911,7 @@ primary-btn
 }
 .designed-glove-area .designed-glove-left .nav .nav-item .nav-link {
   display: inline-block;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -4725,6 +4992,14 @@ primary-btn
 
   .designed-glove-area.designed-glove-mobile.section {
     padding: 0;
+  }
+
+  .designed-glove-area .designed-glove-right h2 {
+    margin-bottom: 2rem;
+  }
+
+  .designed-glove-area .designed-glove-accordion .accordion-item .accordion-button {
+    padding: 3rem 0;
   }
 }
 @media (max-width: 575px) {
@@ -5098,7 +5373,7 @@ primary-btn
 .product-review-top .product-review-right .whrite-review-btn {
   display: inline-block;
   margin-bottom: 3rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -5462,7 +5737,7 @@ primary-btn
      object-fit: cover;
 }
 .section-image-content .single-content-wrap .content-box {
-  padding-left: 5rem;
+  padding-left: 14rem;
 }
 .section-image-content .single-content-wrap .content-box h2 {
   margin-bottom: 5.5rem;
@@ -5485,7 +5760,7 @@ primary-btn
 }
 .section-image-content .single-content-wrap.flex-row-reverse .content-box {
   padding-left: 0;
-  padding-right: 5rem;
+  padding-right: 14rem;
 }
 
 @media (max-width: 1199px) {
@@ -5629,7 +5904,7 @@ primary-btn
 }
 .road-ahead-area p {
   margin-bottom: 4.5rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 2.4rem;
   line-height: 3.6rem;
   font-weight: 500;
@@ -5700,7 +5975,7 @@ primary-btn
 }
 .undies-instead-area .single-box .title {
   margin-bottom: 2.5rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -5708,7 +5983,7 @@ primary-btn
 }
 .undies-instead-area .single-box .info-content {
   margin: 0;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 3.2rem;
   line-height: 1;
   font-weight: 400;
@@ -5757,6 +6032,11 @@ primary-btn
 
   .undies-instead-area .single-box .info-content {
     font-size: 2.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .undies-instead-area .single-box .info-content {
+    font-size: 1.8rem;
   }
 }
 /*-------------------------

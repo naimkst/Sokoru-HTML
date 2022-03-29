@@ -15,7 +15,7 @@
                border: none;
                padding: 0;
                margin: 0;
-               font-family: $titleFont;
+               font-family: $bodyFont;
                font-size: 1.8rem;
                font-weight: 700;
                text-transform: uppercase;
@@ -27,6 +27,11 @@
      }
 }
 @import "./single-blog";
+@media (max-width: 768px) {
+     .blog-area  .nav-tabs {
+          margin-bottom: 5rem;
+     }
+}
 @media (max-width: 767px) {
      .blog-area .nav-tabs {
           margin-bottom: 3rem;
@@ -36,5 +41,10 @@
      }
      .nav-tabs .nav-item {
           margin-right: 2rem;
+     }
+}
+@media (max-width: 575px) {
+     .load-more-area.mt-30 {
+          margin-top: 1rem;
      }
 }

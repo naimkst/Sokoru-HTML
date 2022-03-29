@@ -18,6 +18,7 @@ body {
 	color: var(--bColor);
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #FFFCF7;
 }
 
 
@@ -643,5 +644,10 @@ primary-btn
     }
     .load-more-btn {
         font-size: 1.4rem;
+    }
+}
+@media (max-width: 414px) {
+    .btn-list .primary-btn {
+        margin-right: 1rem;
     }
 }

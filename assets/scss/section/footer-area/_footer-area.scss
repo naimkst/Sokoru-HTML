@@ -16,7 +16,7 @@
           }
           h2 {
                margin-bottom: 2.5rem;
-               font-family: $bodyFont;
+               font-family: $titleFont;
                font-size: 4rem;
                font-weight: 400;
                color: var(--black);
@@ -328,6 +328,9 @@
      }
      .footer-area .footer-left p {
           font-size: 1.6rem;
+     }
+     .footer-area .footer-bottom .footer-menu ul li {
+          margin-right: 1rem;
      }
 }
 @media (max-width: 375px) {

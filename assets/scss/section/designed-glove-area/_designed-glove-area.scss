@@ -34,7 +34,7 @@
                 }
                 .nav-link {
                     display: inline-block;
-                    font-family: $titleFont;
+                    font-family: $bodyFont;
                     font-size: 1.8rem;
                     font-weight: 700;
                     text-transform: uppercase;
@@ -119,6 +119,12 @@
     }
     .designed-glove-area.designed-glove-mobile.section {
         padding: 0;
+    }
+    .designed-glove-area .designed-glove-right h2 {
+        margin-bottom: 2rem;
+    }
+    .designed-glove-area .designed-glove-accordion .accordion-item .accordion-button {
+        padding: 3rem 0;
     }
 }
 @media (max-width: 575px) {
