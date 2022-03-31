@@ -831,6 +831,10 @@ primary-btn
   .load-more-btn {
     font-size: 1.4rem;
   }
+
+  #scrollUp {
+    display: none;
+  }
 }
 @media (max-width: 414px) {
   .btn-list .primary-btn {
@@ -888,7 +892,7 @@ primary-btn
   margin-right: 2.5rem;
 }
 .header-area .main-menu ul li a {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--black);
@@ -917,32 +921,28 @@ primary-btn
   position: absolute;
   left: 0;
   top: 100%;
-  width: 16rem;
-  padding: .5rem 0;
-  background-color: var(--white);
-  -webkit-box-shadow: 0 5px 8px rgba(100, 100, 111, 0.2);
-          box-shadow: 0 5px 8px rgba(100, 100, 111, 0.2);
+  width: 18rem;
+  padding: 1rem;
+  background-color: #FFFCF7;
   z-index: 9;
-  border-radius: .5rem;
+  border-radius: 0;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   pointer-events: none;
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  max-height: 0;
 }
 .header-area .main-menu ul li.has-sub-menu .sub-menu li {
   display: block;
   margin: 0;
-  border-bottom: 1px dashed rgba(100, 100, 111, 0.2);
 }
 .header-area .main-menu ul li.has-sub-menu .sub-menu li:last-child {
   border-bottom: 0;
 }
 .header-area .main-menu ul li.has-sub-menu .sub-menu li a {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: capitalize;
   color: var(--black);
@@ -952,15 +952,13 @@ primary-btn
 }
 .header-area .main-menu ul li.has-sub-menu .sub-menu li a:hover {
   color: var(--black);
-  -webkit-transform: translateX(5px);
-          transform: translateX(5px);
+  text-decoration: underline;
 }
 .header-area .main-menu ul li.has-sub-menu:hover .sub-menu {
   visibility: visible;
   opacity: 1;
   pointer-events: all;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  max-height: 29.375rem;
 }
 .header-area .brand-logo {
   display: inline-block;
@@ -985,7 +983,7 @@ primary-btn
   border: none;
   background: transparent;
   font-family: "Cera Pro";
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--black);
@@ -1008,7 +1006,7 @@ primary-btn
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .header-area .account-curancy-area .curancy-area .dropdown-menu li a {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: capitalize;
   color: var(--black);
@@ -1034,7 +1032,7 @@ primary-btn
   color: var(--black);
 }
 .header-area .account-curancy-area .account-btn {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--black);
@@ -1062,7 +1060,8 @@ primary-btn
   display: inline-block;
 }
 .header-area .search-cart li a img {
-  max-width: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .header-area .cart-area a {
   position: relative;
@@ -1197,7 +1196,7 @@ primary-btn
   border: none;
   background: transparent;
   font-family: "Cera Pro";
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--black);
@@ -1220,7 +1219,7 @@ primary-btn
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .offcanvas-menu-area .curancy-area .dropdown-menu li a {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: capitalize;
   color: var(--black);
@@ -1246,7 +1245,7 @@ primary-btn
   color: var(--black);
 }
 .offcanvas-menu-area .account-btn {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--black);
@@ -1269,7 +1268,7 @@ primary-btn
   cursor: pointer;
 }
 .offcanvas-menu-area .main-menu ul li a {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--black);
@@ -1286,7 +1285,7 @@ primary-btn
   color: var(--black);
 }
 .offcanvas-menu-area .main-menu ul li.has-sub-menu .sub-menu {
-  background-color: var(--white);
+  background-color: #FFFCF7;
   margin-top: 1rem;
   border-radius: .3rem;
   display: none;
@@ -1301,7 +1300,7 @@ primary-btn
 }
 .offcanvas-menu-area .main-menu ul li.has-sub-menu .sub-menu li a {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: capitalize;
   color: var(--black);
@@ -1434,7 +1433,7 @@ primary-btn
   margin-bottom: 5rem;
   font-size: 6rem;
   line-height: 7rem;
-  font-weight: 700;
+  font-weight: 300;
   font-family: "Canela";
   text-transform: capitalize;
   color: var(--black);
@@ -1558,14 +1557,14 @@ primary-btn
 .section-title .title {
   margin: 0;
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 
 .section-inner-title .title {
   margin: 0;
   font-size: 4.8rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 
@@ -1673,7 +1672,7 @@ primary-btn
   color: var(--bColor);
 }
 .footer-area .footer-right {
-  padding: 7rem 5rem 3rem 5rem;
+  padding: 12rem 5rem 7rem 5rem;
 }
 .footer-area .single-widget {
   margin-bottom: 3rem;
@@ -1760,7 +1759,7 @@ primary-btn
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-top: 2rem;
+  margin-top: 7rem;
 }
 .footer-area .footer-bottom .social-media ul {
   margin: 0;
@@ -1843,6 +1842,10 @@ primary-btn
 
   .footer-area .footer-right {
     padding: 7rem 3rem 3rem 3rem;
+  }
+
+  .footer-area .footer-bottom {
+    margin-top: 3rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1350px) {
@@ -1992,6 +1995,20 @@ primary-btn
 
   .footer-area .footer-bottom .footer-menu ul li {
     margin-right: 1rem;
+  }
+
+  .footer-area .contact-widget ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .footer-area .contact-widget ul li {
+    margin-right: 3rem;
+  }
+
+  .footer-area .contact-widget ul li:last-child {
+    margin-right: 0;
   }
 }
 /*-------------------------
@@ -2276,7 +2293,7 @@ primary-btn
   font-family: "Cera Pro";
   margin-bottom: 2rem;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: capitalize;
   color: var(--bColor);
 }
@@ -2284,7 +2301,7 @@ primary-btn
   margin: 0 auto;
   font-size: 1.8rem;
   line-height: 3rem;
-  color: var(--bColor);
+  color: var(--black);
   max-width: 26rem;
 }
 
@@ -2327,10 +2344,16 @@ primary-btn
   margin: 0 auto;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .period-area .single-period .period-image .primary-btn {
-    bottom: 2rem;
-    width: 90%;
+    bottom: 3rem;
+    width: 100%;
+    max-width: 290px;
+  }
+}
+@media (max-width: 360px) {
+  .period-area .single-period .period-image .primary-btn {
+    max-width: 260px;
   }
 }
 /*-------------------------
@@ -2366,7 +2389,7 @@ primary-btn
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 100%;
+  left: calc(100% + 10px);
   border-radius: 50%;
 }
 
@@ -2831,7 +2854,7 @@ primary-btn
 .blog-banner .blog-banner-content .title {
   margin-bottom: 4.5rem;
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: capitalize;
   color: var(--black);
 }
@@ -2924,17 +2947,35 @@ primary-btn
   margin-right: 0;
 }
 .nav-tabs .nav-item .nav-link {
+  position: relative;
   border: none;
   padding: 0;
   margin: 0;
   font-family: "Cera Pro";
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: uppercase;
   color: var(--black);
 }
+.nav-tabs .nav-item .nav-link:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: var(--black);
+  left: 0;
+  bottom: 0;
+  width: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
 .nav-tabs .nav-item .nav-link.active {
-  color: var(--primary-color);
+  color: var(--black);
+}
+.nav-tabs .nav-item .nav-link.active::before {
+  opacity: 1;
+  width: 100%;
 }
 
 .single-blog {
@@ -3061,9 +3102,9 @@ primary-btn
 }
 .single-blog-details .blog-top .post-tag {
   margin-bottom: 4rem;
-  font-family: "Canela";
+  font-family: "Cera Pro";
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: uppercase;
   color: var(--black);
 }
@@ -3078,11 +3119,12 @@ primary-btn
 .single-blog-details .blog-top .blog-title {
   margin-bottom: 4rem;
   font-size: 4.8rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 .single-blog-details .blog-top .post-time {
   margin-bottom: 5.5rem;
+  font-family: "Cera Pro";
   font-size: 1.8rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -3096,7 +3138,7 @@ primary-btn
   margin-bottom: 4rem;
   font-size: 3.2rem;
   line-height: 4.2rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 .single-blog-details .blog-bottom p {
@@ -3482,8 +3524,8 @@ primary-btn
 --------------------------*/
 .shop-page-area .shop-page-top h2 {
   margin-bottom: 2.5rem;
-  font-size: 3.2rem;
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-weight: 300;
   font-family: "Cera Pro";
   text-transform: capitalize;
   color: var(--black);
@@ -3495,6 +3537,9 @@ primary-btn
   font-weight: 400;
   line-height: 3rem;
   color: var(--black);
+}
+.shop-page-area .single-product {
+  margin-bottom: 8rem;
 }
 
 .filter-area {
@@ -3536,7 +3581,7 @@ primary-btn
   background: transparent;
   font-family: "Cera Pro";
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: capitalize;
   color: var(--black);
   white-space: nowrap;
@@ -3586,7 +3631,7 @@ primary-btn
   margin: 0;
   font-family: "Cera Pro";
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: capitalize;
   color: var(--black);
   cursor: pointer;
@@ -3649,6 +3694,11 @@ primary-btn
   background-color: #D08E61;
 }
 
+@media (max-width: 991px) {
+  .shop-page-area .single-product {
+    margin-bottom: 3rem;
+  }
+}
 @media (max-width: 767px) {
   .shop-page-area .shop-page-top p {
     max-width: 100%;
@@ -3697,7 +3747,7 @@ primary-btn
 .single-product-page .product-info-mobile .product-name {
   margin-bottom: 1rem;
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: capitalize;
   color: var(--black);
 }
@@ -3869,7 +3919,7 @@ primary-btn
 .single-product-page .product-info .product-name {
   margin-bottom: .5rem;
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: capitalize;
   color: var(--black);
 }
@@ -3944,7 +3994,7 @@ primary-btn
   font-family: "Cera Pro";
   font-size: 1.1rem;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
   text-transform: uppercase;
   border: none;
@@ -3973,7 +4023,7 @@ primary-btn
   font-family: "Cera Pro";
   margin-bottom: 1rem;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: capitalize;
   color: var(--black);
 }
@@ -4028,7 +4078,7 @@ primary-btn
   background-color: transparent;
   font-family: "Canela";
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 .single-product-page .product-info .buy-offer-info {
@@ -4055,7 +4105,7 @@ primary-btn
 }
 .single-product-page .product-info .buy-offer-info .single-offer-info h4 span {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 300;
   color: #D08E61;
 }
 .single-product-page .product-info .feature-list {
@@ -4086,7 +4136,7 @@ primary-btn
   font-family: "Cera Pro";
   font-size: 1.4rem;
   line-height: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   padding: 0;
   border: none;
 }
@@ -4110,7 +4160,7 @@ primary-btn
   margin-bottom: 1rem;
   font-family: "Cera Pro";
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: capitalize;
   color: var(--bColor);
 }
@@ -4195,7 +4245,7 @@ primary-btn
   font-size: 1.2rem;
   text-transform: uppercase;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
   cursor: pointer;
 }
@@ -4230,7 +4280,7 @@ primary-btn
   border-bottom: 1px solid #C4C4C4;
   font-family: "Cera Pro";
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: capitalize;
   color: var(--black);
   -webkit-box-shadow: none;
@@ -4247,7 +4297,7 @@ primary-btn
   border: 1px solid var(--black);
   font-family: "Canela";
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 .single-product-page .product-brief-info .accordion-item .accordion-body {
@@ -4289,7 +4339,7 @@ primary-btn
 }
 .product-stickty-bar .product-name {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   margin: 0;
   color: var(--black);
   padding-left: 1.5rem;
@@ -4363,7 +4413,7 @@ primary-btn
   text-align: center;
   background-color: #D08E61;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: uppercase;
   color: var(--white);
   border: none;
@@ -4599,7 +4649,7 @@ primary-btn
 }
 .modal .modal-header .modal-title {
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: capitalize;
   color: var(--bColor);
 }
@@ -4614,7 +4664,7 @@ primary-btn
 .table thead tr th {
   font-family: "Cera Pro";
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 .table tbody {
@@ -4627,7 +4677,7 @@ primary-btn
   color: var(--black);
 }
 .table tbody tr td span {
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .table > :not(:first-child) {
@@ -4647,7 +4697,7 @@ primary-btn
   font-family: "Cera Pro";
   margin-bottom: 0;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 
@@ -4677,7 +4727,7 @@ primary-btn
   margin: 0;
   font-family: "Cera Pro";
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: capitalize;
   color: var(--black);
 }
@@ -4711,15 +4761,16 @@ primary-btn
   .table tbody tr td {
     font-size: 1.2rem;
     line-height: 1;
+    white-space: nowrap;
   }
 
   .size-info-bottom p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.3;
   }
 
   .size-info-bottom h4 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.3;
   }
 }
@@ -4758,6 +4809,14 @@ primary-btn
         -ms-flex-align: start;
             align-items: flex-start;
   }
+
+  .table thead tr th {
+    font-size: 1rem;
+  }
+
+  .table tbody tr td {
+    font-size: 1rem;
+  }
 }
 /*-------------------------
 #.period-undies-area
@@ -4773,7 +4832,7 @@ primary-btn
   margin-bottom: 6rem;
   font-size: 4.8rem;
   line-height: 6rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 .period-undies-area .period-undies-left p {
@@ -5375,7 +5434,7 @@ primary-btn
   margin-bottom: 3rem;
   font-family: "Cera Pro";
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: uppercase;
   color: var(--black);
   border-bottom: 1px solid var(--black);
@@ -5386,7 +5445,7 @@ primary-btn
   background-color: transparent;
   font-family: "Cera Pro";
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 
@@ -5406,7 +5465,7 @@ primary-btn
   margin-bottom: 1rem;
   font-family: "Cera Pro";
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 .review-list .single-review .review-left .verified-user {
@@ -5433,7 +5492,7 @@ primary-btn
 }
 .review-list .single-review .review-left ul li span {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 300;
 }
 .review-list .single-review .review-left ul li:last-child {
   margin-bottom: 0;
@@ -5743,7 +5802,7 @@ primary-btn
   margin-bottom: 5.5rem;
   font-size: 3.2rem;
   line-height: 4.2rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 .section-image-content .single-content-wrap .content-box p {
@@ -5847,7 +5906,7 @@ primary-btn
   margin-bottom: 6rem;
   font-size: 6rem;
   line-height: 7rem;
-  font-weight: 700;
+  font-weight: 300;
   font-family: "Canela";
   text-transform: capitalize;
   color: var(--black);
@@ -5899,7 +5958,7 @@ primary-btn
   margin-bottom: 6rem;
   font-size: 4.8rem;
   line-height: 6rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--black);
 }
 .road-ahead-area p {
@@ -5941,6 +6000,11 @@ primary-btn
     font-size: 2.6rem;
     line-height: 3.4rem;
   }
+
+  .road-ahead-area {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 /*-------------------------
 #.undies-instead-area
@@ -5958,7 +6022,7 @@ primary-btn
 }
 .undies-instead-area .instead-top .instead-title span {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 300;
   color: #D08E61;
 }
 .undies-instead-area .single-box {
@@ -5977,7 +6041,7 @@ primary-btn
   margin-bottom: 2.5rem;
   font-family: "Cera Pro";
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: uppercase;
   color: var(--bColor);
 }
@@ -6057,6 +6121,14 @@ primary-btn
   margin: 0 -15px;
 }
 .recently-viewed-area .slick-slider .slick-slide {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.featured-products-area .slick-slider {
+  margin: 0 -15px;
+}
+.featured-products-area .slick-slider .slick-slide {
   margin-right: 15px;
   margin-left: 15px;
 }

@@ -46,115 +46,116 @@
     </div>
   </div>
   <!-- topbar area end here  -->
-  <!-- header area start there -->
-  <header class="header-area d-none d-lg-block">
+  <!-- header area start there  -->
+  <header class="header-area d-none d-lg-block sticky">
     <div class="container">
-      <div class="header-wrap">
-        <div class="header-left">
-          <nav class="main-menu">
-            <ul>
-              <li class="active has-sub-menu">
-                <a href="shop.html">SHOP <i class="fa-solid fa-angle-down"></i></a>
-                <ul class="sub-menu">
-                  <li><a href="#">sub menu item</a></li>
-                  <li><a href="#">sub menu item</a></li>
-                  <li><a href="#">sub menu item</a></li>
+        <div class="header-wrap">
+            <div class="header-left">
+                <nav class="main-menu">
+                    <ul>
+                        <li class="has-sub-menu">
+                            <a href="shop.html">SHOP <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">sub menu item</a></li>
+                                <li><a href="#">sub menu item</a></li>
+                                <li><a href="#">sub menu item</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="blog.html">JOURNAL</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-center">
+                <a href="index.html" class="brand-logo"><img src="assets/images/logo.png" alt="logo" /></a>
+            </div>
+            <div class="header-right">
+                <ul class="account-curancy-area">
+                    <li>
+                        <div class="dropdown curancy-area">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">BTC</a></li>
+                                <li><a class="dropdown-item" href="#">TK</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="account-btn" href="account.html">ACCOUNT</a>
+                    </li>
                 </ul>
-              </li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="blog.html">JOURNAL</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-            </ul>
-          </nav>
+                <ul class="search-cart">
+                    <li><a href="search.html"><img src="assets/images/search.svg" alt="search"></a></li>
+                    <li class="cart-area"><a href="cart.html"><img src="assets/images/cart.svg" alt="cart"><span
+                                class="cart-count">2</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header area end there  -->
+<!-- mobile header start here  -->
+<div class="mobile-header d-block d-lg-none sticky">
+    <div class="mobile-header-wrap">
+        <div class="header-left">
+            <button class="menu-bar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                aria-controls="offcanvasMenu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a class="search-btn" href="search.html"><img src="assets/images/search.svg" alt="search"></a>
         </div>
         <div class="header-center">
-          <a href="index.html" class="brand-logo"><img src="assets/images/logo.png" alt="logo" /></a>
+            <a href="index.html" class="brand-logo"><img src="assets/images/logo.png" alt="logo" /></a>
         </div>
         <div class="header-right">
-          <ul class="account-curancy-area">
-            <li>
-              <div class="dropdown curancy-area">
-                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  USD
-                </button>
-                <ul class="dropdown-menu">
-                  <li class="active"><a class="dropdown-item" href="#">USD</a></li>
-                  <li><a class="dropdown-item" href="#">BTC</a></li>
-                  <li><a class="dropdown-item" href="#">TK</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a class="account-btn" href="account.html">ACCOUNT</a>
-            </li>
-          </ul>
-          <ul class="search-cart">
-            <li><a href="search.html"><img src="assets/images/search.svg" alt="search"></a></li>
-            <li class="cart-area"><a href="cart.html"><img src="assets/images/cart.svg" alt="cart"><span
-                  class="cart-count">2</span></a></li>
-          </ul>
+            <a class="cart-btn" href="cart.html"><img src="assets/images/cart.svg" alt="cart"><span
+                    class="cart-count">2</span></a>
         </div>
-      </div>
     </div>
-  </header>
-  <!-- header area end there  -->
-  <!-- mobile header start here  -->
-  <div class="mobile-header d-block d-lg-none">
-    <div class="mobile-header-wrap">
-      <div class="header-left">
-        <button class="menu-bar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
-          aria-controls="offcanvasMenu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <a class="search-btn" href="search.html"><img src="assets/images/search.svg" alt="search"></a>
-      </div>
-      <div class="header-center">
-        <a href="index.html" class="brand-logo"><img src="assets/images/logo.png" alt="logo" /></a>
-      </div>
-      <div class="header-right">
-        <a class="cart-btn" href="cart.html"><img src="assets/images/cart.svg" alt="cart"><span
-            class="cart-count">2</span></a>
-      </div>
-    </div>
-  </div>
-  <!-- mobile header end here  -->
-  <!-- offcanvasMenu start here  -->
-  <div class="offcanvas offcanvas-start offcanvas-menu-area" tabindex="-1" id="offcanvasMenu">
+</div>
+<!-- mobile header end here  -->
+<!-- offcanvasMenu start here  -->
+<div class="offcanvas offcanvas-start offcanvas-menu-area" tabindex="-1" id="offcanvasMenu">
     <div class="offcanvas-header">
-      <div class="dropdown curancy-area">
-        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          USD
-        </button>
-        <ul class="dropdown-menu">
-          <li class="active"><a class="dropdown-item" href="#">USD</a></li>
-          <li><a class="dropdown-item" href="#">BTC</a></li>
-          <li><a class="dropdown-item" href="#">TK</a></li>
-        </ul>
-      </div>
-      <a class="account-btn" href="account.html">ACCOUNT</a>
-      <button type="button" class="close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i
-          class="fa-solid fa-xmark"></i></button>
+        <div class="dropdown curancy-area">
+            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                USD
+            </button>
+            <ul class="dropdown-menu">
+                <li class="active"><a class="dropdown-item" href="#">USD</a></li>
+                <li><a class="dropdown-item" href="#">BTC</a></li>
+                <li><a class="dropdown-item" href="#">TK</a></li>
+            </ul>
+        </div>
+        <a class="account-btn" href="account.html">ACCOUNT</a>
+        <button type="button" class="close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                class="fa-solid fa-xmark"></i></button>
     </div>
     <div class="offcanvas-body">
-      <nav class="mobile-menu main-menu">
-        <ul>
-          <li class="active has-sub-menu">
-            <a href="shop.html">SHOP </a>
-            <span class="dropdown-btn"><i class="fa-solid fa-angle-down"></i></span>
-            <ul class="sub-menu">
-              <li><a href="#">sub menu item</a></li>
-              <li><a href="#">sub menu item</a></li>
-              <li><a href="#">sub menu item</a></li>
+        <nav class="mobile-menu main-menu">
+            <ul>
+                <li class="has-sub-menu">
+                    <a href="shop.html">SHOP </a>
+                    <span class="dropdown-btn"><i class="fa-solid fa-angle-down"></i></span>
+                    <ul class="sub-menu">
+                        <li><a href="#">sub menu item</a></li>
+                        <li><a href="#">sub menu item</a></li>
+                        <li><a href="#">sub menu item</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">JOURNAL</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
-          </li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="blog.html">JOURNAL</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </nav>
+        </nav>
     </div>
-  </div>
-  <!-- offcanvasMenu end here  -->
+</div>
+<!-- offcanvasMenu end here  -->
   <div class="single-product-page mb-50">
     <div class="product-details-wrap fix">
       <div class="container-fluid g-0">
@@ -877,7 +878,7 @@
                     bacteria.</p>
                 </div>
               </div>
-              <div class="single-work" data-aos="fade-up" data-aos-offset="300" data-aos-duration="300"
+              <div class="single-work" data-aos="fade-up" data-aos-offset="200" data-aos-duration="300"
                 data-aos-anchor-placement="bottom-bottom">
                 <div class="work-icon"><img src="assets/images/absorption.png" alt="absorption" /></div>
                 <div class="work-count">2</div>
@@ -886,7 +887,7 @@
                   <p>Absorbs fluid and locks it away keeping you dry and comfy all day long.</p>
                 </div>
               </div>
-              <div class="single-work" data-aos="fade-up" data-aos-offset="400" data-aos-duration="400"
+              <div class="single-work" data-aos="fade-up" data-aos-offset="200" data-aos-duration="400"
                 data-aos-anchor-placement="bottom-bottom">
                 <div class="work-icon"><img src="assets/images/waterproof-fabric.png" alt="waterproof-fabric" /></div>
                 <div class="work-count">3</div>
@@ -895,7 +896,7 @@
                   <p>The waterproof and breathable layer prevents any fluids from seeping through.</p>
                 </div>
               </div>
-              <div class="single-work" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500"
+              <div class="single-work" data-aos="fade-up" data-aos-offset="200" data-aos-duration="500"
                 data-aos-anchor-placement="bottom-bottom">
                 <div class="work-icon"><img src="assets/images/waterproof-fabric.png" alt="waterproof-fabric" /></div>
                 <div class="work-count">4</div>
@@ -1885,11 +1886,12 @@
                   <p class="opning-time">Mon-Fri, 9am - 5pm GMT</p>
                   <ul>
                     <li><a href="#"><img class="icon" src="assets/images/chat.png" alt="chat" />
-                        Live Chat</a></li>
-                    <li><a href="#"><img class="icon" src="assets/images/smartphone.png" alt="smartphone" />Text: +44
-                        1111 111111</a></li>
-                    <li><a href="#"><img class="icon" src="assets/images/email.png" alt="email" />Email</a></li>
-                  </ul>
+                            Live Chat</a></li>
+                    <li><a href="#"><img class="icon" src="assets/images/smartphone.png"
+                                alt="smartphone" />Text</a></li>
+                    <li><a href="#"><img class="icon" src="assets/images/email.png"
+                                alt="email" />Email</a></li>
+                </ul>
                 </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-6 col-6">

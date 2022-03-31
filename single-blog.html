@@ -46,8 +46,8 @@
         </div>
     </div>
     <!-- topbar area end here  -->
-    <!-- header area start there -->
-    <header class="header-area d-none d-lg-block">
+    <!-- header area start there  -->
+    <header class="header-area d-none d-lg-block sticky">
         <div class="container">
             <div class="header-wrap">
                 <div class="header-left">
@@ -62,7 +62,7 @@
                                 </ul>
                             </li>
                             <li><a href="about.html">ABOUT</a></li>
-                            <li class="active"><a href="blog.html">JOURNAL</a></li>
+                            <li><a href="blog.html">JOURNAL</a></li>
                             <li><a href="faq.html">FAQ</a></li>
                         </ul>
                     </nav>
@@ -100,7 +100,7 @@
     </header>
     <!-- header area end there  -->
     <!-- mobile header start here  -->
-    <div class="mobile-header d-block d-lg-none">
+    <div class="mobile-header d-block d-lg-none sticky">
         <div class="mobile-header-wrap">
             <div class="header-left">
                 <button class="menu-bar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
@@ -149,7 +149,7 @@
                         </ul>
                     </li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li class="active"><a href="blog.html">JOURNAL</a></li>
+                    <li><a href="blog.html">JOURNAL</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
@@ -241,16 +241,16 @@
                 <div class="blog-image-slider mb-50">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="sigle-image">
+                            <div class="sigle-image me-lg-5">
                                 <img src="assets/images/blog-detsils-image-2.jpg" alt="blog-detsils-image" />
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="sigle-image">
+                            <div class="sigle-image  ms-lg-5">
                                 <img src="assets/images/blog-detsils-image-2.jpg" alt="blog-detsils-image" />
                             </div>
                         </div>
-                        <div class="col-lg-12 mt-50">
+                        <div class="col-lg-12 mt-90">
                             <div class="image-slide">
                                 <div class="sigle-slide-image">
                                     <img src="assets/images/blog-image-slide.jpg" alt="perion-image" />
@@ -285,114 +285,228 @@
             <div class="section-title text-center mb-55">
                 <h2 class="title">Featured products</h2>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-product">
-                        <div class="product-thumbnail">
-                            <a href="single-product.html">
-                                <img src="assets/images/single-product-1.jpg" alt="product" />
-                            </a>
-                            <span class="product-label">PRE-ORDER</span>
+            <div class="product-slide">
+                <div class="single-product">
+                    <div class="product-thumbnail">
+                        <a href="single-product.html">
+                            <img class="product-image" src="assets/images/single-product-1.jpg" alt="product" />
+                            <img class="product-hover-image" src="assets/images/product-hover-image.jpg"
+                                alt="product" />
+                        </a>
+                        <span class="product-label">SALE</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name-color">
+                            <h3 class="product-name"><a href="#">Product Name</a></h3>
+                            <ul class="colors-switch">
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors" />
+                                        <span class="color" style="background: #D08E61;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors" />
+                                        <span class="color" style="background: #D08E61;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors" />
+                                        <span class="color" style="background: #571212;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors" />
+                                        <span class="color" style="background: #FFB89D;"></span>
+                                    </label>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="product-info">
-                            <div class="product-name-color">
-                                <h3 class="product-name"><a href="#">Product Name</a></h3>
-                                <ul class="colors-switch">
-                                    <li>
-                                        <label>
-                                            <input type="radio" name="colors" id="colorone" />
-                                            <span class="color" style="background: #D08E61;"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="radio" name="colors" id="colortwo" />
-                                            <span class="color" style="background: #D08E61;"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="radio" name="colors" id="colorthree" />
-                                            <span class="color" style="background: #571212;"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="radio" name="colors" id="colorfour" />
-                                            <span class="color" style="background: #FFB89D;"></span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="price-review-area">
-                                <h4 class="price">$28.00</h4>
-                                <ul class="absorbency">
-                                    <li class="active"><img src="assets/images/blood-drop-fill.png"
-                                            alt="blood-drop-fill" /></li>
-                                    <li class="active"><img src="assets/images/blood-drop-fill.png"
-                                            alt="blood-drop-fill" /></li>
-                                    <li class="active"><img src="assets/images/blood-drop-fill.png"
-                                            alt="blood-drop-fill" /></li>
-                                    <li class="active"><img src="assets/images/blood-drop-fill.png"
-                                            alt="blood-drop-fill" /></li>
-                                    <li><img src="assets/images/blood-drop-outline.png" alt="blood-drop-outline" /></li>
-                                </ul>
-                            </div>
+                        <div class="price-review-area">
+                            <h4 class="price">$28.00</h4>
+                            <ul class="absorbency">
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li><img src="assets/images/blood-drop-outline.png" alt="blood-drop-outline" />
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-product">
-                        <div class="product-thumbnail">
-                            <a href="single-product.html">
-                                <img src="assets/images/single-product-1.jpg" alt="product" />
-                            </a>
-                            <span class="product-label">PRE-ORDER</span>
+                <div class="single-product">
+                    <div class="product-thumbnail">
+                        <a href="single-product.html">
+                            <img class="product-image" src="assets/images/single-product-1.jpg" alt="product" />
+                            <img class="product-hover-image" src="assets/images/product-hover-image.jpg"
+                                alt="product" />
+                        </a>
+                        <span class="product-label">SALE</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name-color">
+                            <h3 class="product-name"><a href="#">Product Name</a></h3>
+                            <ul class="colors-switch">
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors2" />
+                                        <span class="color" style="background: #D08E61;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors2" />
+                                        <span class="color" style="background: #D08E61;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors2" />
+                                        <span class="color" style="background: #571212;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors2" />
+                                        <span class="color" style="background: #FFB89D;"></span>
+                                    </label>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="product-info">
-                            <div class="product-name-color">
-                                <h3 class="product-name"><a href="#">Product Name</a></h3>
-                                <ul class="colors-switch">
-                                    <li>
-                                        <label>
-                                            <input type="radio" name="colors" id="colorone1" />
-                                            <span class="color" style="background: #D08E61;"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="radio" name="colors" id="colortwo2" />
-                                            <span class="color" style="background: #D08E61;"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="radio" name="colors" id="colorthree2" />
-                                            <span class="color" style="background: #571212;"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="radio" name="colors" id="colorfour2" />
-                                            <span class="color" style="background: #FFB89D;"></span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="price-review-area">
-                                <h4 class="price">$28.00</h4>
-                                <ul class="absorbency">
-                                    <li class="active"><img src="assets/images/blood-drop-fill.png"
-                                            alt="blood-drop-fill" /></li>
-                                    <li class="active"><img src="assets/images/blood-drop-fill.png"
-                                            alt="blood-drop-fill" /></li>
-                                    <li class="active"><img src="assets/images/blood-drop-fill.png"
-                                            alt="blood-drop-fill" /></li>
-                                    <li class="active"><img src="assets/images/blood-drop-fill.png"
-                                            alt="blood-drop-fill" /></li>
-                                    <li><img src="assets/images/blood-drop-outline.png" alt="blood-drop-outline" /></li>
-                                </ul>
-                            </div>
+                        <div class="price-review-area">
+                            <h4 class="price">$28.00</h4>
+                            <ul class="absorbency">
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li><img src="assets/images/blood-drop-outline.png" alt="blood-drop-outline" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product-thumbnail">
+                        <a href="single-product.html">
+                            <img class="product-image" src="assets/images/single-product-1.jpg" alt="product" />
+                            <img class="product-hover-image" src="assets/images/product-hover-image.jpg"
+                                alt="product" />
+                        </a>
+                        <span class="product-label">SALE</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name-color">
+                            <h3 class="product-name"><a href="#">Product Name</a></h3>
+                            <ul class="colors-switch">
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors3" />
+                                        <span class="color" style="background: #D08E61;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors3" />
+                                        <span class="color" style="background: #D08E61;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors3" />
+                                        <span class="color" style="background: #571212;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors3" />
+                                        <span class="color" style="background: #FFB89D;"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-review-area">
+                            <h4 class="price">$28.00</h4>
+                            <ul class="absorbency">
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li><img src="assets/images/blood-drop-outline.png" alt="blood-drop-outline" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product-thumbnail">
+                        <a href="single-product.html">
+                            <img class="product-image" src="assets/images/single-product-1.jpg" alt="product" />
+                            <img class="product-hover-image" src="assets/images/product-hover-image.jpg"
+                                alt="product" />
+                        </a>
+                        <span class="product-label">SALE</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name-color">
+                            <h3 class="product-name"><a href="#">Product Name</a></h3>
+                            <ul class="colors-switch">
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors" />
+                                        <span class="color" style="background: #D08E61;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors" />
+                                        <span class="color" style="background: #D08E61;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors" />
+                                        <span class="color" style="background: #571212;"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="colors" />
+                                        <span class="color" style="background: #FFB89D;"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-review-area">
+                            <h4 class="price">$28.00</h4>
+                            <ul class="absorbency">
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li class="active"><img src="assets/images/blood-drop-fill.png"
+                                        alt="blood-drop-fill" /></li>
+                                <li><img src="assets/images/blood-drop-outline.png" alt="blood-drop-outline" />
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -480,7 +594,7 @@
                                         <li><a href="#"><img class="icon" src="assets/images/chat.png" alt="chat" />
                                                 Live Chat</a></li>
                                         <li><a href="#"><img class="icon" src="assets/images/smartphone.png"
-                                                    alt="smartphone" />Text: +44 1111 111111</a></li>
+                                                    alt="smartphone" />Text</a></li>
                                         <li><a href="#"><img class="icon" src="assets/images/email.png"
                                                     alt="email" />Email</a></li>
                                     </ul>

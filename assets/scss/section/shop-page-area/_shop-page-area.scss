@@ -5,8 +5,8 @@
     .shop-page-top {
         h2 {
             margin-bottom: 2.5rem;
-            font-size: 3.2rem;
-            font-weight: 700;
+            font-size: 2.2rem;
+            font-weight: 300;
             font-family: $bodyFont;
             text-transform: capitalize;
             color: var(--black);
@@ -19,6 +19,9 @@
             line-height: 3rem;
             color: var(--black);
         }
+    }
+    .single-product {
+        margin-bottom: 8rem;
     }
 }
 .filter-area {
@@ -45,7 +48,7 @@
             background: transparent;
             font-family: $bodyFont;
             font-size: 1.4rem;
-            font-weight: 700;
+            font-weight: 300;
             text-transform: capitalize;
             color: var(--black);
             white-space: nowrap;
@@ -91,7 +94,7 @@
                     margin: 0;
                     font-family: $bodyFont;
                     font-size: 1.6rem;
-                    font-weight: 700;
+                    font-weight: 300;
                     text-transform: capitalize;
                     color: var(--black);
                     cursor: pointer;
@@ -144,6 +147,11 @@
                 }
             }
         }
+    }
+}
+@media (max-width: 991px) {
+    .shop-page-area .single-product {
+        margin-bottom: 3rem;
     }
 }
 @media (max-width: 767px) {

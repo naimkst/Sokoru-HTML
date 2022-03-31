@@ -22,9 +22,15 @@
           }
      }
 }
-@media (max-width:375px) {
+@media (max-width:480px) {
      .period-area .single-period .period-image .primary-btn {
-          bottom: 2rem;
-          width: 90%;
+          bottom: 3rem;
+          width: 100%;
+          max-width: 290px;
+     }
+}
+@media (max-width:360px) {
+     .period-area .single-period .period-image .primary-btn {
+          max-width: 260px;
      }
 }

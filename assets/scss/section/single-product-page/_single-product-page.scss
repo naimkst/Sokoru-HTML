@@ -8,7 +8,7 @@
         .product-name {
             margin-bottom: 1rem;
             font-size: 3.2rem;
-            font-weight: 700;
+            font-weight: 300;
             text-transform: capitalize;
             color: var(--black);
         }
@@ -165,7 +165,7 @@
         .product-name {
             margin-bottom: .5rem;
             font-size: 3.2rem;
-            font-weight: 700;
+            font-weight: 300;
             text-transform: capitalize;
             color: var(--black);
         }
@@ -233,7 +233,7 @@
             font-family: $bodyFont;
             font-size: 1.1rem;
             line-height: 1;
-            font-weight: 700;
+            font-weight: 300;
             color: var(--black);
             text-transform: uppercase;
             border: none;
@@ -257,7 +257,7 @@
                 font-family: $bodyFont;
                 margin-bottom: 1rem;
                 font-size: 1.4rem;
-                font-weight: 700;
+                font-weight: 300;
                 text-transform: capitalize;
                 color:  var(--black);
             }
@@ -301,7 +301,7 @@
                     background-color: transparent;
                     font-family: $titleFont;
                     font-size: 1.4rem;
-                    font-weight: 700;
+                    font-weight: 300;
                     color: var(--black);
                 }
             }
@@ -327,7 +327,7 @@
                     color: var(--black);
                     span {
                         display: inline-block;
-                        font-weight: 700;
+                        font-weight: 300;
                         color: #D08E61
                     }
                 }
@@ -355,7 +355,7 @@
                     font-family: $bodyFont;
                     font-size: 1.4rem;
                     line-height: 1.8rem;
-                    font-weight: 700;
+                    font-weight: 300;
                     padding: 0;
                     border: none;
                     &::after {
@@ -384,7 +384,7 @@
             margin-bottom: 1rem;
             font-family: $bodyFont;
             font-size: 1.5rem;
-            font-weight: 700;
+            font-weight: 300;
             text-transform: capitalize;
             color: var(--bColor);
             span {
@@ -451,7 +451,7 @@
                 font-size: 1.2rem;
                 text-transform: uppercase;
                 line-height: 1;
-                font-weight: 700;
+                font-weight: 300;
                 color: var(--black);
                 cursor: pointer;
             }
@@ -484,7 +484,7 @@
                     border-bottom: 1px solid #C4C4C4;
                     font-family: $bodyFont;
                     font-size: 1.4rem;
-                    font-weight: 700;
+                    font-weight: 300;
                     text-transform: capitalize;
                     color: var(--black);
                     box-shadow: none;
@@ -499,7 +499,7 @@
                         border: 1px solid var(--black);
                         font-family: $titleFont;
                         font-size: 1.2rem;
-                        font-weight: 700;
+                        font-weight: 300;
                         color: var(--black);
                     }
                 }
@@ -537,7 +537,7 @@
     }
     .product-name {
         font-size: 1.8rem;
-        font-weight: 700;
+        font-weight: 300;
         margin:  0;
         color: var(--black);
         padding-left: 1.5rem;
@@ -594,7 +594,7 @@
         text-align: center;
         background-color: #D08E61;
         font-size: 1.8rem;
-        font-weight: 700;
+        font-weight: 300;
         text-transform: uppercase;
         color: var(--white);
         border: none;

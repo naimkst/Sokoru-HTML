@@ -645,6 +645,9 @@ primary-btn
     .load-more-btn {
         font-size: 1.4rem;
     }
+    #scrollUp {
+        display: none;
+    }
 }
 @media (max-width: 414px) {
     .btn-list .primary-btn {
