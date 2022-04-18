@@ -22,12 +22,14 @@
                font-size: 1.8rem;
                font-weight: 400;
                text-transform: uppercase;
-               color: var(--black);
+               color: var(--white);
                transition: $transition;
+               background-color: var(--black);
                margin: 0 auto;
                &:hover {
-                    background-color: var(--black);
+                    background-color: var(--primary-color);
                     color: var(--white);
+                    border-color: var(--white);
                }
           }
      }

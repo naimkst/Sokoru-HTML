@@ -1,11 +1,11 @@
 /*
 ------------- Table of content ----------------
 
-Template Name: Sokoru Responsive  HTML5 Template
-Template URI: http://sokoru.com
-Description: Sokoru Responsive  HTML5 Template
+Template Name: Soknest - eCommerce HTML Template
+Template URI: http://soknest.com
+Description: Soknest - eCommerce HTML Template
 Author: Gobinda Sarkar
-Author URI: http://sokoru.com
+Author URI: http://soknest.com
 Version: 1.0
 
 ---------------------- common content ----------
@@ -47,6 +47,7 @@ Version: 1.0
 #.undies-instead-area
 #.embrace-area
 #.recently-viewed-area
+#.cart-page-area
 #.footer-area
 
 
@@ -1426,7 +1427,7 @@ primary-btn
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(208, 142, 97, 0.5);
+  background: rgba(255, 255, 255, 0.6);
   z-index: -1;
 }
 .hero-banner-area .banner-title {
@@ -2019,6 +2020,16 @@ primary-btn
 }
 .single-product.promo-product {
   position: relative;
+  z-index: 1;
+}
+.single-product.promo-product::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.5);
 }
 .single-product.promo-product img {
   width: 100%;
@@ -3331,14 +3342,16 @@ primary-btn
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--white);
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
+  background-color: var(--black);
   margin: 0 auto;
 }
 .video-area .video-thumbnail .popup-video:hover {
-  background-color: var(--black);
+  background-color: var(--primary-color);
   color: var(--white);
+  border-color: var(--white);
 }
 .video-area .video-content {
   text-align: center;
@@ -4146,7 +4159,7 @@ primary-btn
   top: -4px;
 }
 .single-product-page .product-info .feature-list .accordion .accordion-button .icon {
-  max-width: 2rem;
+  max-width: 2.5rem;
   margin-right: 1rem;
 }
 .single-product-page .product-info .feature-list .accordion .accordion-body p {
@@ -5173,7 +5186,6 @@ primary-btn
 .how-work-area .video-area {
   position: relative;
   line-height: 1;
-  margin-bottom: -3px;
 }
 .how-work-area .video-area video {
   margin: 0;
@@ -5885,7 +5897,7 @@ primary-btn
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(208, 142, 97, 0.5);
+  background: rgba(255, 255, 255, 0.4);
   z-index: -1;
 }
 .banner-area.video-background {
@@ -6131,4 +6143,211 @@ primary-btn
 .featured-products-area .slick-slider .slick-slide {
   margin-right: 15px;
   margin-left: 15px;
+}
+
+/*-------------------------
+#.cart-page-area
+--------------------------*/
+.cart-page-area .cart-table .product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cart-page-area .cart-table .product-info .product-img {
+  margin-right: 2rem;
+  width: 76px;
+  height: 76px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart-page-area .cart-table .product-info .product-name {
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #1F2226;
+}
+.cart-page-area .cart-table .product-remove a {
+  color: var(--bColor);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  font-size: 2.5rem;
+}
+.cart-page-area .cart-table .product-remove a:hover {
+  color: red;
+}
+.cart-page-area .cart-table .cart-quality input {
+  width: 80px;
+  font-family: "Cera Pro";
+  font-size: 1.6rem;
+  color: #1F2226;
+  background: transparent;
+  border: 1px solid #D08E61;
+  padding: .5rem 1rem;
+}
+.cart-page-area .cart-table thead {
+  background-color: #F4F5F7;
+}
+.cart-page-area .cart-table thead tr th {
+  vertical-align: middle;
+  text-align: left;
+  padding: 2rem;
+  font-family: "Cera Pro";
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: var(--bColor);
+}
+.cart-page-area .cart-table thead tr th:last-child {
+  text-align: right;
+}
+.cart-page-area .cart-table tbody tr td {
+  vertical-align: middle;
+  text-align: left;
+  padding: 2rem;
+  font-family: "Cera Pro";
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #1F2226;
+}
+.cart-page-area .cart-table tbody tr td:last-child {
+  text-align: right;
+}
+.cart-page-area .cart-buttom-area .discount-code {
+  max-width: 400px;
+}
+.cart-page-area .cart-buttom-area .discount-code h3 {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  color: #111111;
+}
+.cart-page-area .cart-buttom-area .discount-code p {
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  color: var(--black);
+}
+.cart-page-area .cart-buttom-area .discount-code .coupon-box .coupon-input {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 6rem;
+  padding: .5rem 2rem;
+  border-radius: 5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid var(--black);
+  font-family: "Cera Pro";
+  font-size: 1.6rem;
+  color: var(--black);
+  background: transparent;
+}
+.cart-page-area .cart-buttom-area .cart-totals {
+  max-width: 400px;
+  margin-left: auto;
+}
+.cart-page-area .cart-buttom-area .cart-totals .grand-total-wrap {
+  border: 1px solid #bfbfbf;
+  background: #f9f9f9;
+  padding: 0px 30px 0;
+  margin-bottom: 2rem;
+}
+.cart-page-area .cart-buttom-area .cart-totals .grand-total-wrap ul {
+  padding: 30px 0 30px;
+}
+.cart-page-area .cart-buttom-area .cart-totals .grand-total-wrap ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Cera Pro";
+  font-size: 1.6rem;
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 16px;
+  margin-bottom: 17px;
+}
+.cart-page-area .cart-buttom-area .cart-totals .grand-total-wrap ul li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.cart-page-area .cart-buttom-area .cart-totals .primary-btn {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .cart-page-area .cart-buttom-area .cart-totals {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .cart-page-area .cart-buttom-area .discount-code {
+    max-width: 100%;
+  }
+
+  .cart-page-area .cart-table .product-info .product-img {
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .cart-page-area .cart-table .product-info .product-name {
+    font-size: 1.4rem;
+  }
+
+  .cart-page-area .cart-table tbody tr td {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+
+  .cart-page-area .cart-table thead tr th {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 575px) {
+  .cart-page-area .cart-table .cart-quality input {
+    width: 6rem;
+    font-size: 1.4rem;
+  }
+
+  .cart-page-area .cart-table .product-remove a {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .cart-page-area .cart-table tbody tr td:first-child {
+    min-width: 17rem;
+  }
+}
+@media (max-width: 360px) {
+  .shoping-update-area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .shoping-update-area .primary-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: .6rem 0;
+  }
+
+  .cart-page-area .cart-buttom-area .cart-totals .grand-total-wrap {
+    padding: 0px 15px 0;
+  }
+
+  .cart-page-area .cart-buttom-area .cart-totals .grand-total-wrap ul {
+    padding: 20px 0 20px;
+  }
 }

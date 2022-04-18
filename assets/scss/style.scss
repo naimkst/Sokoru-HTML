@@ -1,11 +1,11 @@
 /*
 ------------- Table of content ----------------
 
-Template Name: Sokoru Responsive  HTML5 Template
-Template URI: http://sokoru.com
-Description: Sokoru Responsive  HTML5 Template
+Template Name: Soknest - eCommerce HTML Template
+Template URI: http://soknest.com
+Description: Soknest - eCommerce HTML Template
 Author: Gobinda Sarkar
-Author URI: http://sokoru.com
+Author URI: http://soknest.com
 Version: 1.0
 
 ---------------------- common content ----------
@@ -47,6 +47,7 @@ Version: 1.0
 #.undies-instead-area
 #.embrace-area
 #.recently-viewed-area
+#.cart-page-area
 #.footer-area
 
 
@@ -104,5 +105,6 @@ Version: 1.0
 @import "section/undies-instead-area/undies-instead-area";
 @import "section/embrace-area/embrace-area";
 @import "section/recently-viewed-area/recently-viewed-area";
+@import "section/cart-page-area/cart-page-area";
 
 
