@@ -17,14 +17,17 @@
                height: 100%;
                left: 0;
                top: 0;
-               background: rgba(225, 255, 255, .3);
+               background: rgba(0, 0, 0, .3);
                z-index: -1;
           }
           .title {
-               color: var(--black);
+               color: var(--white);
           }
           .content {
-               color: var(--black);
+               color: var(--white);
+          }
+          .arrow-btn {
+               color: var(--white);
           }
      }
      .title {

@@ -1427,7 +1427,7 @@ primary-btn
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.3);
   z-index: -1;
 }
 .hero-banner-area .banner-title {
@@ -1437,13 +1437,23 @@ primary-btn
   font-weight: 300;
   font-family: "Canela";
   text-transform: capitalize;
-  color: var(--black);
+  color: var(--white);
 }
 .hero-banner-area .banner-content {
   margin-bottom: 6rem;
   font-size: 2.4rem;
   line-height: 3rem;
+  color: var(--white);
+}
+.hero-banner-area .primary-btn {
+  background-color: var(--white);
+  border: 1px solid var(--white);
   color: var(--black);
+}
+.hero-banner-area .primary-btn:hover {
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  color: var(--white);
 }
 
 @media (max-width: 1399px) {
@@ -2440,14 +2450,17 @@ primary-btn
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(225, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   z-index: -1;
 }
 .ethically-made-area.background-image .title {
-  color: var(--black);
+  color: var(--white);
 }
 .ethically-made-area.background-image .content {
-  color: var(--black);
+  color: var(--white);
+}
+.ethically-made-area.background-image .arrow-btn {
+  color: var(--white);
 }
 .ethically-made-area .title {
   margin-bottom: 5rem;
@@ -5897,7 +5910,7 @@ primary-btn
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 .banner-area.video-background {
@@ -5921,13 +5934,13 @@ primary-btn
   font-weight: 300;
   font-family: "Canela";
   text-transform: capitalize;
-  color: var(--black);
+  color: var(--white);
 }
 .banner-area .banner-content {
   margin-bottom: 0;
   font-size: 2.4rem;
   line-height: 3.6rem;
-  color: var(--black);
+  color: var(--white);
 }
 
 @media (max-width: 1399px) {

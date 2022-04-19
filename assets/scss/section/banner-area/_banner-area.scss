@@ -19,7 +19,7 @@
         height: 100%;
         left: 0;
         top: 0;
-        background: rgba(255, 255, 255, .4);
+        background: rgba(0, 0, 0, .4);
         z-index: -1;
     }
     &.video-background {
@@ -42,13 +42,13 @@
         font-weight: 300;
         font-family: $titleFont;
         text-transform: capitalize;
-        color: var(--black);
+        color: var(--white);
    }
    .banner-content {
        margin-bottom: 0;
         font-size: 2.4rem;
         line-height: 3.6rem;
-        color: var(--black);
+        color: var(--white);
    }
 }
 @media (max-width: 1399px) {
